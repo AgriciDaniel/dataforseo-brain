@@ -1,0 +1,56 @@
+{
+  "schema": "brainstein.adapter-manifest.v1",
+  "version": 1,
+  "status": "domain-adapted",
+  "domain": "DataForSEO v3 API: 12 modules and ~200+ endpoints, the task/live queue model, and the per-call cost model",
+  "generic_only": false,
+  "raw_input_types": [
+    "DataForSEO v3 response envelope (JSON) from any /v3/... endpoint",
+    "Live API response fixtures captured under .raw/sources/dataforseo-research/*/fixtures/"
+  ],
+  "input_schemas": [
+    {
+      "path": "schemas/dataforseo-response-schema.json",
+      "description": "Minimal DataForSEO v3 response envelope shape (no credentials or private data)"
+    }
+  ],
+  "importers": [
+    {
+      "path": "scripts/import_dataforseo.py",
+      "input": "dataforseo-response-json",
+      "description": "Validate an envelope and normalize tasks into flat records (endpoint, status, cost, target)"
+    }
+  ],
+  "synthesis_modules": [
+    {
+      "path": "scripts/synthesize_cost_summary.py",
+      "produces": "dataforseo.cost-summary-v1",
+      "description": "Aggregate normalized records into a deterministic per-endpoint cost summary"
+    }
+  ],
+  "report_renderers": [
+    {
+      "path": "scripts/render_dataforseo_report.py",
+      "format": "markdown",
+      "produces": "dataforseo-cost-scorecard",
+      "description": "Render a sourced markdown cost scorecard with concept wikilinks and a rollback note"
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "tests/fixtures/sample-dataforseo-response.json",
+      "description": "Compact valid DataForSEO Labs response envelope (fake task id, public keyword data only)"
+    }
+  ],
+  "tests": [
+    {
+      "path": "tests/test_adapters.py",
+      "description": "Importer normalization, synthesis determinism, renderer output, and malformed-input tests"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "description": "End-to-end scaffold, audit, and packaging smoke tests"
+    }
+  ],
+  "core_module": "dataforseo_brain/adapters.py"
+}

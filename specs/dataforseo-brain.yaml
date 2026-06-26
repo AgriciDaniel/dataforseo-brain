@@ -1,0 +1,56 @@
+# Brainstein spec v2
+# DataForSEO Brain — source-cited operating memory of the DataForSEO v3 API platform.
+spec_version: 2
+slug: "dataforseo-brain"
+title: "DataForSEO Brain"
+domain: "DataForSEO v3 API mastery — 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model."
+buyer: "SEO engineers, agencies, and AI/GEO builders who need a source-cited operating memory of the DataForSEO API: endpoints, parameters, request lifecycle, costs, and adapters."
+owner: "Daniel Agrici"
+repo_url: "https://github.com/AgriciDaniel/dataforseo-brain"
+license_name: "Custom license"
+research_refresh_cadence: "monthly for endpoint, parameter, and pricing drift; before every release for cost and authentication claims"
+workflows:
+  - "API surface intake and provenance capture"
+  - "Endpoint selection and request design"
+  - "Cost estimation and budget governance"
+  - "Sandbox and live test with fixture capture"
+  - "Workflow synthesis and report rendering"
+raw_sources:
+  - "DataForSEO v3 documentation pages, free sandbox response samples, cost-capped live API response fixtures, and the seo-dataforseo MCP tool catalog and cost tiers"
+enrichment_sources:
+  - "Official docs.dataforseo.com/v3 documentation"
+  - "dataforseo.com pricing page and help center"
+  - "Official DataForSEO MCP server repository"
+deliverables:
+  - "API capability map and endpoint reference"
+  - "Request-lifecycle and cost-control playbooks"
+  - "Workflow pipelines (rank tracking, keyword research, backlink audit, site audit, local SEO, AI visibility, e-commerce)"
+  - "Decision guides (which API for which job, live vs standard, MCP vs REST, vs competitors)"
+  - "Adapter that normalizes DataForSEO responses into vault records"
+refusal_rules:
+  - "No endpoint, parameter, cost, or auth claim without a current official docs citation"
+  - "No credentials, tokens, or .env values in any repo artifact; secrets stay in ~/Desktop/Keys"
+  - "No live billable API call beyond the operator-approved $5 cap; track spend via the user_data endpoint and hard-stop"
+  - "No irreversible recommendation without owner, confidence, source, and rollback note"
+safety_risks:
+  - "Stale pricing, rate limits, or endpoint parameters"
+  - "Credential or PII leakage in captured response fixtures"
+  - "Overconfident cost estimates leading to budget overrun"
+  - "Generated reports leaking local filesystem paths"
+playbook_steps:
+  - "API surface intake and provenance capture"
+  - "Endpoint selection and request design"
+  - "Cost estimation and budget governance"
+  - "Sandbox and live test with fixture capture"
+  - "Workflow synthesis and report rendering"
+audit_focus:
+  - "Stale pricing, rate limits, or endpoint parameters"
+  - "Credential or PII leakage in captured response fixtures"
+  - "Overconfident cost estimates leading to budget overrun"
+  - "Generated reports leaking local filesystem paths"
+next_action_signals:
+  - "API capability map and endpoint reference"
+  - "Request-lifecycle and cost-control playbooks"
+  - "Workflow pipelines"
+  - "Decision guides"
+  - "Normalization adapter"

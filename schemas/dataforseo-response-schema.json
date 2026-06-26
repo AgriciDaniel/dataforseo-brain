@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/AgriciDaniel/dataforseo-brain/schemas/dataforseo-response-schema.json",
+  "title": "DataForSEO v3 response envelope",
+  "description": "Minimal shape of any DataForSEO v3 API response, sufficient for normalization. No credentials or private data are part of this schema.",
+  "type": "object",
+  "required": ["status_code", "tasks"],
+  "properties": {
+    "version": {"type": "string"},
+    "status_code": {"type": "integer", "description": "20000 = Ok"},
+    "status_message": {"type": "string"},
+    "cost": {"type": "number", "description": "total billed cost in USD"},
+    "tasks_count": {"type": "integer"},
+    "tasks_error": {"type": "integer"},
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["status_code"],
+        "properties": {
+          "id": {"type": "string"},
+          "status_code": {"type": "integer", "description": "20000 = Ok, 40204 = subscription required"},
+          "status_message": {"type": "string"},
+          "cost": {"type": "number"},
+          "result_count": {"type": ["integer", "null"]},
+          "path": {"type": "array", "items": {"type": "string"}},
+          "data": {"type": "object", "description": "the echoed request parameters (function, keyword/target, etc.)"},
+          "result": {"type": ["array", "null"]}
+        }
+      }
+    }
+  }
+}

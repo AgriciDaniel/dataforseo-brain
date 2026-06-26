@@ -1,0 +1,29 @@
+{
+  "name": "dataforseo-brain",
+  "version": "0.1.0",
+  "description": "DataForSEO Brain Obsidian brain for DataForSEO v3 API mastery \u2014 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model..",
+  "author": {
+    "name": "Daniel Agrici",
+    "url": "https://github.com/AgriciDaniel"
+  },
+  "homepage": "https://github.com/AgriciDaniel/dataforseo-brain",
+  "repository": "https://github.com/AgriciDaniel/dataforseo-brain",
+  "license": "Custom license",
+  "keywords": [
+    "dataforseo-brain",
+    "obsidian",
+    "brain",
+    "dataforseo"
+  ],
+  "skills": [
+    "./SKILL.md"
+  ],
+  "allowed-tools": [
+    "Read",
+    "Glob",
+    "Grep",
+    "Bash",
+    "Write",
+    "Edit"
+  ]
+}

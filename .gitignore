@@ -1,0 +1,34 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+.DS_Store
+.env
+.env.*
+!.env.example
+.raw/secrets/
+*.secret
+
+# Raw scraped provenance — kept LOCAL, not republished (IP-safe; the published value is wiki/)
+.raw/
+
+# Quartz static site build outputs
+site/node_modules/
+site/public/
+site/.quartz-cache/
+
+# Obsidian local/session state (keep graph.json, app.json, appearance.json, core-plugins.json)
+.obsidian/workspace*.json
+.obsidian/cache
+.obsidian/plugins/
+.obsidian/.directory
+
+# OS / misc
+.directory
+Thumbs.db
+*.tmp

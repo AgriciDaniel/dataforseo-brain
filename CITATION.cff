@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this knowledge brain, please cite it as below."
+title: "DataForSEO Brain: a source-cited operating memory for the DataForSEO v3 API"
+abstract: >-
+  An Obsidian knowledge brain covering the 12 modules and ~200+ endpoints of the DataForSEO v3 API:
+  the task/live execution model, the per-call cost model, capability notes per module, practitioner
+  workflows, and decision guides. Built from official documentation and live API verification.
+type: dataset
+authors:
+  - family-names: Agrici
+    given-names: Daniel
+    alias: AgriciDaniel
+version: 1.0.1
+date-released: 2026-06-26
+license: LicenseRef-Custom
+url: "https://github.com/AgriciDaniel/dataforseo-brain"
+keywords:
+  - DataForSEO
+  - SEO API
+  - knowledge brain
+  - Obsidian
+  - GEO
+  - generative engine optimization

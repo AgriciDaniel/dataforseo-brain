@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "status": "researched",
+  "domain": "DataForSEO v3 API mastery \u2014 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model.",
+  "refresh_cadence": "monthly for endpoint, parameter, and pricing drift; before every release for cost and authentication claims",
+  "rules": {
+    "researched_requires": [
+      "at least two captured sources for fast-moving or high-stakes domains",
+      "at least one official/primary source for lower-risk domains",
+      "retrieved dates, refresh_due dates, source_type, confidence, and claim coverage",
+      "no placeholder/example URLs"
+    ],
+    "accepted_primary_types": [
+      "official",
+      "primary",
+      "vendor",
+      "regulator",
+      "government",
+      "standards",
+      "standards-body",
+      "authority",
+      "api-docs"
+    ]
+  },
+  "sources": [
+    {
+      "id": "dfs-v3-docs",
+      "title": "DataForSEO API v3 documentation",
+      "url": "https://docs.dataforseo.com/v3/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "DataForSEO exposes a v3 REST API across 12 modules and ~200+ endpoints",
+        "Base production URL is https://api.dataforseo.com/v3"
+      ]
+    },
+    {
+      "id": "dfs-pricing",
+      "title": "DataForSEO pricing",
+      "url": "https://dataforseo.com/pricing",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "Pay-as-you-go pricing with a $50 minimum deposit, no seats",
+        "SERP Standard/Priority/Live priced per query"
+      ]
+    },
+    {
+      "id": "dfs-auth",
+      "title": "DataForSEO authentication",
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "HTTP Basic auth using base64(login:password)",
+        "API password is generated in the API Access tab and differs from the account password"
+      ]
+    },
+    {
+      "id": "dfs-errors",
+      "title": "DataForSEO status & error codes",
+      "url": "https://docs.dataforseo.com/v3/appendix/errors/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "20000 Ok / 20100 Task Created; 40xxx client and 50xxx server codes",
+        "Rate limit is 2000 calls/min, 30 simultaneous, <=100 tasks/POST, 120s live timeout"
+      ]
+    },
+    {
+      "id": "dfs-sandbox",
+      "title": "DataForSEO sandbox",
+      "url": "https://docs.dataforseo.com/v3/appendix/sandbox/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "A free sandbox at sandbox.dataforseo.com returns dummy data with identical schemas",
+        "Standard results retained 30 days; raw HTML 7 days; Live not stored"
+      ]
+    },
+    {
+      "id": "dfs-userdata",
+      "title": "DataForSEO user_data",
+      "url": "https://docs.dataforseo.com/v3/appendix/user_data/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "GET /v3/appendix/user_data returns balance, limits, and pricing at no charge"
+      ]
+    },
+    {
+      "id": "dfs-labs",
+      "title": "DataForSEO Labs overview",
+      "url": "https://docs.dataforseo.com/v3/dataforseo_labs/overview/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "Labs serves pre-indexed keyword, competitor, and market data via Live POST",
+        "Labs is the cheapest data tier (~$0.01/task observed live 2026-06-26)"
+      ]
+    },
+    {
+      "id": "dfs-serp",
+      "title": "DataForSEO SERP API overview",
+      "url": "https://docs.dataforseo.com/v3/serp/overview/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "SERP API covers Google, Bing, YouTube, Baidu, Yahoo, Seznam, Naver",
+        "Methods: Task POST/tasks_ready/Task GET vs Live; Regular/Advanced/HTML"
+      ]
+    },
+    {
+      "id": "dfs-backlinks",
+      "title": "DataForSEO Backlinks API overview",
+      "url": "https://docs.dataforseo.com/v3/backlinks/overview/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "Backlinks API is Live POST with bulk endpoints up to 1000 targets",
+        "Backlinks require an add-on subscription (observed 40204 without one)"
+      ]
+    },
+    {
+      "id": "dfs-onpage",
+      "title": "DataForSEO OnPage API overview",
+      "url": "https://docs.dataforseo.com/v3/on_page/overview/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "OnPage runs a task-based crawl plus instant_pages and Lighthouse",
+        "instant_pages is the cheapest single-page audit (~$0.0001 live)"
+      ]
+    },
+    {
+      "id": "dfs-ai-opt",
+      "title": "DataForSEO AI Optimization API overview",
+      "url": "https://docs.dataforseo.com/v3/ai_optimization/overview/",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "AI Optimization covers LLM Responses, LLM Scraper, LLM Mentions, AI Keyword Data",
+        "LLM Mentions requires an add-on subscription (observed 40204)"
+      ]
+    },
+    {
+      "id": "dfs-mcp",
+      "title": "DataForSEO MCP server",
+      "url": "https://github.com/dataforseo/mcp-server-typescript",
+      "type": "vendor",
+      "source_type": "vendor",
+      "retrieved": "2026-06-26",
+      "refresh_due": "2026-07-26",
+      "version": "v3 as of 2026-06-26",
+      "confidence": "high",
+      "claims": [
+        "Official MCP server exposes 10 DataForSEO modules to agents",
+        "Configured via DATAFORSEO_USERNAME/PASSWORD and ENABLED_MODULES"
+      ]
+    }
+  ],
+  "provenance": "Populated 2026-06-26 from official docs.dataforseo.com/v3 + a $5-capped live API test pass."
+}

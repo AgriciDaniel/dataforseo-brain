@@ -1,0 +1,22 @@
+DataForSEO Brain
+Copyright (c) 2026 Daniel Agrici
+
+This repository is an original, opinionated knowledge synthesis. It bundles no third-party source code;
+the Python tooling uses only the standard library.
+
+ATTRIBUTION OF FACTS AND SOURCES
+
+Endpoint names, parameters, response fields, costs, rate limits, and error codes are derived from the
+official DataForSEO v3 documentation (https://docs.dataforseo.com/v3/) and the DataForSEO pricing pages
+(https://dataforseo.com/pricing), which remain the property of DataForSEO LLC. This project is not
+affiliated with, endorsed by, or sponsored by DataForSEO.
+
+Competitive and GEO research cites the respective publishers under fair-use quotation with attribution,
+including Ahrefs, Semrush, Moz, SerpApi, Search Engine Land, Search Engine Journal, and the
+"Generative Engine Optimization" research paper. Each citation is recorded with its URL and retrieval
+date in wiki/sources/research-pack-2026-06-26.md and references/source-ledger.json.
+
+The raw scraped documentation captured during the build is kept local (gitignored) and is not
+redistributed in this repository. The published value is the original synthesis under wiki/.
+
+No DataForSEO credentials, tokens, or account data are included in this repository.

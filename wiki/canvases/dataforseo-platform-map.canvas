@@ -1,0 +1,370 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "type": "text",
+   "text": "# DataForSEO Platform Map",
+   "x": -200,
+   "y": -400,
+   "width": 420,
+   "height": 80
+  },
+  {
+   "id": "eng1",
+   "type": "file",
+   "file": "wiki/concepts/cap-platform-architecture.md",
+   "x": 300,
+   "y": -300,
+   "width": 300,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "eng2",
+   "type": "file",
+   "file": "wiki/concepts/cap-task-vs-live-execution.md",
+   "x": 300,
+   "y": -210,
+   "width": 300,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "eng3",
+   "type": "file",
+   "file": "wiki/concepts/cap-queue-priority-cost-model.md",
+   "x": 300,
+   "y": -120,
+   "width": 300,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "eng4",
+   "type": "file",
+   "file": "wiki/concepts/cap-rate-limits-throughput.md",
+   "x": 300,
+   "y": -30,
+   "width": 300,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "eng5",
+   "type": "file",
+   "file": "wiki/concepts/cap-authentication-security.md",
+   "x": 300,
+   "y": 60,
+   "width": 300,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "m1",
+   "type": "file",
+   "file": "wiki/concepts/cap-serp-api.md",
+   "x": 760,
+   "y": -420,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m2",
+   "type": "file",
+   "file": "wiki/concepts/cap-keywords-data-api.md",
+   "x": 760,
+   "y": -340,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m3",
+   "type": "file",
+   "file": "wiki/concepts/cap-labs-keyword-research.md",
+   "x": 760,
+   "y": -260,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m4",
+   "type": "file",
+   "file": "wiki/concepts/cap-backlinks-api.md",
+   "x": 760,
+   "y": -180,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m5",
+   "type": "file",
+   "file": "wiki/concepts/cap-onpage-api.md",
+   "x": 760,
+   "y": -100,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m6",
+   "type": "file",
+   "file": "wiki/concepts/cap-domain-analytics.md",
+   "x": 760,
+   "y": -20,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m7",
+   "type": "file",
+   "file": "wiki/concepts/cap-content-analysis-api.md",
+   "x": 760,
+   "y": 60,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m8",
+   "type": "file",
+   "file": "wiki/concepts/cap-merchant-api.md",
+   "x": 760,
+   "y": 140,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m9",
+   "type": "file",
+   "file": "wiki/concepts/cap-app-data-api.md",
+   "x": 760,
+   "y": 220,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m10",
+   "type": "file",
+   "file": "wiki/concepts/cap-business-data-api.md",
+   "x": 760,
+   "y": 300,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m11",
+   "type": "file",
+   "file": "wiki/concepts/cap-ai-optimization-api.md",
+   "x": 760,
+   "y": 380,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "m12",
+   "type": "file",
+   "file": "wiki/concepts/cap-databases.md",
+   "x": 760,
+   "y": 460,
+   "width": 300,
+   "height": 64,
+   "color": "2"
+  },
+  {
+   "id": "s1",
+   "type": "file",
+   "file": "wiki/platforms/plat-google-search.md",
+   "x": 1220,
+   "y": -300,
+   "width": 300,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "s2",
+   "type": "file",
+   "file": "wiki/platforms/plat-amazon-marketplace.md",
+   "x": 1220,
+   "y": -180,
+   "width": 300,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "s3",
+   "type": "file",
+   "file": "wiki/platforms/plat-ai-assistants.md",
+   "x": 1220,
+   "y": -60,
+   "width": 300,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "s4",
+   "type": "file",
+   "file": "wiki/platforms/plat-app-stores.md",
+   "x": 1220,
+   "y": 60,
+   "width": 300,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "f1",
+   "type": "file",
+   "file": "wiki/flows/play-rank-tracking-pipeline.md",
+   "x": 1680,
+   "y": -300,
+   "width": 300,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "f2",
+   "type": "file",
+   "file": "wiki/flows/play-keyword-research-workflow.md",
+   "x": 1680,
+   "y": -180,
+   "width": 300,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "f3",
+   "type": "file",
+   "file": "wiki/flows/play-cost-optimized-pipeline.md",
+   "x": 1680,
+   "y": -60,
+   "width": 300,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "f4",
+   "type": "file",
+   "file": "wiki/flows/play-ai-visibility-tracking.md",
+   "x": 1680,
+   "y": 60,
+   "width": 300,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "d1",
+   "type": "file",
+   "file": "wiki/decisions/dec-which-api-for-which-job.md",
+   "x": 300,
+   "y": 300,
+   "width": 320,
+   "height": 70,
+   "color": "1"
+  },
+  {
+   "id": "d2",
+   "type": "file",
+   "file": "wiki/decisions/dec-live-vs-standard-vs-priority.md",
+   "x": 660,
+   "y": 300,
+   "width": 320,
+   "height": 70,
+   "color": "1"
+  },
+  {
+   "id": "d3",
+   "type": "file",
+   "file": "wiki/decisions/dec-cost-control-strategy.md",
+   "x": 1020,
+   "y": 300,
+   "width": 320,
+   "height": 70,
+   "color": "1"
+  },
+  {
+   "id": "d4",
+   "type": "file",
+   "file": "wiki/decisions/dec-dataforseo-vs-ahrefs-semrush-moz.md",
+   "x": 1380,
+   "y": 300,
+   "width": 320,
+   "height": 70,
+   "color": "1"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "title",
+   "toNode": "eng1"
+  },
+  {
+   "id": "ecm1",
+   "fromNode": "eng1",
+   "toNode": "m1"
+  },
+  {
+   "id": "ecm2",
+   "fromNode": "eng1",
+   "toNode": "m2"
+  },
+  {
+   "id": "ecm3",
+   "fromNode": "eng1",
+   "toNode": "m3"
+  },
+  {
+   "id": "ecm11",
+   "fromNode": "eng1",
+   "toNode": "m11"
+  },
+  {
+   "id": "es1",
+   "fromNode": "m1",
+   "toNode": "s1"
+  },
+  {
+   "id": "es2",
+   "fromNode": "m8",
+   "toNode": "s2"
+  },
+  {
+   "id": "es3",
+   "fromNode": "m11",
+   "toNode": "s3"
+  },
+  {
+   "id": "es4",
+   "fromNode": "m9",
+   "toNode": "s4"
+  },
+  {
+   "id": "ef1",
+   "fromNode": "s1",
+   "toNode": "f1"
+  },
+  {
+   "id": "ef2",
+   "fromNode": "m3",
+   "toNode": "f2"
+  },
+  {
+   "id": "ef3",
+   "fromNode": "eng3",
+   "toNode": "f3"
+  },
+  {
+   "id": "ef4",
+   "fromNode": "s3",
+   "toNode": "f4"
+  }
+ ]
+}

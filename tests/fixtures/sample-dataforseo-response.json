@@ -1,0 +1,36 @@
+{
+  "version": "0.1.20260626",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1 sec.",
+  "cost": 0.0105,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "06260000-0000-0000-0000-0000000000aa",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.09 sec.",
+      "cost": 0.0105,
+      "result_count": 1,
+      "path": ["v3", "dataforseo_labs", "google", "keyword_overview", "live"],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "keyword_overview",
+        "keyword": "seo tools",
+        "location_code": 2840,
+        "language_code": "en"
+      },
+      "result": [
+        {
+          "keyword": "seo tools",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {"search_volume": 40500, "competition_level": "HIGH", "cpc": 9.12},
+          "keyword_properties": {"keyword_difficulty": 88}
+        }
+      ]
+    }
+  ]
+}

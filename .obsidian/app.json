@@ -1,0 +1,19 @@
+{
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "attachmentFolderPath": "wiki/_attachments",
+  "userIgnoreFilters": [
+    "site/",
+    "node_modules/",
+    ".raw/",
+    "dist/",
+    "references/synthesis/",
+    ".github/",
+    "tests/",
+    "scripts/",
+    "schemas/",
+    "examples/",
+    "assets/template-brain/"
+  ]
+}

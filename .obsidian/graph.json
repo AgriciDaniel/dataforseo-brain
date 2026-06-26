@@ -1,0 +1,66 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "colorGroups": [
+    {
+      "query": "file:wiki/index.md OR file:wiki/hot.md OR file:wiki/overview.md OR file:wiki/log.md OR path:wiki/meta",
+      "color": {
+        "a": 1,
+        "rgb": 14926830
+      }
+    },
+    {
+      "query": "path:wiki/concepts",
+      "color": {
+        "a": 1,
+        "rgb": 3901174
+      }
+    },
+    {
+      "query": "path:wiki/platforms",
+      "color": {
+        "a": 1,
+        "rgb": 5025616
+      }
+    },
+    {
+      "query": "path:wiki/entities",
+      "color": {
+        "a": 1,
+        "rgb": 15172649
+      }
+    },
+    {
+      "query": "path:wiki/flows",
+      "color": {
+        "a": 1,
+        "rgb": 10181046
+      }
+    },
+    {
+      "query": "path:wiki/decisions",
+      "color": {
+        "a": 1,
+        "rgb": 14687834
+      }
+    },
+    {
+      "query": "path:wiki/sources",
+      "color": {
+        "a": 1,
+        "rgb": 7965593
+      }
+    }
+  ],
+  "showArrow": true,
+  "textFadeMultiplier": 0.1,
+  "nodeSizeMultiplier": 1.3,
+  "lineSizeMultiplier": 1.2,
+  "centerStrength": 0.45,
+  "repelStrength": 12,
+  "linkDistance": 160
+}

@@ -1,0 +1,54 @@
+name: Deploy site to GitHub Pages
+
+# Builds the Quartz site in site/ (which reads the wiki via a symlink) and
+# publishes it to GitHub Pages on every push to main. Requires the repo to be
+# public (or a paid plan) and Pages set to "GitHub Actions" as the source.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # Quartz uses git history for last-modified dates
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build Quartz site
+        run: npx quartz build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
