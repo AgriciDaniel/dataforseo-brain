@@ -8,9 +8,9 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/AgriciDaniel/rustacean",
-      "Download (.zip)": "https://github.com/AgriciDaniel/rustacean/archive/refs/heads/main.zip",
-      "Latest release": "https://github.com/AgriciDaniel/rustacean/releases/latest",
+      GitHub: "https://github.com/AgriciDaniel/dataforseo-brain",
+      "Download (.zip)": "https://github.com/AgriciDaniel/dataforseo-brain/archive/refs/heads/main.zip",
+      "Latest release": "https://github.com/AgriciDaniel/dataforseo-brain/releases/latest",
     },
   }),
 }

@@ -100,7 +100,7 @@ Map: [[decisions/_index|Decisions MOC]]
 
 ## Research & visuals
 - [[research-pack-2026-06-26|Research Pack (104 dated citations)]]
-- [[dataforseo-platform-map|Platform Map canvas]]
+- Visual map: [brain relationship map](_attachments/brain-relationship-map.svg), plus the interactive graph (top-right) and, in the Obsidian vault, the color-grouped graph view and the `dataforseo-platform-map` canvas.
 
 ## Folder maps
 [[concepts/_index]] · [[platforms/_index]] · [[entities/_index]] · [[flows/_index]] · [[decisions/_index]] · [[sources/_index]]

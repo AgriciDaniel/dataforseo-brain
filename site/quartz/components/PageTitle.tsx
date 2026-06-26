@@ -9,7 +9,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   return (
     <h2 class={classNames(displayClass, "page-title")}>
       <a href={baseDir}>
-        <img class="page-title-logo" src={`${baseDir}/static/logo.png`} alt="Ferris, the Rust mascot" />
+        <img class="page-title-logo" src={`${baseDir}/static/logo.png`} alt="DataForSEO Brain logo" />
         <span>{title}</span>
       </a>
     </h2>
