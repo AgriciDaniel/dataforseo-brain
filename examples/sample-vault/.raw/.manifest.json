@@ -1,0 +1,18 @@
+{
+  "brain_schema": "dataforseo-brain.v1",
+  "sources": [
+    {
+      "path": ".raw/sources/sample-source.md",
+      "sha256": "cd554638393f4211662d15dfa2f280345e0c1695dd18004587d07311dd0684fd",
+      "retrieved": "2026-05-16",
+      "source_type": "fixture"
+    }
+  ],
+  "scaffold_history": [
+    {
+      "client": "sample-client",
+      "client_name": "Sample Client",
+      "owner": "Daniel Agrici"
+    }
+  ]
+}

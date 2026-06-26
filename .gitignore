@@ -14,8 +14,9 @@ dist/
 .raw/secrets/
 *.secret
 
-# Raw scraped provenance — kept LOCAL, not republished (IP-safe; the published value is wiki/)
-.raw/
+# Raw scraped provenance — kept LOCAL, not republished (IP-safe; the published value is wiki/).
+# Anchored to the repo ROOT only, so the template-brain and sample-vault .raw/ (part of the product) stay tracked.
+/.raw/
 
 # Quartz static site build outputs
 site/node_modules/
