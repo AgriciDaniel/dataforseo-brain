@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    { "id": "home", "type": "file", "file": "wiki/DataForSEO Brain Home.md", "x": -260, "y": -80, "width": 420, "height": 160, "color": "4" },
+
+    { "id": "m0", "type": "file", "file": "wiki/concepts/cap-serp-api.md", "x": -1080, "y": 260, "width": 320, "height": 120, "color": "6" },
+    { "id": "m1", "type": "file", "file": "wiki/concepts/cap-keywords-data-api.md", "x": -720, "y": 260, "width": 320, "height": 120, "color": "6" },
+    { "id": "m2", "type": "file", "file": "wiki/concepts/cap-labs-keyword-research.md", "x": -360, "y": 260, "width": 320, "height": 120, "color": "6" },
+    { "id": "m3", "type": "file", "file": "wiki/concepts/cap-backlinks-api.md", "x": 0, "y": 260, "width": 320, "height": 120, "color": "6" },
+    { "id": "m4", "type": "file", "file": "wiki/concepts/cap-onpage-api.md", "x": 360, "y": 260, "width": 320, "height": 120, "color": "6" },
+    { "id": "m5", "type": "file", "file": "wiki/concepts/cap-domain-analytics.md", "x": 720, "y": 260, "width": 320, "height": 120, "color": "6" },
+    { "id": "m6", "type": "file", "file": "wiki/concepts/cap-content-analysis-api.md", "x": -1080, "y": 440, "width": 320, "height": 120, "color": "6" },
+    { "id": "m7", "type": "file", "file": "wiki/concepts/cap-merchant-api.md", "x": -720, "y": 440, "width": 320, "height": 120, "color": "6" },
+    { "id": "m8", "type": "file", "file": "wiki/concepts/cap-app-data-api.md", "x": -360, "y": 440, "width": 320, "height": 120, "color": "6" },
+    { "id": "m9", "type": "file", "file": "wiki/concepts/cap-business-data-api.md", "x": 0, "y": 440, "width": 320, "height": 120, "color": "6" },
+    { "id": "m10", "type": "file", "file": "wiki/concepts/cap-ai-optimization-api.md", "x": 360, "y": 440, "width": 320, "height": 120, "color": "6" },
+    { "id": "m11", "type": "file", "file": "wiki/concepts/cap-databases.md", "x": 720, "y": 440, "width": 320, "height": 120, "color": "6" },
+
+    { "id": "s0", "type": "file", "file": "wiki/concepts/_index.md", "x": -900, "y": 640, "width": 320, "height": 120, "color": "3" },
+    { "id": "s1", "type": "file", "file": "wiki/flows/_index.md", "x": -540, "y": 640, "width": 320, "height": 120, "color": "3" },
+    { "id": "s2", "type": "file", "file": "wiki/decisions/_index.md", "x": -180, "y": 640, "width": 320, "height": 120, "color": "3" },
+    { "id": "s3", "type": "file", "file": "wiki/platforms/_index.md", "x": 180, "y": 640, "width": 320, "height": 120, "color": "3" },
+    { "id": "s4", "type": "file", "file": "wiki/entities/_index.md", "x": 540, "y": 640, "width": 320, "height": 120, "color": "3" },
+
+    { "id": "d0", "type": "link", "url": "http://localhost:3000/dashboard/serp", "x": -1260, "y": 860, "width": 300, "height": 100, "color": "5" },
+    { "id": "d1", "type": "link", "url": "http://localhost:3000/dashboard/keyword-overview", "x": -900, "y": 860, "width": 300, "height": 100, "color": "5" },
+    { "id": "d2", "type": "link", "url": "http://localhost:3000/dashboard/backlinks", "x": -540, "y": 860, "width": 300, "height": 100, "color": "5" },
+    { "id": "d3", "type": "link", "url": "http://localhost:3000/dashboard/on-page", "x": -180, "y": 860, "width": 300, "height": 100, "color": "5" },
+    { "id": "d4", "type": "link", "url": "http://localhost:3000/dashboard/local-finder", "x": 180, "y": 860, "width": 300, "height": 100, "color": "5" },
+    { "id": "d5", "type": "link", "url": "http://localhost:3000/dashboard/ai-optimization", "x": 540, "y": 860, "width": 300, "height": 100, "color": "5" },
+    { "id": "d6", "type": "link", "url": "http://localhost:3000/dashboard/merchant", "x": 900, "y": 860, "width": 300, "height": 100, "color": "5" },
+    { "id": "d7", "type": "link", "url": "http://localhost:3000/dashboard/ledger", "x": 1260, "y": 860, "width": 300, "height": 100, "color": "5" }
+  ],
+  "edges": [
+    { "id": "em0", "fromNode": "home", "fromSide": "bottom", "toNode": "m0", "toSide": "top" },
+    { "id": "em1", "fromNode": "home", "fromSide": "bottom", "toNode": "m1", "toSide": "top" },
+    { "id": "em2", "fromNode": "home", "fromSide": "bottom", "toNode": "m2", "toSide": "top" },
+    { "id": "em3", "fromNode": "home", "fromSide": "bottom", "toNode": "m3", "toSide": "top" },
+    { "id": "em4", "fromNode": "home", "fromSide": "bottom", "toNode": "m4", "toSide": "top" },
+    { "id": "em5", "fromNode": "home", "fromSide": "bottom", "toNode": "m5", "toSide": "top" },
+    { "id": "em6", "fromNode": "home", "fromSide": "bottom", "toNode": "m6", "toSide": "top" },
+    { "id": "em7", "fromNode": "home", "fromSide": "bottom", "toNode": "m7", "toSide": "top" },
+    { "id": "em8", "fromNode": "home", "fromSide": "bottom", "toNode": "m8", "toSide": "top" },
+    { "id": "em9", "fromNode": "home", "fromSide": "bottom", "toNode": "m9", "toSide": "top" },
+    { "id": "em10", "fromNode": "home", "fromSide": "bottom", "toNode": "m10", "toSide": "top" },
+    { "id": "em11", "fromNode": "home", "fromSide": "bottom", "toNode": "m11", "toSide": "top" },
+
+    { "id": "es0", "fromNode": "home", "fromSide": "bottom", "toNode": "s0", "toSide": "top", "color": "3" },
+    { "id": "es1", "fromNode": "home", "fromSide": "bottom", "toNode": "s1", "toSide": "top", "color": "3" },
+    { "id": "es2", "fromNode": "home", "fromSide": "bottom", "toNode": "s2", "toSide": "top", "color": "3" },
+    { "id": "es3", "fromNode": "home", "fromSide": "bottom", "toNode": "s3", "toSide": "top", "color": "3" },
+    { "id": "es4", "fromNode": "home", "fromSide": "bottom", "toNode": "s4", "toSide": "top", "color": "3" },
+
+    { "id": "ed0", "fromNode": "m0", "fromSide": "bottom", "toNode": "d0", "toSide": "top", "color": "5", "label": "Rank / SERP" },
+    { "id": "ed1", "fromNode": "m1", "fromSide": "bottom", "toNode": "d1", "toSide": "top", "color": "5", "label": "Keywords" },
+    { "id": "ed2", "fromNode": "m3", "fromSide": "bottom", "toNode": "d2", "toSide": "top", "color": "5", "label": "Backlinks" },
+    { "id": "ed3", "fromNode": "m4", "fromSide": "bottom", "toNode": "d3", "toSide": "top", "color": "5", "label": "Site audit" },
+    { "id": "ed4", "fromNode": "m9", "fromSide": "bottom", "toNode": "d4", "toSide": "top", "color": "5", "label": "Local" },
+    { "id": "ed5", "fromNode": "m10", "fromSide": "bottom", "toNode": "d5", "toSide": "top", "color": "5", "label": "AI visibility" },
+    { "id": "ed6", "fromNode": "m7", "fromSide": "bottom", "toNode": "d6", "toSide": "top", "color": "5", "label": "E-commerce" },
+    { "id": "ed7", "fromNode": "m11", "fromSide": "bottom", "toNode": "d7", "toSide": "top", "color": "5", "label": "Cost ledger" }
+  ]
+}

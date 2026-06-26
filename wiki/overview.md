@@ -60,8 +60,19 @@ Less suitable when you need a UI, have tiny volume, or lack engineering - see
 [[dec-when-not-to-use-dataforseo]]. Agents can reach it through the official
 [[cap-mcp-server-integration|MCP server]] or [[dec-mcp-vs-raw-rest|raw REST]].
 
+## The SEOus dashboard
+DataForSEO ships no UI of its own, so this brain is paired with **SEOus** — a minimalistic,
+self-hosted dashboard (Next.js + local SQLite cache) that turns the modules above into clickable
+tools, governed by a cost-control spine (Standard-vs-Live, Labs-first, result caching, a live cost
+ledger). The brain is its knowledge layer: the hub [[DataForSEO Brain Home]] groups every capability
+into the eight SEOus tool groups, the `DataForSEO Brain Map` canvas (Obsidian vault) draws the
+fan-out, and `references/dashboard-map.json` is the route ↔ capability ↔ playbook contract both sides
+read. Backlinks and LLM Mentions appear as graceful "subscription required" tools until their add-ons
+are activated.
+
 ## How to navigate this brain
 - Start with the router: [[dec-which-api-for-which-job]].
+- Command center: [[DataForSEO Brain Home]] (hub) and the `DataForSEO Brain Map` canvas (Obsidian vault).
 - Mechanics live in [[concepts/_index|Concepts]]; surfaces in [[platforms/_index|Platforms]];
   competitors and sources in [[entities/_index|Entities]].
 - End-to-end recipes are in [[flows/_index|Flows]]; the judgment calls in [[decisions/_index|Decisions]].

@@ -21,6 +21,7 @@ const config: QuartzConfig = {
       ".obsidian",
       "_attachments/*.json",
       "**/.DS_Store",
+      "**/*.canvas",
     ],
     defaultDateType: "modified",
     theme: {

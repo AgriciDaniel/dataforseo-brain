@@ -32,6 +32,7 @@ Newest first. Dates are the official DataForSEO update publication dates (source
 **Verified 2026-06-26: the Backlinks + LLM Mentions $100/mo subscriptions were NOT removed; still 40204-gated (waived only via Make/n8n/Sheets connectors).** See [[cap-backlinks-api]] and [[cap-llm-mentions-visibility]].
 
 ## Start here
+- Command center: [[DataForSEO Brain Home]] (hub) and the `DataForSEO Brain Map` canvas (Obsidian vault)
 - Router: [[dec-which-api-for-which-job]]
 - Orientation: [[overview]]
 - Platform shape: [[cap-platform-architecture]]
@@ -53,6 +54,9 @@ Newest first. Dates are the official DataForSEO update publication dates (source
 - Backlinks/LLM-Mentions add-on subscriptions are not on the test account; live fixtures for those are unavailable (documented shapes only).
 
 ## Recently added
+- **SEOus dashboard coupling (2026-06-26):** new hub [[DataForSEO Brain Home]] + fan-out
+  `DataForSEO Brain Map` canvas (Obsidian vault) + the route contract `references/dashboard-map.json`,
+  wiring this brain to the self-hosted **SEOus** dashboard (forked from seo-playground, at `~/Desktop/Seous`).
 - 68 content notes across [[concepts/_index|concepts]], [[platforms/_index|platforms]],
   [[entities/_index|entities]], [[flows/_index|flows]], and [[decisions/_index|decisions]].
 - Research pack with 104 dated citations: [[research-pack-2026-06-26]].

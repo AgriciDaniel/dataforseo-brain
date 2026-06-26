@@ -12,7 +12,7 @@ tags: [dataforseo, hub, index]
 
 > Source-cited operating memory of the DataForSEO v3 API platform: 12 modules, ~200+ endpoints, the task/live queue model, and the per-call cost model. Live-verified against the production API on 2026-06-26.
 
-Start here: [[overview|Overview]] · [[hot|Hot / current context]] · [[log|Build Log]] · [[meta/dashboard|Operator Dashboard]] · [[dec-which-api-for-which-job|Which API for which job?]] · [[cap-platform-architecture|Platform Architecture]]
+Start here: [[DataForSEO Brain Home|🧠 Brain Home (hub + SEOus dashboard)]] · [[overview|Overview]] · [[hot|Hot / current context]] · [[log|Build Log]] · [[meta/dashboard|Operator Dashboard]] · [[dec-which-api-for-which-job|Which API for which job?]] · [[cap-platform-architecture|Platform Architecture]]
 
 ## Platform mechanics & appendix
 - [[cap-platform-architecture]]
@@ -100,6 +100,9 @@ Map: [[decisions/_index|Decisions MOC]]
 
 ## Research & visuals
 - [[research-pack-2026-06-26|Research Pack (104 dated citations)]]
+- Command-center hub: [[DataForSEO Brain Home]] — capability groups wired to the SEOus dashboard.
+- Fan-out graph: the `DataForSEO Brain Map` canvas (Obsidian vault; hub to 12 modules to SEOus routes).
+- Route ↔ capability ↔ playbook contract: `references/dashboard-map.json` (shared with SEOus).
 - Visual map: [brain relationship map](_attachments/brain-relationship-map.svg), plus the interactive graph (top-right) and, in the Obsidian vault, the color-grouped graph view and the `dataforseo-platform-map` canvas.
 
 ## Folder maps

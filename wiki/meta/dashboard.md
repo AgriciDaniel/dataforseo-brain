@@ -10,7 +10,23 @@ tags: [dataforseo, meta, dashboard, health]
 
 # DataForSEO Brain - Operator Dashboard
 
-> Coverage, health, and the substance-gate status. Hub: [[index|Master Index]] · [[hot|Hot]].
+> Coverage, health, and the substance-gate status. Hub: [[index|Master Index]] · [[DataForSEO Brain Home|Brain Home]] · [[hot|Hot]].
+
+## SEOus dashboard route map
+The brain is wired to the **SEOus** dashboard. Each tool group maps to capability notes and a playbook;
+the machine-readable contract is `references/dashboard-map.json`.
+
+| SEOus route | Module(s) | Capabilities | Status |
+|---|---|---|---|
+| `/dashboard/serp` | SERP | [[cap-serp-api]], [[cap-serp-google-verticals]], [[cap-serp-non-google-engines]] | live |
+| `/dashboard/keyword-overview` | Keywords + Labs | [[cap-keywords-data-api]], [[cap-labs-keyword-research]] | live |
+| `/dashboard/backlinks` | Backlinks | [[cap-backlinks-api]], [[cap-backlinks-bulk-metrics]] | gated (40204) |
+| `/dashboard/on-page` | OnPage + Content + Domain | [[cap-onpage-api]], [[cap-content-analysis-api]], [[cap-domain-analytics]] | live |
+| `/dashboard/local-finder` | Business Data | [[cap-business-data-api]] | live |
+| `/dashboard/ai-optimization` | AI Optimization | [[cap-ai-optimization-api]], [[cap-llm-mentions-visibility]] | partial (Mentions gated) |
+| `/dashboard/merchant` | Merchant + App Data | [[cap-merchant-api]], [[cap-app-data-api]] | planned |
+| `/dashboard/ledger` | Platform + Databases | [[cap-queue-priority-cost-model]], [[cap-databases]] | planned |
+| `/dashboard/autocomplete` | Free (no cost) | [[cap-keywords-data-api]] | planned |
 
 ## Module coverage matrix
 Every module has a capability concept note, raw endpoint docs, and (where accessible) a live fixture.

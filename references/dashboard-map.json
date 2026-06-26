@@ -1,0 +1,112 @@
+{
+  "$schema_note": "Route <-> capability <-> playbook contract shared by the DataForSEO Brain (Obsidian) and the SEOus dashboard app. Capabilities and playbooks are wiki note stems under wiki/concepts and wiki/flows. The app reads this to render a 'Docs' tab per tool and to validate its routes; the brain hub renders 'open in SEOus' links from the same map.",
+  "app": "SEOus",
+  "app_origin": "http://localhost:3000",
+  "brain_vault": "../DataForSEO Brain/wiki",
+  "generated": "2026-06-26",
+  "groups": [
+    {
+      "key": "search-serp",
+      "label": "Search & SERP",
+      "route": "/dashboard/serp",
+      "module": "SERP",
+      "capabilities": ["cap-serp-api", "cap-serp-google-verticals", "cap-serp-non-google-engines", "cap-result-tiers-regular-advanced-html"],
+      "platforms": ["plat-google-search", "plat-bing-search", "plat-youtube", "plat-other-search-engines"],
+      "playbook": "play-rank-tracking-pipeline",
+      "decision": "dec-live-vs-standard-vs-priority",
+      "default_mode": "standard",
+      "gated": false
+    },
+    {
+      "key": "keywords-research",
+      "label": "Keywords, Competitors & Research",
+      "route": "/dashboard/keyword-overview",
+      "module": "Keywords Data + DataForSEO Labs",
+      "capabilities": ["cap-keywords-data-api", "cap-trends-and-clickstream", "cap-labs-keyword-research", "cap-labs-competitor-research", "cap-labs-market-analysis"],
+      "playbook": "play-keyword-research-workflow",
+      "decision": "dec-labs-vs-live-apis",
+      "default_mode": "labs-first",
+      "gated": false
+    },
+    {
+      "key": "links-authority",
+      "label": "Links & Authority",
+      "route": "/dashboard/backlinks",
+      "module": "Backlinks",
+      "capabilities": ["cap-backlinks-api", "cap-backlinks-bulk-metrics"],
+      "playbook": "play-backlink-audit",
+      "default_mode": "standard",
+      "gated": true,
+      "gate_note": "Backlinks API requires a $100/mo add-on subscription; returns 40204 on pay-as-you-go. SEOus shows a graceful 'subscription required' state."
+    },
+    {
+      "key": "technical-onpage",
+      "label": "Technical & On-Page",
+      "route": "/dashboard/on-page",
+      "module": "OnPage + Content Analysis + Domain Analytics",
+      "capabilities": ["cap-onpage-api", "cap-content-analysis-api", "cap-domain-analytics"],
+      "playbook": "play-technical-site-audit",
+      "default_mode": "standard",
+      "gated": false
+    },
+    {
+      "key": "local-maps",
+      "label": "Local & Maps",
+      "route": "/dashboard/local-finder",
+      "module": "Business Data",
+      "capabilities": ["cap-business-data-api"],
+      "platforms": ["plat-google-maps-local", "plat-review-platforms"],
+      "playbook": "play-local-seo-tracking",
+      "default_mode": "standard",
+      "gated": false
+    },
+    {
+      "key": "ai-geo-visibility",
+      "label": "AI / GEO visibility",
+      "route": "/dashboard/ai-optimization",
+      "module": "AI Optimization",
+      "capabilities": ["cap-ai-optimization-api", "cap-llm-mentions-visibility", "cap-geo-ai-search-optimization"],
+      "platforms": ["plat-ai-assistants"],
+      "playbook": "play-ai-visibility-tracking",
+      "default_mode": "live",
+      "gated_partial": true,
+      "gate_note": "LLM Responses (ChatGPT/Claude/Gemini/Perplexity) are pay-as-you-go accessible. LLM Mentions / Share-of-Voice requires a $100/mo add-on (40204) and is shown gated."
+    },
+    {
+      "key": "ecommerce-apps",
+      "label": "E-commerce & Apps",
+      "route": "/dashboard/merchant",
+      "module": "Merchant + App Data",
+      "capabilities": ["cap-merchant-api", "cap-app-data-api"],
+      "platforms": ["plat-amazon-marketplace", "plat-google-shopping", "plat-app-stores"],
+      "playbook": "play-ecommerce-product-research",
+      "default_mode": "standard",
+      "gated": false,
+      "status": "planned"
+    },
+    {
+      "key": "cost-platform",
+      "label": "Cost & Platform mechanics",
+      "route": "/dashboard/ledger",
+      "module": "Platform + Databases + MCP",
+      "capabilities": ["cap-platform-architecture", "cap-task-vs-live-execution", "cap-queue-priority-cost-model", "cap-rate-limits-throughput", "cap-status-error-codes", "cap-authentication-security", "cap-sandbox-testing", "cap-webhooks-pingback-postback", "cap-locations-languages-targeting", "cap-account-usage-userdata", "cap-data-collection-methodology", "cap-databases", "cap-mcp-server-integration"],
+      "playbook": "play-cost-optimized-pipeline",
+      "decision": "dec-cost-control-strategy",
+      "router": "dec-which-api-for-which-job",
+      "default_mode": "n/a",
+      "gated": false,
+      "status": "planned"
+    },
+    {
+      "key": "free-autocomplete",
+      "label": "Free Google Autocomplete",
+      "route": "/dashboard/autocomplete",
+      "module": "Free (no DataForSEO cost)",
+      "capabilities": ["cap-keywords-data-api"],
+      "default_mode": "free",
+      "gated": false,
+      "status": "planned",
+      "cost_note": "Uses Google's public autocomplete endpoint; spends zero DataForSEO credits."
+    }
+  ]
+}
