@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "researched",
-  "domain": "DataForSEO v3 API mastery \u2014 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model.",
+  "domain": "DataForSEO v3 API mastery - 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model.",
   "refresh_cadence": "monthly for endpoint, parameter, and pricing drift; before every release for cost and authentication claims",
   "rules": {
     "researched_requires": [

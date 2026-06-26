@@ -6,3 +6,7 @@ Report sensitive issues privately to the repository owner.
 
 Release gates scan for common API keys, private keys, OAuth tokens, local home
 paths, and forbidden ZIP entries.
+
+## Reporting
+
+Report vulnerabilities privately via GitHub Security Advisories: https://github.com/AgriciDaniel/dataforseo-brain/security/advisories/new

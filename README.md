@@ -1,16 +1,12 @@
 <div align="center">
 
-<img src="assets/svg/hero-frontispiece.svg" alt="DataForSEO Brain" width="640">
+<img src="assets/dataforseo-hero.png" alt="DataForSEO Brain - a source-cited operating memory for the DataForSEO v3 API" width="860">
 
-# DataForSEO Brain
-
-**A source-cited operating memory for the entire DataForSEO v3 API.**
-
-[![License](https://img.shields.io/badge/license-Custom-blue)](LICENSE)
-[![Notes](https://img.shields.io/badge/wiki%20notes-74-3b82f6)](wiki/index.md)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Notes](https://img.shields.io/badge/wiki%20notes-76-3b82f6)](wiki/index.md)
 [![Modules](https://img.shields.io/badge/API%20modules-12-4caf50)](wiki/concepts/cap-platform-architecture.md)
 [![Endpoints](https://img.shields.io/badge/endpoints-~200%2B-4caf50)](wiki/index.md)
-[![Links](https://img.shields.io/badge/wikilinks-0%20dead-success)](references/synthesis/review/wiki-lint-report.md)
+[![Links](https://img.shields.io/badge/wikilinks-0%20dead-success)](wiki/index.md)
 [![Audit](https://img.shields.io/badge/Brainstein-SSS%2B%20100%2F100-gold)](RELEASE_CHECKLIST.md)
 [![Live verified](https://img.shields.io/badge/live%20verified-2026--06--26-informational)](references/current-requirements.md)
 
@@ -27,7 +23,7 @@
 
 - **Pick the right call, the first time.** A 12-module, ~200+ endpoint surface is easy to get wrong. The brain routes job to endpoint and flags the cost footguns (Live vs Standard, depth, priority).
 - **Current, not stale.** Built from a one-shot scrape, then hardened against the live API and the 2026 changelog (API v2 closure, AI Mode endpoints, MCP 2.9.9, the AI Optimization API).
-- **Connected, not flat.** 74 interlinked notes (avg 28 wikilinks each, zero dead links) so you navigate by concept, surface, workflow, and decision, not by scrolling docs.
+- **Connected, not flat.** 76 interlinked notes (avg 28 wikilinks each, zero dead links) so you navigate by concept, surface, workflow, and decision, not by scrolling docs.
 
 ## Who this is for
 
@@ -38,7 +34,7 @@
 ## Contents
 
 - [What is inside](#what-is-inside)
-- [How to use it](#how-to-use-it)
+- [Quick start](#quick-start)
 - [The DataForSEO agent surface](#the-dataforseo-agent-surface)
 - [How it was built](#how-it-was-built)
 - [Quality and verification](#quality-and-verification)
@@ -52,7 +48,7 @@
 
 | Layer | Count | What it is |
 |---|---|---|
-| Concept notes (`wiki/concepts/`) | 31 | Platform mechanics (lifecycle, cost, auth, limits, errors, sandbox, webhooks) plus one capability note per module |
+| Concept notes (`wiki/concepts/`) | 33 | Platform mechanics (lifecycle, cost, auth, limits, errors, sandbox, webhooks) plus one capability note per module |
 | Platform notes (`wiki/platforms/`) | 10 | Each surface from DataForSEO's lens: Google, Bing, YouTube, Amazon, App Stores, review sites, AI assistants |
 | Entity notes (`wiki/entities/`) | 8 | The vendor, the MCP server, competitors (Ahrefs/Semrush/Moz), and upstream data sources |
 | Workflow notes (`wiki/flows/`) | 10 | Step-by-step pipelines: rank tracking, keyword research, backlink audit, site audit, local SEO, AI visibility, e-commerce |
@@ -63,7 +59,7 @@
 **Modules covered:** SERP, Keywords Data, DataForSEO Labs, Backlinks, OnPage, Domain Analytics,
 Content Analysis, Merchant, App Data, Business Data, AI Optimization, Databases.
 
-## How to use it
+## Quick start
 
 1. **Open the repository root in Obsidian** (File then Open vault then this folder). The graph view is pre-colored by folder.
 2. **Start at [`wiki/index.md`](wiki/index.md)**, then the router [`dec-which-api-for-which-job`](wiki/decisions/dec-which-api-for-which-job.md).
@@ -74,6 +70,8 @@ Content Analysis, Merchant, App Data, Business Data, AI Optimization, Databases.
    - [`play-cost-optimized-pipeline`](wiki/flows/play-cost-optimized-pipeline.md) - the money-saving reference flow
 
 Prefer the web? The same vault is published as a searchable site (see the repository homepage link).
+
+The **buyer** is an engineer or agency standardizing on DataForSEO. The **outputs** are a normalized record set and a cost scorecard. What the brain does and does not do (its **boundaries**) is documented in [docs/PRODUCT_BOUNDARIES.md](docs/PRODUCT_BOUNDARIES.md).
 
 ## The DataForSEO agent surface
 
@@ -99,7 +97,7 @@ An orchestrated, source-cited pipeline (a watcher thread plus parallel secretari
 ## Quality and verification
 
 - **Brainstein maturity: market-ready (anatomy audit SSS+ 100/100)** - all 8 categories full, zero failing items, `--strict` clean.
-- **74 notes, avg 82 lines, avg 28 wikilinks, 0 dead links, 0 orphans** (independently lint-verified).
+- **76 notes, avg 82 lines, avg 28 wikilinks, 0 dead links, 0 orphans** (independently lint-verified).
 - **Live-verified 2026-06-26** against the production API (43 endpoints exercised; real costs recorded in the cost ledger).
 - **Adapter tests green** (importer, synthesis, renderer, malformed-input) plus a deterministic demo vault.
 - **Honest gaps documented:** the Backlinks API and AI Optimization LLM Mentions require separate dashboard subscriptions (re-verified 2026-06-26, not removed); those modules are covered from official docs.

@@ -1,4 +1,4 @@
-# Market Research — DataForSEO as a programmatic SEO data provider
+# Market Research - DataForSEO as a programmatic SEO data provider
 
 Captured 2026-06-26 from a multi-source, fact-checked research pass (see
 `.raw/sources/dataforseo-research/_research/competitive-market.md`, 35 cited sources).
@@ -18,7 +18,7 @@ DataForSEO API: endpoints, parameters, request lifecycle, costs, and adapters.
 | Provider | Pricing model | Data sourcing | Best buyer fit |
 |---|---|---|---|
 | DataForSEO | Pay-as-you-go, per-request/per-result, no seats, $50 min | Own SERP scraper + own backlink crawler + Google/Bing Ads + clickstream | SaaS builders, in-house engineers (cheapest at scale, raw JSON) |
-| SerpApi | Pay-as-you-go searches, no rollover | Real-time SERP scraping only (no keyword/backlink DB) | Real-time SERP + legal cover; ~15–40x DFS per-SERP cost |
+| SerpApi | Pay-as-you-go searches, no rollover | Real-time SERP scraping only (no keyword/backlink DB) | Real-time SERP + legal cover; ~15-40x DFS per-SERP cost |
 | Ahrefs | Subscription seat + API units/rows | Largest link index (own AhrefsBot) + clickstream + Keyword Planner | Backlink-led agencies |
 | Semrush | Subscription seat + API units | Own crawler + third-party + 200M-device clickstream | All-in-one marketing teams |
 | Moz | Bundled with Moz Pro, rows-based | Link Explorer index, DA/PA ML model | Budget DA/PA scoring |
@@ -32,7 +32,7 @@ DataForSEO API: endpoints, parameters, request lifecycle, costs, and adapters.
 | SerpApi offers real-time SERP scraping only, no keyword/backlink database | https://serpapi.com/ | 2026-06-26 | medium | narrower scope |
 | Ahrefs gates API access behind subscription + per-row units | https://ahrefs.com/api | 2026-06-26 | medium | seat + units |
 | Semrush exposes API on Business plan with unit-based metering | https://www.semrush.com/api-analytics/ | 2026-06-26 | medium | seat + units |
-| Keyword volume across all tools derives from Google Ads buckets; tool-to-tool variance 30–200% | https://www.searchenginejournal.com/ | 2026-06-26 | medium | treat as relative |
+| Keyword volume across all tools derives from Google Ads buckets; tool-to-tool variance 30-200% | https://www.searchenginejournal.com/ | 2026-06-26 | medium | treat as relative |
 | DataForSEO has an official 10-module MCP server for agent integration | https://github.com/dataforseo/mcp-server-typescript | 2026-06-26 | high | agent-native |
 
 ## Where DataForSEO wins / loses

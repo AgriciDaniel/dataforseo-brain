@@ -14,7 +14,7 @@ dist/
 .raw/secrets/
 *.secret
 
-# Raw scraped provenance — kept LOCAL, not republished (IP-safe; the published value is wiki/).
+# Raw scraped provenance - kept LOCAL, not republished (IP-safe; the published value is wiki/).
 # Anchored to the repo ROOT only, so the template-brain and sample-vault .raw/ (part of the product) stay tracked.
 /.raw/
 
@@ -33,3 +33,6 @@ site/.quartz-cache/
 .directory
 Thumbs.db
 *.tmp
+
+# Internal point-in-time QA/review artifacts (kept local, not shipped)
+references/synthesis/review/

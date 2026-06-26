@@ -1,6 +1,6 @@
 # Product Boundaries
 
-DataForSEO Brain is an advisory, read-only Obsidian brain for DataForSEO v3 API mastery — 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model..
+DataForSEO Brain is an advisory, read-only Obsidian brain for DataForSEO v3 API mastery - 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model.
 
 ## It Does
 

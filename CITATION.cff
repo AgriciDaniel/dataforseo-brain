@@ -12,7 +12,7 @@ authors:
     alias: AgriciDaniel
 version: 1.0.1
 date-released: 2026-06-26
-license: LicenseRef-Custom
+license: MIT
 url: "https://github.com/AgriciDaniel/dataforseo-brain"
 keywords:
   - DataForSEO

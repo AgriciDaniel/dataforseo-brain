@@ -61,7 +61,7 @@ Less suitable when you need a UI, have tiny volume, or lack engineering - see
 [[cap-mcp-server-integration|MCP server]] or [[dec-mcp-vs-raw-rest|raw REST]].
 
 ## The SEOus dashboard
-DataForSEO ships no UI of its own, so this brain is paired with **SEOus** — a minimalistic,
+DataForSEO ships no UI of its own, so this brain is paired with **SEOus** - a minimalistic,
 self-hosted dashboard (Next.js + local SQLite cache) that turns the modules above into clickable
 tools, governed by a cost-control spine (Standard-vs-Live, Labs-first, result caching, a live cost
 ledger). The brain is its knowledge layer: the hub [[DataForSEO Brain Home]] groups every capability

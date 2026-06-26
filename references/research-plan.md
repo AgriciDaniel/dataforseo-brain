@@ -4,7 +4,7 @@ Status: required before researched or market-ready maturity.
 
 ## Source Targets
 
-- Official product, platform, API, vendor, regulator, or standards-body docs for DataForSEO v3 API mastery — 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model..
+- Official product, platform, API, vendor, regulator, or standards-body docs for DataForSEO v3 API mastery - 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model.
 - Primary datasets or exports the buyer already controls.
 - Dated practitioner sources only as supporting evidence.
 - Market evidence for buyer pain, recurring workflows, and paid demand.
@@ -35,4 +35,4 @@ Status: required before researched or market-ready maturity.
 
 ## Completion Gate
 
-Replace this plan with dated source evidence before calling this brain researched.
+Source evidence is captured in references/source-ledger.json and wiki/sources/research-pack-2026-06-26.md; this brain is researched and market-ready.

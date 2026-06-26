@@ -1,13 +1,13 @@
 # Brainstein spec v2
-# DataForSEO Brain — source-cited operating memory of the DataForSEO v3 API platform.
+# DataForSEO Brain - source-cited operating memory of the DataForSEO v3 API platform.
 spec_version: 2
 slug: "dataforseo-brain"
 title: "DataForSEO Brain"
-domain: "DataForSEO v3 API mastery — 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model."
+domain: "DataForSEO v3 API mastery - 12 modules and ~200+ endpoints (SERP, Keywords Data, AI Optimization, Domain Analytics, DataForSEO Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, Databases), the task/live queue execution model, and the per-call cost model."
 buyer: "SEO engineers, agencies, and AI/GEO builders who need a source-cited operating memory of the DataForSEO API: endpoints, parameters, request lifecycle, costs, and adapters."
 owner: "Daniel Agrici"
 repo_url: "https://github.com/AgriciDaniel/dataforseo-brain"
-license_name: "Custom license"
+license_name: "MIT"
 research_refresh_cadence: "monthly for endpoint, parameter, and pricing drift; before every release for cost and authentication claims"
 workflows:
   - "API surface intake and provenance capture"

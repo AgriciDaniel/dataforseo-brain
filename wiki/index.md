@@ -100,7 +100,7 @@ Map: [[decisions/_index|Decisions MOC]]
 
 ## Research & visuals
 - [[research-pack-2026-06-26|Research Pack (104 dated citations)]]
-- Command-center hub: [[DataForSEO Brain Home]] — capability groups wired to the SEOus dashboard.
+- Command-center hub: [[DataForSEO Brain Home]] - capability groups wired to the SEOus dashboard.
 - Fan-out graph: the `DataForSEO Brain Map` canvas (Obsidian vault; hub to 12 modules to SEOus routes).
 - Route ↔ capability ↔ playbook contract: `references/dashboard-map.json` (shared with SEOus).
 - Visual map: [brain relationship map](_attachments/brain-relationship-map.svg), plus the interactive graph (top-right) and, in the Obsidian vault, the color-grouped graph view and the `dataforseo-platform-map` canvas.

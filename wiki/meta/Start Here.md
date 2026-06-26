@@ -10,7 +10,7 @@ tags: [dataforseo, meta, entrypoint]
 
 # Start Here
 
-New to this brain? Open the hub: **[[DataForSEO Brain Home]]** — eight capability groups that map
+New to this brain? Open the hub: **[[DataForSEO Brain Home]]** - eight capability groups that map
 one-to-one onto the **SEOus** dashboard, with the fan-out drawn in the
 `DataForSEO Brain Map` canvas (Obsidian vault).
 

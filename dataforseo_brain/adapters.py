@@ -1,4 +1,4 @@
-"""DataForSEO response adapters — importer, synthesis, and renderer.
+"""DataForSEO response adapters - importer, synthesis, and renderer.
 
 Read-only, no network, no credentials. Normalizes a DataForSEO v3 API response
 envelope (the JSON returned by any /v3/... endpoint) into flat records, summarizes

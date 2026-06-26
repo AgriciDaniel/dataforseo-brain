@@ -32,7 +32,7 @@ deprecation notes, and confidence.
 ## Cost model (verified live 2026-06-26, cheapest variants)
 | Endpoint family | Observed live cost (USD) | URL | Retrieved | Confidence |
 |---|---|---|---:|---|
-| DataForSEO Labs (most live endpoints) | ~0.0101–0.0105 per call | https://dataforseo.com/pricing | 2026-06-26 | high |
+| DataForSEO Labs (most live endpoints) | ~0.0101-0.0105 per call | https://dataforseo.com/pricing | 2026-06-26 | high |
 | Labs search_intent | ~0.0011 per call | https://dataforseo.com/pricing | 2026-06-26 | high |
 | SERP Google/Bing organic Live Advanced (depth 10) | ~0.0020 per call | https://dataforseo.com/pricing | 2026-06-26 | high |
 | Keywords Data Google Ads (search_volume / keywords_for_site) | ~0.075 per call | https://dataforseo.com/pricing | 2026-06-26 | high |

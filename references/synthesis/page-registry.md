@@ -1,4 +1,4 @@
-# DataForSEO Brain — page registry (synthesis contract)
+# DataForSEO Brain - page registry (synthesis contract)
 
 Authoritative list of every `wiki/` content note. Synthesis agents create exactly these files,
 following `references/synthesis/note-template.md`. `[[wikilinks]]` may target ONLY slugs in this
@@ -10,12 +10,12 @@ Folder hubs (created separately, link targets): `index`, `concepts/_index`, `pla
 
 ---
 
-## concepts/  (cap-*)  — 31 notes
+## concepts/  (cap-*)  - 31 notes
 
-### Platform mechanics & appendix (12)  — raw: `appendix/`, plus `_research/cost-lifecycle-bestpractices.md`
+### Platform mechanics & appendix (12)  - raw: `appendix/`, plus `_research/cost-lifecycle-bestpractices.md`
 | slug | scope |
 |---|---|
-| cap-platform-architecture | v3 API shape: base URL, `/v3/{module}/{function}`, the 12-module map, request/response envelope (tasks[]/result[]/cost/status). MASTER HUB — most notes link here. |
+| cap-platform-architecture | v3 API shape: base URL, `/v3/{module}/{function}`, the 12-module map, request/response envelope (tasks[]/result[]/cost/status). MASTER HUB - most notes link here. |
 | cap-task-vs-live-execution | POST-task → tasks_ready → task_get (queue) vs Live (synchronous); latency/retry/idempotency; when each is forced. HUB. |
 | cap-queue-priority-cost-model | Priority 1 vs 2, per-result vs per-request billing, balance/credits, the `cost` field, $50 min deposit. HUB. |
 | cap-rate-limits-throughput | 2000 calls/min, 30 simultaneous, ≤100 tasks/POST, 120s live timeout, 429/40202 handling, batching. |
@@ -28,7 +28,7 @@ Folder hubs (created separately, link targets): `index`, `concepts/_index`, `pla
 | cap-account-usage-userdata | appendix/user_data: balance, limits, money spent, daily cost-limit (40203), usage monitoring. |
 | cap-data-collection-methodology | How DataForSEO sources data: own SERP scraping vs Google Ads API vs clickstream vs own backlink crawler; freshness/retention/accuracy. raw: `_research/competitive-market.md`. |
 
-### Module capabilities (19)  — raw: the named module dir
+### Module capabilities (19)  - raw: the named module dir
 | slug | scope | raw |
 |---|---|---|
 | cap-serp-api | SERP API hub: engines, Task/Live, Regular/Advanced/HTML, depth/cost; routes to verticals. | serp/ |
@@ -37,11 +37,11 @@ Folder hubs (created separately, link targets): `index`, `concepts/_index`, `pla
 | cap-keywords-data-api | Google Ads + Bing Ads volume/keywords-for-site/keywords-for-keywords/ad-traffic; lineage. | keywords-data/ |
 | cap-trends-and-clickstream | Google Trends, DataForSEO Trends, Clickstream (real-volume signals, bulk). | keywords-data/ |
 | cap-ai-optimization-api | LLM Responses (ChatGPT/Claude/Gemini/Perplexity), LLM Scraper, AI Keyword Data. | ai-optimization/ |
-| cap-llm-mentions-visibility | LLM Mentions: search, top domains/pages, aggregated, cross-model — brand/citation visibility in AI answers. | ai-optimization/, _research/ai-geo-practice.md |
+| cap-llm-mentions-visibility | LLM Mentions: search, top domains/pages, aggregated, cross-model - brand/citation visibility in AI answers. | ai-optimization/, _research/ai-geo-practice.md |
 | cap-domain-analytics | Technologies (stack detection) + Whois (registration intel). | domain-analytics/ |
 | cap-labs-keyword-research | Labs keyword engine (Google/Amazon/Play/App Store): ideas, suggestions, related, difficulty, intent, overview, historical. | labs/ |
 | cap-labs-competitor-research | SERP competitors, ranked keywords, competitors-domain, domain/page intersection, relevant pages, rank overview, historical, bulk traffic. | labs/ |
-| cap-labs-market-analysis | Categories, top searches, categories-for-domain/keywords — demand mapping. | labs/ |
+| cap-labs-market-analysis | Categories, top searches, categories-for-domain/keywords - demand mapping. | labs/ |
 | cap-onpage-api | Crawler: task mgmt, summary, pages, resources, duplicates, links, redirects, non-indexable, waterfall, density, raw HTML, parsing, screenshot, instant pages, Lighthouse, microdata. | onpage/ |
 | cap-backlinks-api | Summary, history, backlinks, anchors, referring domains/networks, competitors, intersections, domain pages, timeseries, new/lost. | backlinks/ |
 | cap-backlinks-bulk-metrics | Bulk endpoints: ranks, spam score, backlinks, referring domains, new/lost (≤1000 targets). | backlinks/ |
@@ -51,7 +51,7 @@ Folder hubs (created separately, link targets): `index`, `concepts/_index`, `pla
 | cap-business-data-api | Google My Business/Hotels/Reviews/Q&A, Trustpilot, Tripadvisor, Pinterest, Business Listings. | business-data/ |
 | cap-databases | Pre-indexed SERP/keyword/backlink/whois/business repositories; cost/freshness vs live. | databases/ |
 
-### Integration / cross-cutting (2)  — raw: `_research/mcp-integration-ecosystem.md`, `appendix/`
+### Integration / cross-cutting (2)  - raw: `_research/mcp-integration-ecosystem.md`, `appendix/`
 | slug | scope |
 |---|---|
 | cap-mcp-server-integration | Official DataForSEO MCP server: 10 modules, env config, transports, when MCP beats raw REST. |
@@ -59,7 +59,7 @@ Folder hubs (created separately, link targets): `index`, `concepts/_index`, `pla
 
 ---
 
-## platforms/  (plat-*)  — 10 notes  (surface from DataForSEO's lens)
+## platforms/  (plat-*)  - 10 notes  (surface from DataForSEO's lens)
 | slug | scope | raw |
 |---|---|---|
 | plat-google-search | Google organic + SERP features + AI Overviews/AI Mode as a data surface. | serp/, labs/ |
@@ -70,12 +70,12 @@ Folder hubs (created separately, link targets): `index`, `concepts/_index`, `pla
 | plat-amazon-marketplace | Amazon as product/keyword/review surface (Merchant + Labs Amazon). | merchant/, labs/ |
 | plat-google-shopping | Google Shopping product/seller/review data. | merchant/ |
 | plat-app-stores | Apple App Store + Google Play as ASO surfaces. | app-data/, labs/ |
-| plat-review-platforms | Trustpilot, Tripadvisor, Google Reviews, Pinterest — reputation/sentiment. | business-data/, content-analysis/ |
+| plat-review-platforms | Trustpilot, Tripadvisor, Google Reviews, Pinterest - reputation/sentiment. | business-data/, content-analysis/ |
 | plat-ai-assistants | ChatGPT, Claude, Gemini, Perplexity as answer surfaces DFS queries/monitors. | ai-optimization/, _research/ai-geo-practice.md |
 
 ---
 
-## entities/  (ent-*)  — 8 notes  (raw: `_research/competitive-market.md`, `_research/mcp-integration-ecosystem.md`)
+## entities/  (ent-*)  - 8 notes  (raw: `_research/competitive-market.md`, `_research/mcp-integration-ecosystem.md`)
 | slug | scope |
 |---|---|
 | ent-dataforseo | The vendor: raw-data API positioning (no dashboard), scale, pricing philosophy, trust. |
@@ -89,7 +89,7 @@ Folder hubs (created separately, link targets): `index`, `concepts/_index`, `pla
 
 ---
 
-## flows/  (play-*)  — 10 notes  (step-by-step: trigger → API sequence → cost/cadence → output → pitfalls)
+## flows/  (play-*)  - 10 notes  (step-by-step: trigger → API sequence → cost/cadence → output → pitfalls)
 | slug | scope | raw |
 |---|---|---|
 | play-rank-tracking-pipeline | Daily/weekly rank tracking: SERP Standard + scheduling + webhooks; time-series storage. | serp/, appendix/ |
@@ -105,11 +105,11 @@ Folder hubs (created separately, link targets): `index`, `concepts/_index`, `pla
 
 ---
 
-## decisions/  (dec-*)  — 7 notes  (the judgment spine; most-linked)
+## decisions/  (dec-*)  - 7 notes  (the judgment spine; most-linked)
 | slug | scope | raw |
 |---|---|---|
 | dec-which-api-for-which-job | Master router: job-to-be-done → module/endpoint (decision table). MOST-LINKED. | all |
-| dec-live-vs-standard-vs-priority | When to pay Live vs queue Standard vs Priority — latency/cost/volume matrix. | appendix/, _research/cost-lifecycle-bestpractices.md |
+| dec-live-vs-standard-vs-priority | When to pay Live vs queue Standard vs Priority - latency/cost/volume matrix. | appendix/, _research/cost-lifecycle-bestpractices.md |
 | dec-mcp-vs-raw-rest | MCP server (agent-native) vs raw REST (production scale) tradeoffs. | _research/mcp-integration-ecosystem.md |
 | dec-dataforseo-vs-ahrefs-semrush-moz | Data source, pricing model, freshness, build-vs-buy; when DFS wins/loses. | _research/competitive-market.md |
 | dec-cost-control-strategy | The optimization playbook: Live vs Standard, bulk, Labs vs live, sandbox, depth. | _research/cost-lifecycle-bestpractices.md |

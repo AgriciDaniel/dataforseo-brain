@@ -1,4 +1,4 @@
-# DataForSEO Brain — note template + authoring rules (for synthesis agents)
+# DataForSEO Brain - note template + authoring rules (for synthesis agents)
 
 Every content note in `wiki/` (concepts/, platforms/, entities/, flows/, decisions/) MUST follow
 this template. Targets that the audit enforces:
@@ -32,7 +32,7 @@ related:
 > One-sentence definition. Sits under [[index|DataForSEO Brain]] → [[<folder>/_index|<Folder>]].
 
 ## Overview
-3–6 sentences: what this is, why it matters, where it fits in the DataForSEO platform.
+3-6 sentences: what this is, why it matters, where it fits in the DataForSEO platform.
 
 ## What it covers
 Bullets mapping to the REAL endpoints/fields from the raw docs (name them precisely).
@@ -44,7 +44,7 @@ A short table or bullets of the most important request parameters (from the raw 
 The key response fields or result item types (from the raw `## Response fields`).
 
 ## Cost & method notes
-Live vs Standard vs Priority, per-result vs per-request, Advanced/HTML, limits — link
+Live vs Standard vs Priority, per-result vs per-request, Advanced/HTML, limits - link
 [[cap-queue-priority-cost-model]] and [[cap-task-vs-live-execution]] where relevant.
 
 ## When to use / how it fits
@@ -64,14 +64,14 @@ Rate limits, retention, subscription gates, accuracy caveats (cite raw / researc
 - [[<one flow or decision>]]
 
 ## Sources
-- <real doc/research URL> — retrieved 2026-06-26
-- <second real URL if available> — retrieved 2026-06-26
+- <real doc/research URL> - retrieved 2026-06-26
+- <second real URL if available> - retrieved 2026-06-26
 ```
 
 ## Rules
-1. Use ONLY slugs that exist in `references/synthesis/page-registry.md` for `[[wikilinks]]` (so links resolve — no dead links).
+1. Use ONLY slugs that exist in `references/synthesis/page-registry.md` for `[[wikilinks]]` (so links resolve - no dead links).
 2. `## Related` must contain ≥ 8 distinct wikilinks; `related:` frontmatter adds 3 more (dups across the two are fine, both count).
-3. Pull params/fields/costs from the matching `.raw/.../<module>/*.md` — quote real names; do not fabricate.
+3. Pull params/fields/costs from the matching `.raw/.../<module>/*.md` - quote real names; do not fabricate.
 4. Decisions/entities/flows that synthesize market or practitioner knowledge cite the `_research/*.md` reports' URLs.
 5. Keep prose tight and factual; no marketing fluff, no em dashes.
 6. File names = the registry slug + `.md`, placed in the registry's folder.

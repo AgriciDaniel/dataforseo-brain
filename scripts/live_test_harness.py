@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""DataForSEO live-test harness — cost-governed authentic fixture capture.
+"""DataForSEO live-test harness - cost-governed authentic fixture capture.
 
 Reads credentials from the environment (DATAFORSEO_USERNAME / DATAFORSEO_PASSWORD),
 makes the cheapest representative call per endpoint family, records the real `cost`
@@ -27,7 +27,7 @@ AUTH = base64.b64encode(f"{USER}:{PW}".encode()).decode()
 US = 2840  # location_code United States
 EN = "en"
 
-# (namespace, slug, http_method, path, payload-or-None)  — POST payloads are wrapped in a list.
+# (namespace, slug, http_method, path, payload-or-None)  - POST payloads are wrapped in a list.
 TESTS = [
     # --- Labs (pre-indexed, cheapest, highest value) ---
     ("labs", "google-keyword-ideas", "POST", "/v3/dataforseo_labs/google/keyword_ideas/live", {"keywords": ["seo tools"], "location_code": US, "language_code": EN, "limit": 5}),
@@ -75,7 +75,7 @@ TESTS = [
     ("merchant", "google-shopping-products", "POST", "/v3/merchant/google/products/live/advanced", {"keyword": "laptop", "location_code": US, "language_code": EN, "depth": 10}),
     # --- Business Data (indexed listings live) ---
     ("business-data", "business-listings-search", "POST", "/v3/business_data/business_listings/search/live", {"categories": ["restaurant"], "location_coordinate": "40.7128,-74.0060,10", "limit": 1}),
-    # --- OnPage (instant single page — cheapest non-crawl) ---
+    # --- OnPage (instant single page - cheapest non-crawl) ---
     ("onpage", "instant-pages", "POST", "/v3/on_page/instant_pages", {"url": "https://dataforseo.com/"}),
 ]
 
