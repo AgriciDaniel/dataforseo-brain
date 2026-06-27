@@ -2,6 +2,7 @@
 
 <img src="assets/dataforseo-hero.png" alt="DataForSEO Brain - a source-cited operating memory for the DataForSEO v3 API" width="860">
 
+[![Live docs](https://img.shields.io/badge/docs-live%20site-3b82f6)](https://agricidaniel.github.io/dataforseo-brain/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Notes](https://img.shields.io/badge/wiki%20notes-76-3b82f6)](wiki/index.md)
 [![Modules](https://img.shields.io/badge/API%20modules-12-4caf50)](wiki/concepts/cap-platform-architecture.md)
@@ -69,7 +70,7 @@ Content Analysis, Merchant, App Data, Business Data, AI Optimization, Databases.
    - [`dec-cost-control-strategy`](wiki/decisions/dec-cost-control-strategy.md) - how to spend less
    - [`play-cost-optimized-pipeline`](wiki/flows/play-cost-optimized-pipeline.md) - the money-saving reference flow
 
-Prefer the web? The same vault is published as a searchable site (see the repository homepage link).
+Prefer the web? The same vault is published as a searchable site: **[agricidaniel.github.io/dataforseo-brain](https://agricidaniel.github.io/dataforseo-brain/)**.
 
 The **buyer** is an engineer or agency standardizing on DataForSEO. The **outputs** are a normalized record set and a cost scorecard. What the brain does and does not do (its **boundaries**) is documented in [docs/PRODUCT_BOUNDARIES.md](docs/PRODUCT_BOUNDARIES.md).
 
