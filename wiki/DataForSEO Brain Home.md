@@ -4,7 +4,7 @@ title: "DataForSEO Brain Home"
 domain: dataforseo
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, moc, home]
 ---
 
@@ -12,7 +12,7 @@ tags: [dataforseo, moc, home]
 
 Your command center for the **DataForSEO v3 API** - 12 modules, ~200+ endpoints, the task/live queue
 model, and the per-call cost model - wired to **SEOus**, a minimalistic self-hosted dashboard.
-Live-verified 2026-06-26. Full catalog: [[index]] · the eight capability groups below map 1:1 to the SEOus dashboard sidebar (run SEOus locally; the route contract is `references/dashboard-map.json`).
+Live-verified 2026-06-26; Backlinks and LLM Mentions access re-verified 2026-07-08. Full catalog: [[index]] · the eight capability groups below map 1:1 to the SEOus dashboard sidebar (run SEOus locally; the route contract is `references/dashboard-map.json`).
 
 ## 🔎 Search & SERP - 4 capabilities · 1 playbook
 - [[cap-serp-api]] - live + queued SERPs across seven engines; the spine of rank tracking
@@ -32,7 +32,7 @@ Live-verified 2026-06-26. Full catalog: [[index]] · the eight capability groups
 - Decision: [[dec-labs-vs-live-apis]]
 
 ## 🔗 Links & Authority - 2 capabilities · 1 playbook
-- [[cap-backlinks-api]] - link profiles from DataForSEO's own crawler *(add-on gated - 40204)*
+- [[cap-backlinks-api]] - link profiles from DataForSEO's own crawler *(pay-as-you-go since 2026-07-01)*
 - [[cap-backlinks-bulk-metrics]] - bulk rank, referring-domain, and spam metrics
 - Playbook: [[play-backlink-audit]]
 
@@ -49,7 +49,7 @@ Live-verified 2026-06-26. Full catalog: [[index]] · the eight capability groups
 
 ## 🤖 AI / GEO visibility - 3 capabilities · 1 playbook
 - [[cap-ai-optimization-api]] - LLM responses, LLM scraper, and AI keyword data
-- [[cap-llm-mentions-visibility]] - share-of-voice across AI answers *(add-on gated - 40204)*
+- [[cap-llm-mentions-visibility]] - share-of-voice across AI answers *(pay-as-you-go since 2026-07-01)*
 - [[cap-geo-ai-search-optimization]] - the GEO / answer-engine optimization surface
 - Surface: [[plat-ai-assistants]]  ·  Playbook: [[play-ai-visibility-tracking]]
 

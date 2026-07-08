@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: databases
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, databases, bulk-data]
 related:
   - "[[cap-labs-keyword-research]]"
@@ -47,7 +47,7 @@ The deliverable is a dataset dump, not a per-call JSON envelope. SERP databases 
 ## When to use / how it fits
 Choose Databases when you need the whole haystack in your own warehouse: building an internal keyword tool, training models, or running analytics that would be uneconomical as millions of live calls. For targeted, fresh lookups use [[cap-serp-api]] or [[cap-keywords-data-api]]; for cheap pre-indexed analytics without managing dumps, use [[cap-labs-keyword-research]] and [[cap-labs-competitor-research]]. Databases are the bulk extreme of [[play-cost-optimized-pipeline]]; route the choice via [[dec-which-api-for-which-job]].
 
-The decision is essentially build-vs-buy at the storage layer. A live or Labs call gives you a fresh slice on demand with no infrastructure; a database gives you the entire corpus to query offline but shifts ingestion, storage, indexing, and refresh management onto your team. Unified Search and Unified Search Historical bundle Advanced SERP and Keyword data together across 67 regions, which is the closest the catalog comes to a one-stop dataset. The Backlink Summary database is the bulk-download counterpart to the gated [[cap-backlinks-api]], useful when the per-call add-on is uneconomical for your volume.
+The decision is essentially build-vs-buy at the storage layer. A live or Labs call gives you a fresh slice on demand with no infrastructure; a database gives you the entire corpus to query offline but shifts ingestion, storage, indexing, and refresh management onto your team. Unified Search and Unified Search Historical bundle Advanced SERP and Keyword data together across 67 regions, which is the closest the catalog comes to a one-stop dataset. The Backlink Summary database is the bulk-download counterpart to [[cap-backlinks-api]], useful when repeated pay-as-you-go live calls are uneconomical for your volume.
 
 ## Gotchas / limits
 - Freshness lags live APIs by design: 60-90 day SERP/app cycles and monthly keyword updates mean Databases are wrong for near-real-time tracking.

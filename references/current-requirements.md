@@ -2,10 +2,12 @@
 
 These facts drift and are re-verified monthly, and again before every release. Captured 2026-06-26
 from official documentation plus a $5-capped live API test pass against the production endpoint.
+Backlinks and LLM Mentions access was re-verified live on 2026-07-08.
 
 ## Refresh Cadence
 Monthly for endpoint, parameter, and pricing drift; re-verify cost and authentication facts before
-every release. Pricing figures below are live-observed on 2026-06-26 and supersede any cached tier table.
+every release. Pricing figures below are live-observed on 2026-06-26; DataForSEO adjusted rates across
+selected APIs on 2026-07-01, so refresh exact figures before scaling.
 
 ## Required Source Standard
 Use official, primary, vendor, or API documentation first. Record URL, retrieval date, version,
@@ -45,32 +47,37 @@ deprecation notes, and confidence.
 Full per-call ledger: `.raw/sources/dataforseo-research/_cost-log.json` (39 endpoints tested live, total spend $0.85 of a $5 cap).
 
 ## Access notes observed during live testing
-The Backlinks API and the AI Optimization LLM Mentions endpoints returned status 40204 (access denied)
-on the test account: both require an active add-on subscription separate from pay-as-you-go credit.
-Their request and response shapes are still documented from the official docs in
-`.raw/sources/dataforseo-research/backlinks/` and `.../ai-optimization/`.
+The Backlinks API and the AI Optimization LLM Mentions endpoints returned status 40204 on 2026-06-26,
+when those two modules were still subscription-gated. DataForSEO removed the remaining monthly
+commitments on 2026-07-01 and moved all endpoints to pay-as-you-go. The 40204 result is now legacy
+for these modules.
 
-**Subscription status (re-verified 2026-06-26): NOT removed.** A claim that DataForSEO dropped the
-Backlinks subscription around May 2026 was checked against the official pricing page, the help-center
-"Backlinks API pricing & subscription explained" article, AND a live API re-probe, and is false/unconfirmed.
-- **Backlinks API:** still a **$100/month prepaid minimum**, credited to account balance and spendable on
-  any DataForSEO API (not a sunk access fee). Still 40204-gated until activated. The minimum is **waived
-  only when Backlinks is called via the Make.com, n8n, or Google Sheets connectors** (long-standing wording,
-  not a 2026 change). Activation is a one-time dashboard action at
-  **https://app.dataforseo.com/backlinks-subscription** (Plans and Subscriptions -> Backlinks API ->
-  Activate -> Gain Access, then the payment form); it does not turn on automatically from balance.
-- **LLM Mentions API:** a **separate, unchanged $100/month** subscription; activating one does not unlock
-  the other. Also 40204-gated; usage priced $0.10/request + $0.001/row.
+**Pay-as-you-go status (re-verified 2026-07-08): active.** Gated through 2026-06-26; removed 2026-07-01
+when DataForSEO moved all APIs to pay-as-you-go.
+- **Backlinks API:** no subscription and no activation step. Live re-probe returned `20000 Ok` for
+  `/v3/backlinks/summary/live` and `/v3/backlinks/bulk_ranks/live`; fixtures:
+  `.raw/sources/dataforseo-research/backlinks/fixtures/summary-live.json` and
+  `.raw/sources/dataforseo-research/backlinks/fixtures/bulk_ranks-live.json`.
+- **LLM Mentions API:** no subscription and no activation step. Usage remains per request and per row,
+  roughly $1.1 per 1,000 data rows. Live re-probe returned `20000 Ok`
+  for `/v3/ai_optimization/llm_mentions/search/live`; fixture:
+  `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-mentions-search.json`.
+- Probe cost log: `.raw/sources/dataforseo-research/_cost-log-2026-07-08-reprobe.json`.
+- The former Make.com, n8n, and Google Sheets connector waiver is historical only because there is
+  no monthly minimum left to waive.
 
 ### Recent changes (2026)
-Newest first; official update publication dates (source https://dataforseo.com/updates, retrieved 2026-06-26):
+Newest first; official update publication dates (source https://dataforseo.com/updates, retrieved 2026-07-08):
+- **2026-07-01** - DataForSEO moved all endpoints to **100% pay-as-you-go**, removed the Backlinks
+  and LLM Mentions monthly commitments, and adjusted rates across selected APIs.
 - **2026-06-10** - Amazon Merchant API gains real-time **Live endpoints** (previously task-based only).
 - **2026-05-28** - **LLM Scraper (ChatGPT)** now returns **ad results** (sponsored placements in ChatGPT answers).
 - **2026-05-05** - **API v2 fully closed**; no new v2 requests (task_get had a ~1-month grace window). v3 only.
 - **2026-04-27** - **OnPage Lighthouse API**: seven new browser-simulation parameters.
 - **2026-04-21** - **OnPage uncrawlable-resources** endpoint plus expanded summary data.
 
-Sources: https://docs.dataforseo.com/v3/backlinks/overview/ (retrieved 2026-06-26);
-https://dataforseo.com/help-center/backlinks-api-pricing-explained (retrieved 2026-06-26);
-https://dataforseo.com/help-center/llm-mentions-api-subscription-explained (retrieved 2026-06-26);
-https://app.dataforseo.com/backlinks-subscription (retrieved 2026-06-26).
+Sources: https://dataforseo.com/update/pricing-update-in-dataforseo-apis (retrieved 2026-07-08);
+https://docs.dataforseo.com/v3/backlinks/overview/ (retrieved 2026-06-26);
+historical comparison pages retrieved 2026-06-26:
+https://dataforseo.com/help-center/backlinks-api-pricing-explained and
+https://dataforseo.com/help-center/llm-mentions-api-subscription-explained.

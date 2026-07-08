@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: labs
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, labs, backlinks, competitive]
 related:
   - "[[cap-labs-competitor-research]]"
@@ -42,7 +42,7 @@ A team needs a competitive content/link roadmap: a market-entry plan, a quarterl
 
 ## Cost & cadence
 - Labs competitive endpoints bill about $0.0105 per request (cost-log: `domain_intersection`, `ranked_keywords`, `competitors_domain`, `serp_competitors`, `relevant_pages` all $0.0105; `domain_rank_overview` $0.0101).
-- Backlinks `domain_intersection` is Live-only, billed per request, and subscription-gated (40204 without a Backlinks subscription).
+- Backlinks `domain_intersection` is Live-only and billed per request under pay-as-you-go; no Backlinks subscription is required as of 2026-07-01.
 - Domain Analytics `domain_technologies` bills about $0.01 per request (cost-log: $0.01); Whois overview is pricier at about $0.101.
 - `include_clickstream_data: true` doubles Labs request cost; leave it off for gap work.
 - Cadence: full gap analysis quarterly; ranked-keyword refresh monthly (Labs updates weekly).
@@ -82,3 +82,4 @@ A competitive gap pack: keyword-gap table (competitor ranks, you do not), page-l
 - https://docs.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/backlinks/domain_intersection/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/ (retrieved 2026-06-26)
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis (retrieved 2026-07-08)

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 - 2026-07-08
+
+- Corrected Backlinks and LLM Mentions access: DataForSEO moved both to pay-as-you-go on 2026-07-01 and removed the $100/mo minimums.
+- Reframed 40204 as a defined legacy code for those modules; pay-as-you-go accounts now receive 20000 Ok in the 2026-07-08 re-probe.
+- Updated hub/dashboard references and source ledger to cite the new pricing update and recorded live fixtures.
+
 ## 1.0.1 - 2026-06-26
 
 - Mega review pass: 7-agent coverage/accuracy/structure audit + adversarial consolidation (37 findings, 0 blockers).

@@ -3,7 +3,7 @@
   "app": "SEOus",
   "app_origin": "http://localhost:3000",
   "brain_vault": "../DataForSEO Brain/wiki",
-  "generated": "2026-06-26",
+  "generated": "2026-07-08",
   "groups": [
     {
       "key": "search-serp",
@@ -36,8 +36,8 @@
       "capabilities": ["cap-backlinks-api", "cap-backlinks-bulk-metrics"],
       "playbook": "play-backlink-audit",
       "default_mode": "standard",
-      "gated": true,
-      "gate_note": "Backlinks API requires a $100/mo add-on subscription; returns 40204 on pay-as-you-go. SEOus shows a graceful 'subscription required' state."
+      "gated": false,
+      "gate_note": "Backlinks API is pay-as-you-go since 2026-07-01, with no subscription or activation step; live re-probe returns live data."
     },
     {
       "key": "technical-onpage",
@@ -69,8 +69,8 @@
       "platforms": ["plat-ai-assistants"],
       "playbook": "play-ai-visibility-tracking",
       "default_mode": "live",
-      "gated_partial": true,
-      "gate_note": "LLM Responses (ChatGPT/Claude/Gemini/Perplexity) are pay-as-you-go accessible. LLM Mentions / Share-of-Voice requires a $100/mo add-on (40204) and is shown gated."
+      "gated_partial": false,
+      "gate_note": "LLM Responses (ChatGPT/Claude/Gemini/Perplexity) and LLM Mentions / Share-of-Voice are pay-as-you-go accessible since 2026-07-01, with no subscription gate."
     },
     {
       "key": "ecommerce-apps",

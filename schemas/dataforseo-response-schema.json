@@ -19,7 +19,7 @@
         "required": ["status_code"],
         "properties": {
           "id": {"type": "string"},
-          "status_code": {"type": "integer", "description": "20000 = Ok, 40204 = subscription required"},
+          "status_code": {"type": "integer", "description": "20000 = Ok, 40204 = subscription required (legacy for Backlinks/LLM Mentions since 2026-07-01 pay-as-you-go)"},
           "status_message": {"type": "string"},
           "cost": {"type": "number"},
           "result_count": {"type": ["integer", "null"]},

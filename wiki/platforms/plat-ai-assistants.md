@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: ai-optimization
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, platform, ai-optimization, geo, llm]
 related:
   - "[[cap-ai-optimization-api]]"
@@ -38,7 +38,7 @@ Generative engines are now a discovery surface alongside classic search, and Dat
 - Aggregation endpoints group by location, language, platform, `sources_domain[]`, `search_results_domain[]`, `brand_entities_title[]`, with `mentions` and `ai_search_volume` per group (`impressions` is deprecated and returns null).
 
 ## Cost & method notes
-- Per the research report and live pricing pages: LLM Responses costs $0.0006 per task plus the underlying model token charge on Live, or $0.0002 plus a $0.01 refundable prepayment per task on Standard; LLM Scraper (ChatGPT and Gemini only) about $0.0012 per page Standard, $0.0024 Priority, $0.004 Live (approximate); LLM Mentions about $0.10 per request plus $0.001 per row with a $100 monthly minimum; AI Keyword Data about $0.01 per task plus $0.0001 per keyword.
+- Per the research report and live pricing pages: LLM Responses costs $0.0006 per task plus the underlying model token charge on Live, or $0.0002 plus a $0.01 refundable prepayment per task on Standard; LLM Scraper (ChatGPT and Gemini only) about $0.0012 per page Standard, $0.0024 Priority, $0.004 Live (approximate); LLM Mentions about $0.10 per request plus $0.001 per row, roughly $1.10 per 1,000 rows and no monthly minimum since 2026-07-01; AI Keyword Data about $0.01 per task plus $0.0001 per keyword.
 - LLM Responses, Scraper, and Mentions all run up to 120s with 30 concurrent Live tasks per platform; 2000 calls/min. See [[cap-rate-limits-throughput]] and [[cap-task-vs-live-execution]].
 
 ## When to use / how it fits
@@ -81,3 +81,5 @@ Generative engines are now a discovery surface alongside classic search, and Dat
 - https://dataforseo.com/pricing/ai-optimization/llm-responses - retrieved 2026-06-26
 - https://dataforseo.com/pricing/ai-optimization/llm-scraper - retrieved 2026-06-26
 - https://arxiv.org/abs/2311.09735 - retrieved 2026-06-26
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis - published 2026-07-01, retrieved 2026-07-08
+- https://dataforseo.com/pricing/ai-optimization/llm-mentions - retrieved 2026-07-08

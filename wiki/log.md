@@ -4,13 +4,20 @@ title: "DataForSEO Brain - Build & Change Log"
 domain: dataforseo
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, log, changelog]
 ---
 
 # DataForSEO Brain - Build & Change Log
 
 > Append-only; newest on top. Hub: [[index|Master Index]].
+
+## 2026-07-08 - Backlinks + LLM Mentions pay-as-you-go correction
+Corrected the cross-cutting brain state after DataForSEO's 2026-07-01 pricing update moved all endpoints to pay-as-you-go and cancelled the Backlinks and LLM Mentions monthly commitments.
+
+- **Access correction:** Backlinks and LLM Mentions were gated through 2026-06-26, but the gate was removed 2026-07-01. Live re-probe on 2026-07-08 returned `20000 Ok` for `/v3/backlinks/summary/live`, `/v3/backlinks/bulk_ranks/live`, and `/v3/ai_optimization/llm_mentions/search/live`.
+- **40204:** kept in [[cap-status-error-codes]] as a defined code, reframed as legacy for these modules.
+- **Evidence:** official pricing update plus fixtures under `.raw/sources/dataforseo-research/` and `_cost-log-2026-07-08-reprobe.json`.
 
 ## 2026-06-26 - Mega review + gap-fill (v1.0.1)
 A full review pass: an ultracode 7-reviewer Workflow + 4 deep-dives (currency, Backlinks, AI Optimization) + a claude-obsidian wiki-lint.

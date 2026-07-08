@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: ai-optimization
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, geo, ai-optimization]
 related:
   - "[[cap-llm-mentions-visibility]]"
@@ -45,7 +45,7 @@ GEO produces a small set of standard metrics:
 - **Source mix**: roughly 85% of brand mentions come from third-party pages, so earned and UGC sources (the `sources_domain[]` view) must be tracked, not just the owned site.
 
 ## Cost & method notes
-- GEO with DataForSEO is pay-as-you-go infrastructure: LLM Mentions roughly $0.10/request + $0.001/row ($100 minimum monthly), LLM Responses Live roughly $0.0006/task plus model token charges (Standard $0.0002 + $0.01 refundable prepayment), LLM Scraper roughly $0.0012 Standard / $0.0024 Priority / $0.004 Live per page (ChatGPT and Gemini only, approximate), AI Keyword Data roughly $0.01/task + $0.0001/keyword. See [[cap-queue-priority-cost-model]].
+- GEO with DataForSEO is pay-as-you-go infrastructure: LLM Mentions roughly $0.10/request + $0.001/row, about $1.10 per 1,000 rows and no monthly minimum since 2026-07-01; LLM Responses Live roughly $0.0006/task plus model token charges (Standard $0.0002 + $0.01 refundable prepayment), LLM Scraper roughly $0.0012 Standard / $0.0024 Priority / $0.004 Live per page (ChatGPT and Gemini only, approximate), AI Keyword Data roughly $0.01/task + $0.0001/keyword. See [[cap-queue-priority-cost-model]].
 - DataForSEO is cheaper and fully programmable vs finished SaaS dashboards (Profound, Peec AI, Otterly at roughly $29-$499/mo), but you supply the prompt design, scoring logic, and dashboards.
 
 ## When to use / how it fits
@@ -80,3 +80,5 @@ GEO is operationalized as [[play-ai-visibility-tracking]]: sample prompts and pu
 - https://ahrefs.com/blog/ai-brand-visibility-correlations/ (retrieved 2026-06-26)
 - https://searchengineland.com/what-is-generative-engine-optimization-geo-444418 (retrieved 2026-06-26)
 - https://developers.google.com/search/docs/fundamentals/ai-optimization-guide (retrieved 2026-06-26)
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis (published 2026-07-01, retrieved 2026-07-08)
+- https://dataforseo.com/pricing/ai-optimization/llm-mentions (retrieved 2026-07-08)

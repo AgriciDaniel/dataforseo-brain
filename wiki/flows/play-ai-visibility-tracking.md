@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: ai-optimization
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, ai-optimization, geo]
 related:
   - "[[cap-llm-mentions-visibility]]"
@@ -41,7 +41,7 @@ A brand wants to know how it shows up in AI answers: a GEO program launch, a com
 7. Score and chart: per engine, record mention rate, citation rate, share of voice, position, and sentiment over time; alert on drops.
 
 ## Cost & cadence
-- LLM Mentions is Live-only, priced about $0.10/request + $0.001/row with a $100 minimum monthly commitment; turnaround about 2 seconds. The Mentions API is subscription-gated (`llm_mentions_subscription_expiry_date` in `user_data`; calls fail 40204 without it, as the cost-log shows).
+- LLM Mentions is Live-only and pay-as-you-go, priced about $0.10/request + $0.001/row, roughly $1.10 per 1,000 rows; turnaround about 2 seconds. It returned `40204` through 2026-06-26, then the subscription and activation step were removed on 2026-07-01. A 2026-07-08 re-probe of `/v3/ai_optimization/llm_mentions/search/live` returned `20000 Ok` with real data; fixture: `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-mentions-search.json`.
 - LLM Responses bills DataForSEO's per-task cost (about $0.0006/task) plus a pass-through `money_spent` for the underlying model tokens. AI Keyword Data bills about $0.0101/task (cost-log: $0.0101).
 - Cadence: mentions/aggregates weekly or monthly (the data has churn but stable patterns); live prompt sampling weekly across the model set.
 
@@ -57,7 +57,7 @@ An AI visibility dashboard per engine: mention rate, citation rate, AI share of 
 
 ## Decisions in play
 - [[dec-which-api-for-which-job]]: LLM Mentions for aggregated brand/citation visibility; LLM Responses for fresh, controllable prompt sampling across models.
-- [[dec-cost-control-strategy]]: LLM Mentions carries a $100 monthly minimum, so design a fixed prompt/target set and cache; LLM Responses adds a pass-through `money_spent` token charge per model.
+- [[dec-cost-control-strategy]]: LLM Mentions bills per request and per row, so design a fixed prompt/target set and cache; LLM Responses adds a pass-through `money_spent` token charge per model.
 - [[dec-dataforseo-vs-ahrefs-semrush-moz]]: DataForSEO is raw GEO infrastructure, not a finished SOV dashboard; you build the scoring and charts.
 
 ## Related
@@ -80,3 +80,6 @@ An AI visibility dashboard per engine: mention rate, citation rate, AI share of 
 - https://docs.dataforseo.com/v3/ai_optimization/chat_gpt/llm_responses/live/ (retrieved 2026-06-26)
 - https://dataforseo.com/update/introducing-llm-mentions-api (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/ai_optimization-overview/ (retrieved 2026-06-26)
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis (published 2026-07-01, retrieved 2026-07-08)
+- https://dataforseo.com/pricing/ai-optimization/llm-mentions (retrieved 2026-07-08)
+- `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-mentions-search.json` (captured 2026-07-08; `20000 Ok`)
