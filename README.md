@@ -20,6 +20,16 @@
 
 ---
 
+## Watch the walkthrough
+
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=svD6nQNQDMM"><img src="https://i.ytimg.com/vi/svD6nQNQDMM/maxresdefault.jpg" alt="Watch: I Built a DataForSEO Brain for Claude Code" width="640"></a>
+
+**▶ [I Built a DataForSEO Brain for Claude Code](https://www.youtube.com/watch?v=svD6nQNQDMM)**
+
+</div>
+
 ## Why it exists
 
 - **Pick the right call, the first time.** A 12-module, ~200+ endpoint surface is easy to get wrong. The brain routes job to endpoint and flags the cost footguns (Live vs Standard, depth, priority).
