@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: ai-optimization
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, ai-optimization, geo]
 related:
   - "[[cap-ai-optimization-api]]"
@@ -46,14 +46,14 @@ The LLM Mentions API (launched 2025-11-11) is DataForSEO's flagship AI-visibilit
 Search returns `total_count`, `current_offset`, `search_after_token`, and `items[]`. Each item carries `platform`, `model_name`, `question`, `answer`, `sources[]` (source_name, snippet, title, domain, url, position, publication_date), `search_results[]`, `ai_search_volume`, `first_response_at`, `last_response_at`, and `brand_entities[]`. The aggregation endpoints return a `total` object plus grouped arrays: `location[]`, `language[]`, `platform[]`, `sources_domain[]`, `search_results_domain[]`, `brand_entities_title[]`, `brand_entities_category[]`. Group elements carry `key`, `mentions`, and `ai_search_volume` (note `impressions` is deprecated and returns null).
 
 ## Cost & method notes
-- Per the AI Optimization page, LLM Mentions is roughly $0.10 per request plus $0.001 per row, with a $100 minimum monthly commitment credited to usage, and about a 2-second turnaround.
+- Per the AI Optimization page, LLM Mentions is pay-as-you-go: roughly $0.10 per request plus $0.001 per row, about $1.10 per 1,000 rows, with no monthly minimum since DataForSEO's 2026-07-01 pricing update.
 - All endpoints are Live-only with one task per call. See [[cap-queue-priority-cost-model]] and [[cap-task-vs-live-execution]].
 
 ## When to use / how it fits
 LLM Mentions is the data engine of [[play-ai-visibility-tracking]] and the GEO loop in [[cap-geo-ai-search-optimization]]. Use Search for evidence (the actual question and answer), Top Domains/Pages to see who AI cites in your category, and Cross Aggregated Metrics to compute Share of Voice across competitors. Practitioner research notes that about 85% of brand mentions come from third-party pages, so the off-domain `sources_domain[]` view matters as much as your own. The answer surfaces are profiled in [[plat-ai-assistants]] and the models in [[ent-llm-model-providers]].
 
 ## Gotchas / limits
-- Subscription-gated: every LLM Mentions endpoint (search, top_domains, top_pages, aggregated_metrics, cross_aggregated_metrics) returns 40204 until you activate the LLM Mentions subscription ($100/mo, credited to your balance and spendable on any DataForSEO API) at app.dataforseo.com/api-access-subscriptions. This is separate from the Backlinks subscription and is NOT auto-activated by balance or auto-recharge; the dedicated payment form must be submitted each month or access lapses. See [[cap-status-error-codes]].
+- Access is now plain pay-as-you-go, with no subscription or activation step. It returned `40204` through 2026-06-26; that gate was removed 2026-07-01 when DataForSEO moved all APIs to pay-as-you-go. A live re-probe on 2026-07-08 returned `20000 Ok` with real data for `/v3/ai_optimization/llm_mentions/search/live`; fixture: `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-mentions-search.json`. See [[cap-status-error-codes]].
 - ChatGPT coverage uses model GPT-5 and covers United States (location_code 2840) and English only; Google AI Overview (`model_name` always `google_ai_overview`) supports multiple locations and languages and is the broad-coverage platform. The launch announcement notes initial coverage is narrower than the marketing list.
 - Execution up to 120 seconds; 2000 calls/min; one task per call; `offset` max 9,000 (use `search_after_token` beyond 20,000 results).
 - Citation churn is high (industry studies report 40-60% of cited sources change month to month), so trends matter more than any single snapshot. See [[cap-data-collection-methodology]].
@@ -78,7 +78,9 @@ LLM Mentions is the data engine of [[play-ai-visibility-tracking]] and the GEO l
 - https://docs.dataforseo.com/v3/ai_optimization/llm_mentions/search/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/ai_optimization/llm_mentions/top_domains/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/ai_optimization/llm_mentions/cross_aggregated_metrics/live/ (retrieved 2026-06-26)
-- https://dataforseo.com/help-center/llm-mentions-api-subscription-explained (retrieved 2026-06-26)
-- https://app.dataforseo.com/api-access-subscriptions (retrieved 2026-06-26)
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis (published 2026-07-01, retrieved 2026-07-08)
+- https://dataforseo.com/pricing/ai-optimization/llm-mentions (retrieved 2026-07-08)
+- https://dataforseo.com/help-center/llm-mentions-api-subscription-explained (retrieved 2026-07-08; pricing fields retained, subscription text superseded by the 2026-07-01 update)
+- `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-mentions-search.json` (captured 2026-07-08; `20000 Ok`)
 - https://dataforseo.com/update/introducing-llm-mentions-api (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/ai_optimization-llm_mentions-overview/ (retrieved 2026-06-26)

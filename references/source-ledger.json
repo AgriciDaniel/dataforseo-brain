@@ -54,6 +54,21 @@
       ]
     },
     {
+      "id": "dfs-pricing-update-2026-07-01",
+      "title": "Pricing Update in DataForSEO APIs",
+      "url": "https://dataforseo.com/update/pricing-update-in-dataforseo-apis",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-07-08",
+      "refresh_due": "2026-08-08",
+      "version": "published 2026-07-01",
+      "confidence": "high",
+      "claims": [
+        "DataForSEO cancelled monthly commitments and moved all endpoints to pay-as-you-go on 2026-07-01",
+        "The $100 monthly commitments for Backlinks API and LLM Mentions API were removed"
+      ]
+    },
+    {
       "id": "dfs-auth",
       "title": "DataForSEO authentication",
       "url": "https://docs.dataforseo.com/v3/auth/",
@@ -148,13 +163,13 @@
       "url": "https://docs.dataforseo.com/v3/backlinks/overview/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
-      "version": "v3 as of 2026-06-26",
+      "retrieved": "2026-07-08",
+      "refresh_due": "2026-08-08",
+      "version": "v3 as of 2026-07-08",
       "confidence": "high",
       "claims": [
         "Backlinks API is Live POST with bulk endpoints up to 1000 targets",
-        "Backlinks require an add-on subscription (observed 40204 without one)"
+        "Backlinks moved to pay-as-you-go on 2026-07-01 with no add-on subscription; live re-probe on 2026-07-08 returned 20000 Ok for summary/live and bulk_ranks/live"
       ]
     },
     {
@@ -178,13 +193,13 @@
       "url": "https://docs.dataforseo.com/v3/ai_optimization/overview/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
-      "version": "v3 as of 2026-06-26",
+      "retrieved": "2026-07-08",
+      "refresh_due": "2026-08-08",
+      "version": "v3 as of 2026-07-08",
       "confidence": "high",
       "claims": [
         "AI Optimization covers LLM Responses, LLM Scraper, LLM Mentions, AI Keyword Data",
-        "LLM Mentions requires an add-on subscription (observed 40204)"
+        "LLM Mentions moved to pay-as-you-go on 2026-07-01 with no add-on subscription; live re-probe on 2026-07-08 returned 20000 Ok for llm_mentions/search/live"
       ]
     },
     {
@@ -203,5 +218,5 @@
       ]
     }
   ],
-  "provenance": "Populated 2026-06-26 from official docs.dataforseo.com/v3 + a $5-capped live API test pass."
+  "provenance": "Populated 2026-06-26 from official docs.dataforseo.com/v3 + a $5-capped live API test pass. Updated 2026-07-08 for the 2026-07-01 pay-as-you-go move and live Backlinks/LLM Mentions re-probe."
 }

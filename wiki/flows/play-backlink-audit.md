@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: backlinks
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, backlinks, audit]
 related:
   - "[[cap-backlinks-api]]"
@@ -43,14 +43,14 @@ A domain needs a link-health review: a penalty investigation, an M&A due-diligen
 ## Cost & cadence
 - Backlinks endpoints are Live-only and billed per request; pricing is on the Backlinks API page (per-row plus per-request components).
 - Bulk endpoints are the cost lever: `bulk_spam_score` scores up to 1,000 targets in one billed request rather than 1,000 separate calls. The same applies to bulk ranks and bulk new/lost.
-- The Backlinks API is subscription-gated: `backlinks_subscription_expiry_date` appears in `user_data`; without an active subscription calls return error 40204 (the project cost-log shows backlinks calls failing 40204 when unsubscribed).
+- Since 2026-07-01, the Backlinks API is pay-as-you-go with no subscription or activation step. The `backlinks_subscription_expiry_date` field in `user_data` is legacy and irrelevant for access; 2026-07-08 probes returned `20000 Ok` for `summary/live` and `bulk_ranks/live`.
 - Cadence: full audit on demand; monitoring (summary + new/lost) weekly or monthly.
 
 ## Output
 A backlink audit pack: profile summary metrics, ranked referring-domain table, anchor distribution, new/lost velocity chart, and a prioritized disavow + reclamation list. Feeds [[play-competitor-gap-analysis]] for link-gap work.
 
 ## Pitfalls / limits
-- Requires an active Backlinks API subscription; calls fail with 40204 otherwise. Check `user_data` before running.
+- No Backlinks API subscription is required. Check `user_data` for balance and limits before running, not for access.
 - `include_subdomains`, `include_indirect_links`, and `exclude_internal_backlinks` all default to true and materially change counts; set them deliberately and keep them consistent across runs.
 - `rank_scale` defaults to `one_thousand`; switch to `one_hundred` if your reporting expects 0-100.
 - Rate ceiling is 2,000 calls/min and max 30 simultaneous Live requests; max 1,000 items per page and 1,000 targets per bulk call.
@@ -80,3 +80,6 @@ A backlink audit pack: profile summary metrics, ranked referring-domain table, a
 - https://docs.dataforseo.com/v3/backlinks/referring_domains/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/backlinks/bulk_spam_score/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/backlinks/domain_intersection/live/ (retrieved 2026-06-26)
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis (retrieved 2026-07-08)
+- .raw/sources/dataforseo-research/backlinks/fixtures/summary-live.json (captured 2026-07-08)
+- .raw/sources/dataforseo-research/backlinks/fixtures/bulk_ranks-live.json (captured 2026-07-08)

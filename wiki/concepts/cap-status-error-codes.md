@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: platform
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, platform, errors]
 related:
  - "[[cap-platform-architecture]]"
@@ -18,14 +18,14 @@ related:
 > The dual-layer status system: HTTP codes plus DataForSEO internal `status_code` values (20000 OK, 20100 Task Created, 40xxx client, 50xxx server) and which are retryable. Sits under [[index|DataForSEO Brain]] → [[concepts/_index|Concepts]].
 
 ## Overview
-DataForSEO reports outcome at two layers: the HTTP response code and an internal `status_code` field that appears both at the response top level and per task. A request can be HTTP 200 yet carry a per-task error code (e.g. 40204 "subscription required"), so robust clients must inspect both. Codes group into success (200xx), client errors (40xxx), and server/3rd-party errors (50xxx). Knowing the retryable set is essential for reliable pipelines.
+DataForSEO reports outcome at two layers: the HTTP response code and an internal `status_code` field that appears both at the response top level and per task. A request can be HTTP 200 yet carry a per-task error code, so robust clients must inspect both; for example, 40204 remains a defined "subscription required" code, but is legacy for Backlinks and LLM Mentions after their 2026-07-01 pay-as-you-go move. Codes group into success (200xx), client errors (40xxx), and server/3rd-party errors (50xxx). Knowing the retryable set is essential for reliable pipelines.
 
 ## What it covers
 - HTTP codes: 401 Unauthorized, 402 Payment Required, 404 Not Found, 500 Internal Server Error.
 - Success: 20000 "Ok." (request completed), 20100 "Task Created." (Standard task accepted).
 - Task management (40000-40006): 40000 multiple tasks not allowed, 40006 >100 tasks per POST.
 - Auth/verification (40100-40104): 40100 not authorized, 40102 no search results, 40103 task execution failed (resubmit), 40104 account verification required.
-- Payment/account (40200-40210): 40200 insufficient balance, 40202 rate limit (2000/min), 40203 daily cost limit, 40204 Backlinks subscription required, 40207 IP not whitelisted, 40209 >30 simultaneous, 40210 insufficient funds.
+- Payment/account (40200-40210): 40200 insufficient balance, 40202 rate limit (2000/min), 40203 daily cost limit, 40204 subscription required (legacy for Backlinks and LLM Mentions after 2026-07-01), 40207 IP not whitelisted, 40209 >30 simultaneous, 40210 insufficient funds.
 - Not found (40400-40408): 40401 task doesn't exist, 40403 "Results Expired" (data older than one month), 40404 sandbox missing prepared data, 40408 target URL invalid/404.
 - Validation (40501-40506): 40501 invalid POST field, 40502 empty POST, 40503 invalid POST, 40506 unknown fields.
 - Task status (40601 "Task Handed", 40602 "Task in Queue").
@@ -36,11 +36,12 @@ DataForSEO reports outcome at two layers: the HTTP response code and an internal
 - `tasks_error` counts tasks with errors in a batch response.
 
 ## Response / what you get back
-- Live-observed task-level codes (2026-06-26, `_cost-log.json`): 40204 on Backlinks and LLM Mentions endpoints (subscription not active, $0 charged); 40501 on a malformed Labs `categories_for_domain` and a YouTube SERP call; 40402 on a Google Shopping products call (invalid URL path). Charged tasks all returned 20000.
+- Live-observed task-level codes (2026-06-26, `_cost-log.json`): 40204 on Backlinks and LLM Mentions endpoints (then subscription-gated, $0 charged); 40501 on a malformed Labs `categories_for_domain` and a YouTube SERP call; 40402 on a Google Shopping products call (invalid URL path). Charged tasks all returned 20000.
+- Timeline correction: Backlinks and LLM Mentions were gated through 2026-06-26, but DataForSEO removed the gate on 2026-07-01 when it moved all APIs to pay-as-you-go. Live re-probe on 2026-07-08 returned `20000 Ok` for `/v3/backlinks/summary/live`, `/v3/backlinks/bulk_ranks/live`, and `/v3/ai_optimization/llm_mentions/search/live`.
 - A failed task returns `result_count: 0` and `cost: 0` - you are not billed for errored tasks.
 
 ## Cost & method notes
-Errored tasks are not charged, so cost-control depends on not retrying non-retryable errors blindly. Subscription-gated 40204 (Backlinks, LLM Mentions) means you pay a subscription, not per-call balance. See [[cap-account-usage-userdata]] and [[cap-queue-priority-cost-model]].
+Errored tasks are not charged, so cost-control depends on not retrying non-retryable errors blindly. For Backlinks and LLM Mentions, 40204 is now a legacy signal from the former subscription gate; those modules are per-call pay-as-you-go as of 2026-07-01. See [[cap-account-usage-userdata]] and [[cap-queue-priority-cost-model]].
 
 ## When to use / how it fits
 Build your retry/error matrix from this note before shipping [[play-cost-optimized-pipeline]] or [[play-rank-tracking-pipeline]]. It underpins reliability in [[dec-live-vs-standard-vs-priority]].
@@ -53,7 +54,7 @@ Build your retry/error matrix from this note before shipping [[play-cost-optimiz
 - Failed pingbacks/postbacks can be re-sent via the Webhook Resend endpoint. See [[cap-webhooks-pingback-postback]].
 
 - 40202 maps to the 2000 calls/min ceiling; 40209 to the 30-simultaneous cap. See [[cap-rate-limits-throughput]].
-- 40204 gates the Backlinks and LLM Mentions APIs behind active subscriptions. The official `/appendix/errors/` 40204 message references the Backlinks subscription URL only; LLM Mentions reuses the same code with its own separate $100/mo subscription. See [[cap-backlinks-api]] and [[cap-llm-mentions-visibility]].
+- 40204 stays in the code catalog as "subscription required," but it is legacy for the historically gated Backlinks and LLM Mentions modules. A pay-as-you-go account no longer receives 40204 for those modules after the 2026-07-01 move; if it appears elsewhere, handle it as a product-specific access error. See [[cap-backlinks-api]] and [[cap-llm-mentions-visibility]].
 - 40505 ("Outdated location parameters") fails geo-targeted tasks; refresh from the helper endpoint. See [[cap-locations-languages-targeting]].
 - 40404 ("Sandbox missing prepared data") only occurs in the sandbox environment. See [[cap-sandbox-testing]].
 - 50401 is the Live 120-second timeout; 50402 is the 50-second target-page cap. See [[cap-task-vs-live-execution]].
@@ -81,3 +82,4 @@ Build your retry/error matrix from this note before shipping [[play-cost-optimiz
 - https://docs.dataforseo.com/v3/appendix/errors/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/ (retrieved 2026-06-26)
 - https://dataforseo.com/help-center/best-practices-live-endpoints-in-dataforseo-api (retrieved 2026-06-26)
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis (retrieved 2026-07-08)

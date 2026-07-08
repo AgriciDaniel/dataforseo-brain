@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: platform
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, platform, architecture]
 related:
  - "[[cap-task-vs-live-execution]]"
@@ -58,7 +58,7 @@ Read this first when integrating any module. It underpins every workflow ([[play
 - The official MCP server exposes the same modules to agents over a wrapped interface. See [[cap-mcp-server-integration]].
 - Pre-indexed Databases are a separate delivery channel (S3, SFTP, Google Cloud), not REST task results. See [[cap-databases]].
 - Locations and languages are set per task and validated against helper endpoints. See [[cap-locations-languages-targeting]].
-- Subscription-gated modules (Backlinks, LLM Mentions) return 40204 until the subscription is active. See [[cap-status-error-codes]].
+- All DataForSEO APIs, including Backlinks and LLM Mentions, are pay-as-you-go as of 2026-07-01. The earlier 40204 gate for those two modules is legacy. See [[cap-status-error-codes]].
 
 ## Related
 - [[index]]
@@ -79,3 +79,4 @@ Read this first when integrating any module. It underpins every workflow ([[play
 - https://docs.dataforseo.com/v3/auth/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/appendix/user_data/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/appendix/errors/ (retrieved 2026-06-26)
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis (retrieved 2026-07-08)

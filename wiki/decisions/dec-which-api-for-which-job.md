@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: platform
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, decision, routing, module-map]
 related:
   - "[[cap-platform-architecture]]"
@@ -55,7 +55,7 @@ DataForSEO exposes 12 modules under one v3 envelope ([[cap-platform-architecture
 ## Gotchas / limits
 - Endpoint paths and costs above are quoted from this brain's own runs and the official pricing pages; verify on your live invoice before scaling.
 - Some jobs have both a live and a pre-indexed path (e.g. SERP vs Labs ranked_keywords) - picking wrong is the main cost leak.
-- Several endpoints returned task-level errors in testing (e.g. 40204 on backlinks, 40402 on merchant) - handle per [[cap-status-error-codes]].
+- Several endpoints returned task-level errors in testing. The 40204 seen on Backlinks in the 2026-06-26 run is legacy after the 2026-07-01 pay-as-you-go move, while 40402 on merchant still needs path handling. Handle per [[cap-status-error-codes]].
 
 ## Worked examples
 - "Rank-track 500 keywords daily" -> SERP Standard High + webhooks, store time series ([[play-rank-tracking-pipeline]]).
@@ -83,3 +83,4 @@ DataForSEO exposes 12 modules under one v3 envelope ([[cap-platform-architecture
 - dataforseo_labs/google/overview - https://docs.dataforseo.com/v3/dataforseo_labs-google-overview/ - retrieved 2026-06-26
 - dataforseo_labs/google/keyword_ideas/live - https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/ - retrieved 2026-06-26
 - SERP API pricing - https://dataforseo.com/apis/serp-api/pricing - retrieved 2026-06-26
+- DataForSEO pricing update - https://dataforseo.com/update/pricing-update-in-dataforseo-apis - retrieved 2026-07-08

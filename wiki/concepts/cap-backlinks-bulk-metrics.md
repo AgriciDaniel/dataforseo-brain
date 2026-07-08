@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: backlinks
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, backlinks, bulk]
 related:
   - "[[cap-backlinks-api]]"
@@ -19,7 +19,7 @@ related:
 > The Backlinks bulk endpoints return headline link metrics (rank, spam score, backlink count, referring domains, new/lost, and a full page summary) for up to 1000 targets in a single request, so you can score a whole list of domains in one call instead of one call per target. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
 
 ## Overview
-The bulk family is the cost-efficient sibling of the detailed [[cap-backlinks-api]]. Instead of a deep profile for one target, each bulk endpoint takes a `targets` array (up to 1000 entries) and returns one row of metrics per target. This is the right tool for screening a large prospect list, scoring all competitors at once, or refreshing a dashboard of tracked domains. All endpoints are Live POST calls under `/v3/backlinks/bulk_{metric}/live` and, like the rest of the module, sit behind the paid Backlinks add-on.
+The bulk family is the cost-efficient sibling of the detailed [[cap-backlinks-api]]. Instead of a deep profile for one target, each bulk endpoint takes a `targets` array (up to 1000 entries) and returns one row of metrics per target. This is the right tool for screening a large prospect list, scoring all competitors at once, or refreshing a dashboard of tracked domains. All endpoints are Live POST calls under `/v3/backlinks/bulk_{metric}/live`; since 2026-07-01 they are pay-as-you-go with no Backlinks add-on or activation step.
 
 ## What it covers
 - `/v3/backlinks/bulk_ranks/live` - PageRank-style `rank` (0-1000 or 0-100) per target.
@@ -43,7 +43,7 @@ The bulk family is the cost-efficient sibling of the detailed [[cap-backlinks-ap
 Each endpoint returns a compact, target-keyed row. `bulk_ranks` returns `target` and `rank`; `bulk_spam_score` returns `type`, `target`, `spam_score`; `bulk_backlinks` returns `target`, `backlinks`, `items_count`. `bulk_referring_domains` adds `referring_domains`, `referring_domains_nofollow`, `referring_main_domains`, `referring_main_domains_nofollow`. The new/lost endpoints return `new_backlinks` / `lost_backlinks` or `new_referring_domains` / `lost_referring_domains` (plus main-domain variants). `bulk_pages_summary` is the richest, returning `url`, `rank`, `main_domain_rank`, `backlinks`, `first_seen`, `lost_date`, `backlinks_spam_score`, `broken_backlinks`, `referring_domains`, `referring_ips`, `referring_subnets`, `referring_links_tld`, `referring_links_types`, `referring_links_platform_types`, and `referring_links_countries`.
 
 ## Cost & method notes
-- Live/synchronous; the whole module needs the Backlinks add-on. In the cost log, `bulk_ranks` and `bulk_spam_score` returned status 40204 with `cost: 0.0` because the test account lacks the add-on.
+- Live/synchronous and pay-as-you-go. In the 2026-06-26 cost log, `bulk_ranks` and `bulk_spam_score` returned status `40204` with `cost: 0.0` while the module was still gated. After the 2026-07-01 pay-as-you-go move, `bulk_ranks` was re-probed on 2026-07-08 and returned `20000 Ok` with real data in `.raw/sources/dataforseo-research/backlinks/fixtures/bulk_ranks-live.json`.
 - The economic case: one bulk call covers up to 1000 targets, versus 1000 separate per-target calls. At the 2000 calls/min and 30-simultaneous ceiling, bulk keeps you well under rate limits and cuts request count by up to 1000x. See [[cap-queue-priority-cost-model]] and [[dec-cost-control-strategy]].
 
 ## When to use / how it fits
@@ -54,7 +54,7 @@ A typical sequence is: run `bulk_ranks` and `bulk_spam_score` across the full ca
 ## Gotchas / limits
 - The 1000-target cap is per call, but `bulk_pages_summary` additionally caps at 100 distinct domains even when 1000 items are submitted.
 - New/lost windows cannot exceed 365 days; the default lookback is 30 days.
-- Same add-on gate as the rest of the module: no data without the subscription.
+- No subscription gate remains; bulk endpoints are usable on pay-as-you-go accounts.
 - Metrics are DataForSEO model estimates; benchmark against [[ent-ahrefs]] and [[ent-semrush]] before treating thresholds as absolute.
 - `rank_scale` defaults differ from what a dashboard might show; set `one_hundred` or `one_thousand` explicitly so scores are comparable across runs.
 - Bulk endpoints return one summary row per target, not the underlying links, so a target flagged by `bulk_spam_score` still needs the per-target `backlinks` endpoint to see which links drive the score.
@@ -78,3 +78,5 @@ A typical sequence is: run `bulk_ranks` and `bulk_spam_score` across the full ca
 - https://docs.dataforseo.com/v3/backlinks/bulk_ranks/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/backlinks/bulk_spam_score/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/backlinks/bulk_pages_summary/live/ (retrieved 2026-06-26)
+- https://dataforseo.com/update/pricing-update-in-dataforseo-apis (retrieved 2026-07-08)
+- .raw/sources/dataforseo-research/backlinks/fixtures/bulk_ranks-live.json (captured 2026-07-08)

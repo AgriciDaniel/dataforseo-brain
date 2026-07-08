@@ -4,14 +4,15 @@ title: "DataForSEO Brain - Overview"
 domain: dataforseo
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-08
 tags: [dataforseo, overview, orientation]
 ---
 
 # DataForSEO Brain - Overview
 
 > What DataForSEO is, how it is shaped, and how to navigate this brain. Live-verified against the
-> production API on 2026-06-26 (a $5-capped test pass spending $0.85 across 39 endpoints).
+> production API on 2026-06-26 (a $5-capped test pass spending $0.85 across 39 endpoints);
+> Backlinks and LLM Mentions access re-verified 2026-07-08 after the pay-as-you-go move.
 
 ## What DataForSEO is
 DataForSEO is a **raw SEO-data API provider**, not a dashboard. You send REST requests and get back
@@ -67,8 +68,8 @@ tools, governed by a cost-control spine (Standard-vs-Live, Labs-first, result ca
 ledger). The brain is its knowledge layer: the hub [[DataForSEO Brain Home]] groups every capability
 into the eight SEOus tool groups, the `DataForSEO Brain Map` canvas (Obsidian vault) draws the
 fan-out, and `references/dashboard-map.json` is the route ↔ capability ↔ playbook contract both sides
-read. Backlinks and LLM Mentions appear as graceful "subscription required" tools until their add-ons
-are activated.
+read. Backlinks and LLM Mentions are now directly usable in pay-as-you-go mode since 2026-07-01,
+with live fixtures captured from the 2026-07-08 re-probe.
 
 ## How to navigate this brain
 - Start with the router: [[dec-which-api-for-which-job]].
@@ -82,3 +83,4 @@ are activated.
 ## Sources
 - DataForSEO API v3 documentation - https://docs.dataforseo.com/v3/ - retrieved 2026-06-26
 - DataForSEO pricing - https://dataforseo.com/pricing - retrieved 2026-06-26
+- DataForSEO pricing update - https://dataforseo.com/update/pricing-update-in-dataforseo-apis - retrieved 2026-07-08
