@@ -3,6 +3,7 @@
 <img src="assets/dataforseo-hero.png" alt="DataForSEO Brain - a source-cited operating memory for the DataForSEO v3 API" width="860">
 
 [![Live docs](https://img.shields.io/badge/docs-live%20site-3b82f6)](https://agricidaniel.github.io/dataforseo-brain/)
+[![Watch on YouTube](https://img.shields.io/badge/▶%20watch-on%20YouTube-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=svD6nQNQDMM)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Notes](https://img.shields.io/badge/wiki%20notes-76-3b82f6)](wiki/index.md)
 [![Modules](https://img.shields.io/badge/API%20modules-12-4caf50)](wiki/concepts/cap-platform-architecture.md)
@@ -19,6 +20,16 @@
 > traces to an official source or a live API call.
 
 ---
+
+## Watch the walkthrough
+
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=svD6nQNQDMM"><img src="https://i.ytimg.com/vi/svD6nQNQDMM/maxresdefault.jpg" alt="Watch: I Built a DataForSEO Brain for Claude Code" width="640"></a>
+
+**▶ [I Built a DataForSEO Brain for Claude Code](https://www.youtube.com/watch?v=svD6nQNQDMM)**
+
+</div>
 
 ## Why it exists
 
