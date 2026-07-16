@@ -30,7 +30,7 @@ jobs:
         with:
           fetch-depth: 0 # Quartz uses git history for last-modified dates
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
       - name: Install dependencies
