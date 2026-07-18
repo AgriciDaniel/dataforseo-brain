@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: domain-analytics
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-17
 tags: [dataforseo, domain-analytics, technographics]
 related:
   - "[[cap-backlinks-api]]"
@@ -56,7 +56,7 @@ Domain Analytics powers the technographic and ownership legs of [[play-competito
 - Selector arrays cap at 10 entries; filters cap at 8; sort rules cap at 3.
 - domains_by_technology requires limit + offset <= 10,000; use `offset_token` beyond 100,000 results.
 - Technologies reflects the last crawl (`last_visited`), so very new or very small sites may be stale or absent.
-- Whois `registered` is false when a domain has expired, which is itself a useful drop-catching signal.
+- Whois `registered` stays `true` while a domain is in `redemption_period`/`pending_delete` (it is still in the registry and restorable) and only flips to `false` after the final drop. Combining a `registered = false` filter with drop-status EPP codes therefore matches nothing; use `registered = false` as the expiry signal only in date-only queries with no status filter. Observed live 2026-07-17: 461/461 drop-status candidates returned `registered: true`.
 - The Whois `metrics` and `backlinks_info` enrichment is sourced from DataForSEO's own backlink index, so coverage tracks that index rather than the live web.
 - aggregation_technologies internal list limits (`internal_groups_list_limit`, `internal_categories_list_limit`, `internal_technologies_list_limit`) default to 5/5/10 and can be overridden by `internal_list_limit`.
 
@@ -78,3 +78,4 @@ Domain Analytics powers the technographic and ownership legs of [[play-competito
 - https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/ (retrieved 2026-06-26)
 - https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/ (retrieved 2026-06-26)
+- Live WHOIS Overview probe: all 461 candidates in redemption_period/pending_delete EPP status returned registered=true (observed 2026-07-17)

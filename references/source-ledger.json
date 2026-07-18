@@ -216,6 +216,21 @@
         "Official MCP server exposes 10 DataForSEO modules to agents",
         "Configured via DATAFORSEO_USERNAME/PASSWORD and ENABLED_MODULES"
       ]
+    },
+    {
+      "id": "dfs-whois-registered-drop-lifecycle",
+      "title": "WHOIS Overview registered flag during the drop lifecycle (live observation)",
+      "url": "https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/",
+      "type": "primary",
+      "source_type": "primary",
+      "retrieved": "2026-07-17",
+      "refresh_due": "2026-10-17",
+      "version": "v3 as of 2026-07-17",
+      "confidence": "high",
+      "claims": [
+        "All 461 live WHOIS Overview candidates in redemption_period/pending_delete EPP status returned registered=true (2026-07-17 run)",
+        "Filtering registered=false together with drop-status EPP codes returns zero rows; registered flips to false only after the final drop"
+      ]
     }
   ],
   "provenance": "Populated 2026-06-26 from official docs.dataforseo.com/v3 + a $5-capped live API test pass. Updated 2026-07-08 for the 2026-07-01 pay-as-you-go move and live Backlinks/LLM Mentions re-probe."
