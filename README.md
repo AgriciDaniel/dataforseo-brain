@@ -96,6 +96,13 @@ python scripts/import_dataforseo.py --response tests/fixtures/sample-dataforseo-
 python scripts/render_dataforseo_report.py tests/fixtures/sample-dataforseo-response.json
 ```
 
+Scripts that call the REST API should go through `scripts/dfs_safety.py`. `dfs_safety.call()` applies
+the same rules as the MCP guard hook (`scripts/dfs_guard.py`) before a POST and raises `Blocked`
+(nothing billed). It stops on HTTP 402, caps a run's actual spend (`DFS_RUN_CAP`) and logs each call's
+exact cost with a `source=` tag. `dfs_safety.queue()` runs Standard-queue tasks, saving task ids before
+polling so a restart never pays twice. Node scripts use `scripts/dfs_safety.mjs`. `scripts/spend_report.py`
+summarizes the call log by day, source and endpoint, with guard blocks and bursts.
+
 ## How it was built
 
 An orchestrated, source-cited pipeline (a watcher thread plus parallel secretaries):

@@ -141,6 +141,41 @@ def multiplier_warning(ep, p):
     return None
 
 
+QUERY_SIDE_LLM_RE = re.compile(r"llm_ment.*(historical|timeseries|top_mentioned|top_domains|top_pages)")
+DUPLICATE_TAG_TYPES = ("duplicate_title", "duplicate_description")
+
+
+def target_elements(p):
+    """Every element of target / targets[].target, flattened."""
+    out = list(p.get("target") or []) if isinstance(p.get("target"), list) else []
+    for t in p.get("targets") or [] if isinstance(p.get("targets"), list) else []:
+        if isinstance(t, dict) and isinstance(t.get("target"), list):
+            out += t["target"]
+    return [e for e in out if isinstance(e, dict)]
+
+
+def target_kind_problem(ep, p):
+    """Query-side LLM Mentions endpoints fed a domain return 20000 Ok, all zeros, fully billed (2026-09-17, $0.20)."""
+    if not QUERY_SIDE_LLM_RE.search(ep):
+        return None
+    els = target_elements(p)
+    if els and any("domain" in e for e in els) and not any("keyword" in e for e in els):
+        return ("This LLM Mentions endpoint is query-side: it takes a keyword target. A domain target returns "
+                "20000 Ok with all zeros and is still billed. Use {'keyword': '...'} here, or multi_target_metrics "
+                "(ai_opt_llm_ment_cross_agg_metrics) to measure a domain.")
+    return None
+
+
+def param_gotcha(ep, p):
+    """Parameter traps found in past runs; each one failed or returned nothing."""
+    israel = p.get("location_code") == 2376 or "israel" in str(p.get("location_name") or "").lower()
+    if matches(ep, "google_ads") and israel and (p.get("language_code") or p.get("language_name")):
+        return "Google Ads volume for Israel rejects a language; omit language_code/language_name for location 2376."
+    if matches(ep, "duplicate_tags") and p.get("type") not in DUPLICATE_TAG_TYPES:
+        return f"on_page/duplicate_tags only accepts type {' or '.join(DUPLICATE_TAG_TYPES)}."
+    return None
+
+
 def estimate(ep, p):
     """Rough USD from the 2026-10-02 account price table; used for budget prompts, not billing.
     tests/test_dfs_guard_prices.py compares these against the newest live-prices JSON in the vault.
@@ -166,7 +201,7 @@ def is_free_helper(ep):
 
 def below_country(p):
     """A city, metro (DMA) or state location. Labs is country-only, so Google Ads is the only source of
-    local volume there and the 600-keyword Labs rule doesn't apply (it blocked a city market scan, 2026-10-04)."""
+    local volume there and the 600-keyword Labs rule doesn't apply (it blocked a 4-city market scan, 2026-10-04)."""
     name = str(p.get("location_name") or "")
     code = p.get("location_code")
     return "," in name or (isinstance(code, (int, float)) and code >= 10000)   # country codes are 4 digits (US 2840)
@@ -284,6 +319,9 @@ def check(tool, inp, session, now, log):
         v = p.get(f)
         if isinstance(v, str) and v.strip().lstrip("-").isdigit():
             return "deny", f"`{f}` was sent as the string '{v}'. Pass a number."
+    problem = target_kind_problem(ep, p) or param_gotcha(ep, p)
+    if problem:
+        return "deny", problem
 
     if matches(ep, "google_ads_search_volume", "google_ads/search_volume"):
         kws = p.get("keywords") if isinstance(p.get("keywords"), list) else []
