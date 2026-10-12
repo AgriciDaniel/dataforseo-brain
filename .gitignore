@@ -36,3 +36,7 @@ Thumbs.db
 
 # Internal point-in-time QA/review artifacts (kept local, not shipped)
 references/synthesis/review/
+
+# local safety backups
+*.bak-*
+*.bak

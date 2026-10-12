@@ -32,7 +32,7 @@ A content topic is selected and needs a brief: a new article in a cluster, a ref
 - `POST /v3/content_analysis/sentiment_analysis/live` (sentiment + connotations).
 
 ## Pipeline
-1. Scrape the SERP: call `serp/google/organic/live/advanced` for the target keyword. Read `result.items[]` to capture the ranking organic URLs (titles, descriptions, `is_featured_snippet`), the `item_types` present (people_also_ask, featured_snippet, ai_overview, video, etc.), and the `people_also_ask`/`related_searches` elements for questions to answer.
+1. Scrape the SERP: call `serp/google/organic/live/advanced` for the target keyword. Read `result.items[]` to capture the ranking organic URLs (titles, descriptions, and `checks` — the array superseding `is_featured_snippet`, which DataForSEO removes 2027-01-20; it is `null` when no flags apply, so null-guard before testing membership), the `item_types` present (people_also_ask, featured_snippet, ai_overview, video, etc.), and the `people_also_ask`/`related_searches` elements for questions to answer.
 2. Map subtopics: run Labs `keyword_ideas` and `related_keywords` to build the semantic field around the topic, with `search_volume` and inline `keyword_difficulty` to weight coverage.
 3. Tag intent: pass the topic plus key subtopics through `search_intent` to confirm whether the brief should be informational, commercial, etc., and shape the format accordingly.
 4. Add demand context: use Labs `top_searches` (and optionally Keywords Data trends) to see rising vs declining interest and seasonal timing.

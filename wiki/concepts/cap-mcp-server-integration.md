@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: platform
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, mcp, integration]
 related:
   - "[[ent-dataforseo-mcp-server]]"
@@ -16,6 +16,8 @@ related:
 # MCP Server Integration
 
 > The official DataForSEO Model Context Protocol server that lets AI assistants call SEO APIs through natural language. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Agent practice (2026-10-02):** a Claude Code PreToolUse hook (`scripts/dfs_guard.py`) enforces batching, limits, depth and spend prompts on every MCP call. Without it, subagents made 65% of calls, with 109 unbatched Google Ads calls and 63 oversized results.
 
 ## Overview
 The official DataForSEO MCP server is a TypeScript/Node.js implementation of Anthropic's Model Context Protocol, published under Apache-2.0 (around 221 stars / 120 forks on GitHub in mid-2026). It exposes selected DataForSEO APIs as MCP tools so agents like Claude Code, Cursor, and ChatGPT can request SEO data via prompts instead of hand-coded REST calls. It uses a JSON-RPC client-server architecture and removes per-source integration work. The package is published on npm as `dataforseo-mcp-server` (latest 2.9.9 at retrieval, Jun 2026) and requires Node.js >=20.0.0 (per `package.json` engines; the README still says v14+ and the marketing page 18+, both stale). The v2.9.9 line added Historical SERPs (date params), an `exclude_targets` field on the backlinks domain-intersection tool, tool annotations/titles, OAuth/MCP auth improvements, and Cloudflare Worker deploy. The vendor and repo are profiled in [[ent-dataforseo-mcp-server]].
@@ -31,9 +33,9 @@ The server is organized into modules, each wrapping an API family and exposing m
 Environment variables and config:
 | var | role |
 |---|---|
-| DATAFORSEO_USERNAME | required; API login (account email) |
+| DATAFORSEO_LOGIN | required; API login (account email). `DATAFORSEO_USERNAME` is accepted as an alias. |
 | DATAFORSEO_PASSWORD | required; auto-generated API password (not the dashboard password) |
-| ENABLED_MODULES | comma-separated allow-list (for example "SERP,KEYWORDS_DATA,ONPAGE"); primary permission gate; all modules load if unset |
+| ENABLED_MODULES | comma-separated allow-list (for example "SERP,KEYWORDS_DATA,ONPAGE"); primary permission gate; all modules load if unset. **Documented for 2.9.x; the v3 README no longer mentions it - re-verify before relying on it (checked 2026-09-16).** |
 | ENABLED_PROMPTS | allow-list of prompt templates (for example top_3_google_result_domains) |
 | DATAFORSEO_FULL_RESPONSE | true returns unfiltered raw API responses (default false) |
 | DATAFORSEO_SIMPLE_FILTER | true flattens the filter schema for LLMs that struggle with nested structures |

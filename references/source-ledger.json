@@ -29,8 +29,8 @@
       "url": "https://docs.dataforseo.com/v3/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
@@ -44,8 +44,8 @@
       "url": "https://dataforseo.com/pricing",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
@@ -59,13 +59,14 @@
       "url": "https://dataforseo.com/update/pricing-update-in-dataforseo-apis",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-07-08",
-      "refresh_due": "2026-08-08",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "published 2026-07-01",
       "confidence": "high",
       "claims": [
         "DataForSEO cancelled monthly commitments and moved all endpoints to pay-as-you-go on 2026-07-01",
-        "The $100 monthly commitments for Backlinks API and LLM Mentions API were removed"
+        "The $100 monthly commitments for Backlinks API and LLM Mentions API were removed",
+        "The same update raised rates ~+20% across Backlinks, Business Data, Content Analysis, Labs, Domain Analytics, Keywords Data and OnPage, and +50% on Merchant Amazon Products/Sellers Task POST. Any cost figure observed on 2026-06-26 predates this increase."
       ]
     },
     {
@@ -74,13 +75,14 @@
       "url": "https://docs.dataforseo.com/v3/auth/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-17",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
-        "HTTP Basic auth using base64(login:password)",
-        "API password is generated in the API Access tab and differs from the account password"
+        "HTTP Basic auth using base64(login:password); header-only, never URL parameters",
+        "API password is generated in the API Access tab and differs from the account password",
+        "No separate authentication call and no documented credential expiry (verified 2026-09-17)"
       ]
     },
     {
@@ -89,13 +91,14 @@
       "url": "https://docs.dataforseo.com/v3/appendix/errors/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
         "20000 Ok / 20100 Task Created; 40xxx client and 50xxx server codes",
-        "Rate limit is 2000 calls/min, 30 simultaneous, <=100 tasks/POST, 120s live timeout"
+        "Rate limit is 2000 calls/min, 30 simultaneous, <=100 tasks/POST, 120s live timeout",
+        "The docs still describe 40204 as 'access denied ... activate your subscription' for Backlinks. This text is stale post-2026-07-01: a live backlinks/summary call on 2026-09-16 returned status_code 20000 on a pay-as-you-go account with no subscription."
       ]
     },
     {
@@ -104,8 +107,8 @@
       "url": "https://docs.dataforseo.com/v3/appendix/sandbox/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
@@ -119,8 +122,8 @@
       "url": "https://docs.dataforseo.com/v3/appendix/user_data/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
@@ -133,8 +136,8 @@
       "url": "https://docs.dataforseo.com/v3/dataforseo_labs/overview/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
@@ -148,8 +151,8 @@
       "url": "https://docs.dataforseo.com/v3/serp/overview/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
@@ -163,8 +166,8 @@
       "url": "https://docs.dataforseo.com/v3/backlinks/overview/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-07-08",
-      "refresh_due": "2026-08-08",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-07-08",
       "confidence": "high",
       "claims": [
@@ -178,8 +181,8 @@
       "url": "https://docs.dataforseo.com/v3/on_page/overview/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-06-26",
       "confidence": "high",
       "claims": [
@@ -193,8 +196,8 @@
       "url": "https://docs.dataforseo.com/v3/ai_optimization/overview/",
       "type": "official",
       "source_type": "official",
-      "retrieved": "2026-07-08",
-      "refresh_due": "2026-08-08",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
       "version": "v3 as of 2026-07-08",
       "confidence": "high",
       "claims": [
@@ -208,15 +211,68 @@
       "url": "https://github.com/dataforseo/mcp-server-typescript",
       "type": "vendor",
       "source_type": "vendor",
-      "retrieved": "2026-06-26",
-      "refresh_due": "2026-07-26",
-      "version": "v3 as of 2026-06-26",
+      "retrieved": "2026-09-16",
+      "refresh_due": "2026-10-16",
+      "version": "npm 3.1.1 as of 2026-08-25",
       "confidence": "high",
       "claims": [
-        "Official MCP server exposes 10 DataForSEO modules to agents",
-        "Configured via DATAFORSEO_USERNAME/PASSWORD and ENABLED_MODULES"
+        "Official MCP server is published on npm as dataforseo-mcp-server; latest 3.1.1 (2026-08-25). The v3 redesign supersedes v2, which the repository marks deprecated.",
+        "Requires Node.js >=22 per package.json engines (was >=20 in the 2.9.x line).",
+        "Credentials are DATAFORSEO_LOGIN (DATAFORSEO_USERNAME accepted as an alias) and DATAFORSEO_PASSWORD. ENABLED_MODULES is not documented in the v3 README; re-verify module gating before relying on it."
+      ]
+    },
+    {
+      "id": "dfs-openapi",
+      "title": "DataForSEO official OpenAPI specification (all v3 endpoints)",
+      "url": "https://github.com/dataforseo/OpenApiDocumentation",
+      "type": "vendor",
+      "source_type": "vendor",
+      "retrieved": "2026-09-17",
+      "refresh_due": "2026-10-17",
+      "version": "commit e9c59102479e (2026-09-09), 4,934,621 bytes, sha256 5948818f63bd7a400efb6918ea375887533dd3371e829f5c1d0a67c10c34f7db",
+      "confidence": "high",
+      "claims": [
+        "Machine-readable ground truth for DataForSEO v3: 453 endpoint paths across 12 modules (serp 128, keywords_data 56, dataforseo_labs 47, ai_optimization 46, business_data 40, on_page 29, app_data 29, merchant 25, backlinks 24, domain_analytics 14, content_analysis 11, appendix 4).",
+        "Contains 17 ai_optimization/llm_mentions paths, including the full v2 family (target_metrics, multi_target_metrics, top_mentioned_*, _lite variants, historical, timeseries_delta, timeseries_new_lost). These were previously recorded as undocumented; they are documented here.",
+        "Five llm_mentions v1 endpoints billable on the account are ABSENT from this spec: search/live, top_domains/live, top_pages/live, aggregated_metrics/live, cross_aggregated_metrics/live. Treat as legacy/undocumented-upstream, still billable.",
+        "Stored immutably at .raw/sources/dataforseo-openapi/ in the vault with PROVENANCE.json."
+      ]
+    },
+    {
+      "id": "dfs-github-org",
+      "title": "DataForSEO GitHub organisation (full sweep, 15 repos)",
+      "url": "https://github.com/dataforseo",
+      "type": "vendor",
+      "source_type": "vendor",
+      "retrieved": "2026-09-17",
+      "refresh_due": "2026-10-17",
+      "version": "15 repos as of 2026-09-17",
+      "confidence": "high",
+      "claims": [
+        "All 15 repos reviewed. Products: OpenApiDocumentation, mcp-server-typescript, Python/TypeScript/Java/CSharp clients, DataForSeoClientsGenerator, open-ai-actions, n8n-nodes-dataforseo, claude-skills, dataforseo-toolkit-skill, codex-plugins. langchain and langchainjs are forks, not products.",
+        "llm_mentions v1 retirement confirmed by three artifacts: OpenApiDocumentation (2026-09-09) omits v1; PythonClient (2026-09-11) exposes no callable v1 method, only orphaned model files; open-ai-actions (2026-09-03) documents v1 only and is stale.",
+        "A hosted MCP endpoint exists at https://mcp.dataforseo.com/v3/mcp (type http), per codex-plugins .mcp.json.",
+        "The DataForSEO MCP returns an AI-optimized response that omits fields by default; noAiMode=true returns the full field set.",
+        "open-ai-actions paths carry a .ai suffix (ChatGPT Actions convention) and are not callable REST paths; do not use as endpoint ground truth."
+      ]
+    },
+    {
+      "id": "dfs-changelog",
+      "title": "DataForSEO product updates / changelog",
+      "url": "https://dataforseo.com/updates",
+      "type": "official",
+      "source_type": "official",
+      "retrieved": "2026-09-17",
+      "refresh_due": "2026-10-17",
+      "version": "checked 2026-09-17",
+      "confidence": "high",
+      "claims": [
+        "Earliest-warning source for endpoint additions, deprecations and pricing changes. Leads both the OpenAPI spec and the account price table.",
+        "2026-09-16: Pinterest API and Social Media API support ENDED. 2026-09-15: Google Events SERP deprecated as a separate search engine type (Google retired the Events tab).",
+        "Recent additions: Google Trends Explore category-only filtering (no keyword required); Gemini LLM Responses direct_url field on Live and Task GET; new ETV calculation in Labs accounting for SERP features and intent; Google goto-link resolution across SERP elements incl. AI Overviews; ChatGPT ads rendered-status field; App Store subtitle support.",
+        "Drift direction is not consistent: Pinterest and Google Events were removed from the account price table while still present in the 2026-09-09 spec, whereas llm_mentions v1 was removed from the spec while still billable. Check all three sources - changelog, price table, spec - before concluding an endpoint's status."
       ]
     }
   ],
-  "provenance": "Populated 2026-06-26 from official docs.dataforseo.com/v3 + a $5-capped live API test pass. Updated 2026-07-08 for the 2026-07-01 pay-as-you-go move and live Backlinks/LLM Mentions re-probe."
+  "provenance": "Populated 2026-06-26 from official docs.dataforseo.com/v3 + a $5-capped live API test pass. Updated 2026-07-08 for the 2026-07-01 pay-as-you-go move and live Backlinks/LLM Mentions re-probe. Re-verified 2026-09-16 against all 13 live sources: MCP server corrected to 3.1.1 / Node >=22 / DATAFORSEO_LOGIN; recorded the +20% 2026-07-01 rate rise; confirmed 40204 doc text is stale via a live 20000 Ok Backlinks probe. Auth source re-read 2026-09-17: the 2026-09-16 pass re-dated it without fetching it; both recorded claims confirmed true, so 13/13 are now genuinely verified."
 }

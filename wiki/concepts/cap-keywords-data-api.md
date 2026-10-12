@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: keywords
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, keywords, search-volume]
 related:
   - "[[cap-trends-and-clickstream]]"
@@ -16,6 +16,8 @@ related:
 # Keywords Data API
 
 > Search volume, CPC, competition, and keyword discovery sourced straight from Google Ads and Bing Ads. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Cost rule (2026-10-02, from 689 audited calls):** Google Ads `search_volume/live` is **$0.09 per call** flat (not $0.075). Below ~600 keywords, Labs `keyword_overview` is cheaper ($0.012 + $0.00012/keyword, up to 700 per call). Live Google Ads is rate-limited to 12 calls a minute (40202). Google Trends Explore accepts category-only queries since September 2026.
 
 ## Overview
 The Keywords Data API exposes advertiser-grade keyword metrics from the two big ad platforms. The Google Ads sub-API is sourced from the latest Google Ads API, and the Bing sub-API is sourced from Microsoft Advertising. Unlike DataForSEO Labs (which uses DataForSEO's own clickstream-blended database), Keywords Data passes through the ad networks' own numbers, so it is the canonical source for paid-search planning signals: average monthly search volume, top-of-page bids, CPC, and competition. It supports both Live and Standard (Task POST / Tasks Ready / Task GET) methods.

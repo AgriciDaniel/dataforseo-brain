@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: platform
 status: stable
 created: 2026-06-26
-updated: 2026-07-08
+updated: 2026-10-02
 tags: [dataforseo, decision, routing, module-map]
 related:
   - "[[cap-platform-architecture]]"
@@ -20,12 +20,16 @@ related:
 ## Overview
 DataForSEO exposes 12 modules under one v3 envelope ([[cap-platform-architecture]]). The common failure mode is reaching for live SERP when a cheaper pre-indexed Labs query would do, or polling raw REST when a bulk endpoint exists. This page maps jobs to endpoints. Two cross-cutting choices ride on top of every row: pre-indexed vs live ([[dec-labs-vs-live-apis]]) and Live vs Standard vs Priority ([[dec-live-vs-standard-vs-priority]]).
 
+> **Superseded rows fixed 2026-10-02** (volume, AI-answer tracking, content analysis). Prices: [[cap-live-price-table]].
+
 ## Decision table (job → module / endpoint)
 | Job to be done | Module / endpoint | Why this one |
 |---|---|---|
 | Read a live ranking SERP for a keyword | SERP API `/v3/serp/google/organic/live/advanced` | Fresh, full structured parse; ~$0.002/live SERP ([[cap-serp-api]]) |
+| Rankings for a list of keywords | SERP API `/v3/serp/google/organic/task_post` (Standard queue, up to 100 tasks per POST) | $0.0006 each, 30% of live; collect later with the free `task_get` |
+| Local pack / Maps rankings | SERP API `/v3/serp/google/maps/live/advanced` | Business listings search is a directory, not a ranking |
 | Track AI Overview / AI Mode presence | SERP API `ai_overview` element + `/v3/serp/google/ai_mode` | Dedicated AI-search surfaces ([[cap-serp-google-verticals]]) |
-| Get raw search volume / CPC | Keywords Data `/v3/keywords_data/google_ads/search_volume/live` | Google Ads lineage; ~$0.075/call ([[cap-keywords-data-api]]) |
+| Get search volume / CPC | **Under 600 keywords: Labs `keyword_overview`** ($0.012 + $0.00012/kw, up to 700); 600-1,000: Keywords Data `google_ads/search_volume/live` in ONE call ($0.09) | Cost-correct since the 2026-10-02 audit ([[cap-keywords-data-api]]) |
 | Find keyword ideas/suggestions/related | Labs `/v3/dataforseo_labs/google/keyword_ideas/live` (and suggestions, related) | Pre-indexed, ~$0.0105/call ([[cap-labs-keyword-research]]) |
 | Score keyword difficulty in bulk | Labs `/v3/dataforseo_labs/google/bulk_keyword_difficulty/live` | Up to 1,000 keywords per billable task |
 | Classify search intent | Labs `/v3/dataforseo_labs/google/search_intent/live` | Cheap (~$0.0011/call observed) intent labels |
@@ -37,9 +41,11 @@ DataForSEO exposes 12 modules under one v3 envelope ([[cap-platform-architecture
 | Detect a site's tech stack / Whois | Domain Analytics `technologies`, `whois/overview` | Stack + registration intel ([[cap-domain-analytics]]) |
 | Product / price / review data | Merchant `/v3/merchant/google/products/live/advanced` (+ Amazon) | Shopping & Amazon ([[cap-merchant-api]]) |
 | App store / ASO data | App Data API (Google Play + App Store) | Listings, reviews, ASO ([[cap-app-data-api]]) |
-| Reviews / listings / GBP | Business Data `/v3/business_data/business_listings/search/live` | Reputation surfaces ([[cap-business-data-api]]) |
-| Track brand mentions in AI answers | AI Optimization `llm_mentions`, `llm_responses` | Cross-model visibility ([[cap-llm-mentions-visibility]]) |
-| Sentiment / citation analysis over a corpus | Content Analysis `search`, `summary` | Citation DB ([[cap-content-analysis-api]]) |
+| Listings in an area / business facts | Business Data `/v3/business_data/business_listings/search/live` | Directory with ratings and counts, no review text ([[cap-business-data-api]]) |
+| One business's GBP profile | Business Data `/v3/business_data/google/my_business_info/task_post` | $0.0015 queued |
+| Review text | Business Data `/v3/business_data/google/reviews/task_post` | $0.00075 per task of up to 10 reviews. Extended reviews cost 2x when looked up by `cid` or `place_id` |
+| Track brand mentions in AI answers | **`chat_gpt`/`gemini` `llm_scraper`** for what users see ($0.004; $0.0012 queued); LLM Mentions `multi_target_metrics` for aggregates ($0.10/call, many targets per call) | `llm_responses` only for raw model answers ([[cap-llm-mentions-visibility]]) |
+| Web mentions / sentiment over a corpus | Content Analysis `search`, `summary` (exact phrases, filters) | Text-match index, not citations ([[cap-content-analysis-api]]) |
 | Cheap historical/analytical lookups | DataForSEO Labs / Databases | Pre-indexed, no live crawl ([[cap-databases]]) |
 
 ## Decision rules

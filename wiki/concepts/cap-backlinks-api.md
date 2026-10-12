@@ -63,6 +63,13 @@ Summary-style responses carry `rank`, `backlinks`, `referring_domains`, `referri
 ## When to use / how it fits
 This module drives [[play-backlink-audit]] (summary -> referring domains -> new/lost -> bulk spam -> cleanup) and the link side of [[play-competitor-gap-analysis]] (domain/page intersection alongside Labs intersections). For headline metrics across many targets at once, prefer [[cap-backlinks-bulk-metrics]]. Route jobs through [[dec-which-api-for-which-job]] and weigh build-vs-buy against rivals via [[dec-dataforseo-vs-ahrefs-semrush-moz]].
 
+## `content_duplicates` (verified priced 2026-09-17)
+`POST /v3/backlinks/content_duplicates/live` bills **$0.024 per request**, the
+same as `summary`. It returns pages carrying duplicate content to a given target
+across the backlink index - the practical use is finding scraped or syndicated
+copies of a client's pages that may be splitting link equity, and spotting
+near-duplicate doorway pages in a competitor's profile. See [[cap-live-price-table]].
+
 ## Gotchas / limits
 - **Access status timeline:** gated through 2026-06-26; removed 2026-07-01 when DataForSEO moved all APIs to pay-as-you-go. The earlier 2026-06-26 note that the subscription was NOT removed was accurate then, but became false after the published pricing update. Treat `40204` for Backlinks as historical and legacy; a pay-as-you-go account no longer receives it for Backlinks live endpoints verified 2026-07-08. See [[cap-status-error-codes]].
 - No $100/month Backlinks add-on remains; budget for per-request and per-row usage before building on this module.

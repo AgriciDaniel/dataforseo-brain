@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """DataForSEO live-test harness - cost-governed authentic fixture capture.
 
-Reads credentials from the environment (DATAFORSEO_USERNAME / DATAFORSEO_PASSWORD),
+Reads credentials from the environment (DATAFORSEO_LOGIN, or DATAFORSEO_USERNAME
+as an alias, plus DATAFORSEO_PASSWORD),
 makes the cheapest representative call per endpoint family, records the real `cost`
 returned by the API into a running ledger, and HARD-STOPS at a cumulative cap.
 
@@ -9,8 +10,11 @@ Fixtures are written to .raw/sources/dataforseo-research/<ns>/fixtures/<slug>.js
 Responses contain only public SEO data (no credentials).
 """
 from __future__ import annotations
-import base64, json, os, sys, time, urllib.request, urllib.error
+import base64, json, os, sys, urllib.request, urllib.error
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import dfs_safety  # noqa: E402
 
 BASE = "https://api.dataforseo.com"
 ROOT = Path(__file__).resolve().parent.parent
@@ -18,12 +22,16 @@ RAW = ROOT / ".raw" / "sources" / "dataforseo-research"
 LEDGER = RAW / "_cost-log.json"
 CAP = float(os.environ.get("DFS_COST_CAP", "5.00"))
 
-USER = os.environ.get("DATAFORSEO_USERNAME")
+USER = os.environ.get("DATAFORSEO_LOGIN") or os.environ.get("DATAFORSEO_USERNAME")
 PW = os.environ.get("DATAFORSEO_PASSWORD")
 if not USER or not PW:
     print("MISSING credentials in env", file=sys.stderr); sys.exit(2)
 AUTH = base64.b64encode(f"{USER}:{PW}".encode()).decode()
 
+# COSTLY-OK: this harness deliberately captures one fixture per endpoint family,
+# including keywords_data/google_ads/search_volume/live at $0.09. That is the point
+# of a fixture harness. Production keyword flows must default to Labs - see
+# dec-google-ads-vs-labs-keyword-volume.
 US = 2840  # location_code United States
 EN = "en"
 
@@ -70,7 +78,9 @@ TESTS = [
     ("content-analysis", "summary", "POST", "/v3/content_analysis/summary/live", {"keyword": "dataforseo"}),
     # --- AI Optimization (cheaper endpoints; LLM responses skipped to bound cost) ---
     ("ai-optimization", "ai-keyword-data-search-volume", "POST", "/v3/ai_optimization/ai_keyword_data/keywords_search_volume/live", {"keywords": ["seo tools"], "location_code": US, "language_code": EN}),
-    ("ai-optimization", "llm-mentions-search", "POST", "/v3/ai_optimization/llm_mentions/search/live", {"target": {"keyword": "best seo api"}, "limit": 5}),
+    # v2: search_mentions supersedes search/live. `target` is now an ARRAY of up to
+    # 10 entities (spec: AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo).
+    ("ai-optimization", "llm-mentions-search-mentions", "POST", "/v3/ai_optimization/llm_mentions/search_mentions/live", {"target": [{"keyword": "best seo api"}], "limit": 5}),
     # --- Merchant (Google Shopping live) ---
     ("merchant", "google-shopping-products", "POST", "/v3/merchant/google/products/live/advanced", {"keyword": "laptop", "location_code": US, "language_code": EN, "depth": 10}),
     # --- Business Data (indexed listings live) ---
@@ -89,7 +99,9 @@ def call(method: str, path: str, payload):
     req.add_header("Authorization", "Basic " + AUTH)
     req.add_header("Content-Type", "application/json")
     with urllib.request.urlopen(req, timeout=90) as r:
-        return json.loads(r.read().decode())
+        result = json.loads(r.read().decode())
+    dfs_safety.log_rest(url, [payload] if method == "POST" else None, result)
+    return result
 
 
 def main():

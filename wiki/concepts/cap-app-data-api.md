@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: app-data
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, app-data, aso]
 related:
   - "[[plat-app-stores]]"
@@ -17,6 +17,8 @@ related:
 # App Data API (Capability)
 
 > The App Data API returns Apple App Store and Google Play data for app-store optimization: keyword searches, category lists, app detail, reviews, and a live indexed app-catalog query (app_listings). Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Update 2026-09-22:** the App Store App List maximum depth is 100 (the App Store no longer returns more).
 
 ## Overview
 App Data is DataForSEO's ASO layer, mirroring its web-SERP tooling for mobile app stores. It covers two engines, Apple (`/v3/app_data/apple/...`) and Google Play (`/v3/app_data/google/...`), each with parallel endpoints. You search a store by keyword to see which apps rank, pull top-chart lists by category, fetch a single app's full metadata, read its reviews, or query a pre-indexed catalog of apps with filters. The first four are Task-based (POST then poll then `task_get/advanced`); `app_listings` is a Live, database-style query. It is the data behind keyword-rank tracking, competitor monitoring, and review analysis for apps.

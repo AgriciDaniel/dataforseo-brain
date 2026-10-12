@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: labs
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, labs, market-analysis]
 related:
   - "[[cap-labs-keyword-research]]"
@@ -17,6 +17,8 @@ related:
 # Labs Market Analysis (Capability)
 
 > The DataForSEO Labs market-analysis endpoints map demand by Google product/service category: which categories a domain ranks in, which categories a keyword belongs to, the top searches in a market, and the keywords inside any category. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Update 2026-09:** the new ETV formula means older stored ETV values aren't comparable with current ones.
 
 ## Overview
 This Labs family shifts the unit of analysis from one keyword or domain to a whole market segment, expressed through Google's product and service category taxonomy. It answers "what categories does this domain compete in", "what is this keyword about", "what are the highest-volume searches in this market", and "give me every keyword in this category". It is the demand-mapping layer beneath content strategy and total-addressable-market sizing. All endpoints are Live POST calls under `/v3/dataforseo_labs/google/{function}/live`, except the free `categories` metadata endpoint.

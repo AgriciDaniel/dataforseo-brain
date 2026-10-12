@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: serp
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, serp, google]
 related:
   - "[[cap-serp-api]]"
@@ -16,6 +16,8 @@ related:
 # SERP API Google Verticals
 
 > The Google-specific SERP endpoints beyond plain organic: AI Mode, AI Overview, Maps, Local Finder, News, Events, Images, Search By Image, Jobs, Autocomplete, Ads, Finance, and Dataset Search/Info. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Changed in September 2026:** Google Events was deprecated as a SERP engine on 2026-09-15, so don't call `serp/google/events/*`. Google Local Finder desktop returns 10 places per page since 2026-09-25 (default depth 10, max 350), and billing is per page of 10.
 
 ## Overview
 Google exposes far more than ten blue links. The SERP API mirrors that with dedicated vertical endpoints, each under `/v3/serp/google/{vertical}/{method}`. They share the standard envelope but return vertical-specific element types and parameters. These verticals are how you capture local packs, news cycles, image carousels, job listings, ad transparency data, finance tickers, and the new generative surfaces (AI Mode and AI Overview) as structured data. This note routes the Google surfaces; see [[cap-serp-api]] for the shared mechanics and [[cap-serp-non-google-engines]] for other engines.

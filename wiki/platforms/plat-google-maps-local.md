@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: serp
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, platform, local-seo, business-data]
 related:
   - "[[cap-serp-google-verticals]]"
@@ -16,6 +16,8 @@ related:
 # Google Maps and Local as a DataForSEO Surface
 
 > Google Maps, Local Finder, Google Business Profile, Hotels, and the indexed business-listings database exposed as local-SEO data. Sits under [[index|DataForSEO Brain]] then [[platforms/_index|Platforms]].
+
+> **Update 2026-09-25:** Local Finder desktop depth defaults to 10 (Google now shows 10 per page), and billing is per page of 10. The `business_data/social_media/*` endpoints were retired on 2026-09-16.
 
 ## Overview
 The local surface spans two DataForSEO modules. The SERP API reads the live ranked local results (Maps pack and Local Finder) for a keyword at a location, while the Business Data API reads the durable profile of a single establishment (its description, hours, attributes, reviews, Q&A, and updates). Together they let a practitioner track where a business ranks in the map results and audit the profile that those rankings feed. Geo precision comes from `location_coordinate`, which makes grid-based local rank tracking possible.

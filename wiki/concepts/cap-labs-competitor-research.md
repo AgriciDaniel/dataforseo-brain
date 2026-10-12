@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: labs
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, labs, competitor-research]
 related:
   - "[[cap-labs-keyword-research]]"
@@ -17,6 +17,8 @@ related:
 # Labs Competitor Research (Capability)
 
 > The DataForSEO Labs competitor endpoints map who ranks for what: SERP competitors, ranked keywords, domain and page intersections, rank overviews, traffic estimates, and the Amazon / Google Play / App Store equivalents, all from a pre-indexed database. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Update 2026-09:** Labs switched ETV to a new formula (SERP features, intent, clickstream-normalised volume), so ETV figures before and after early September 2026 aren't comparable. `ranked_keywords` results are verbose; keep `limit` at 25 or less, with filters.
 
 ## Overview
 Where the keyword-research family expands a seed, the competitor family analyzes domains, pages, ASINs, and apps. It answers "who else ranks for my keywords", "what does this domain rank for", "which keywords do two domains share", and "how much traffic does this domain or app get". Like all of Labs, the data is pre-indexed (not a live SERP scrape), updated periodically, with historical series available from October 2020 onward. All endpoints are Live POST calls under `/v3/dataforseo_labs/{engine}/{function}/live`.

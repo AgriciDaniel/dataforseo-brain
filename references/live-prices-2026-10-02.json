@@ -1,0 +1,7567 @@
+{
+  "captured": "2026-10-02",
+  "source": "GET /v3/appendix/user_data (free)",
+  "entries": [
+    {
+      "endpoint": "keywords_data/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/ad_traffic_by_keywords/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/ad_traffic_by_keywords/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/ad_traffic_by_keywords/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/ad_traffic_by_keywords/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/ad_traffic_by_keywords/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/ad_traffic_by_keywords/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/audience_estimation/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/audience_estimation/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/audience_estimation/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/audience_estimation/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/audience_estimation/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/audience_estimation/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/bing/audience_estimation/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/audience_estimation/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/audience_estimation/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keyword_performance/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keyword_performance/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keyword_performance/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keywords_for_keywords/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keywords_for_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keywords_for_keywords/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keywords_for_site/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keywords_for_site/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keywords_for_site/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keyword_suggestions_for_url/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keyword_suggestions_for_url/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/keyword_suggestions_for_url/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/search_volume/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/bing/search_volume/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/categories",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/categories",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/categories",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/bulk_search_volume/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/bulk_search_volume/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/bulk_search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/bulk_search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/bulk_search_volume/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/bulk_search_volume/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/dataforseo_search_volume/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.18
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/dataforseo_search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.18
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/dataforseo_search_volume/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.18
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/global_search_volume/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.18
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/global_search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.18
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/global_search_volume/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.18
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/locations_and_languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/locations_and_languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/clickstream_data/locations_and_languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/google_ads/ad_traffic_by_keywords/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/ad_traffic_by_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/ad_traffic_by_keywords/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/keywords_for_keywords/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/keywords_for_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/keywords_for_keywords/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/keywords_for_site/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/keywords_for_site/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/keywords_for_site/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/search_volume/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/search_volume/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.09
+    },
+    {
+      "endpoint": "keywords_data/google_ads/status",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/google_ads/status",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/google_ads/status",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keyword_performance/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keyword_performance/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keyword_performance/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keyword_performance/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keyword_performance/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keyword_performance/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_keywords/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_keywords/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_keywords/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_keywords/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_keywords/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_keywords/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_site/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_site/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_site/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_site/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_site/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keywords_for_site/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keyword_suggestions_for_url/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keyword_suggestions_for_url/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keyword_suggestions_for_url/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/keyword_suggestions_for_url/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keyword_suggestions_for_url/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/keyword_suggestions_for_url/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/locations",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/locations",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/locations",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/locations_and_languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/locations_and_languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/locations_and_languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/search_volume/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/search_volume/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/search_volume/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/search_volume/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/search_volume/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/search_volume/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.06
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/demography/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/demography/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/demography/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/explore/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/explore/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/explore/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/merged_data/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.006
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/merged_data/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.006
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/merged_data/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.006
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/subregion_interests/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/subregion_interests/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "keywords_data/dataforseo_trends/subregion_interests/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "keywords_data/explore/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.011
+    },
+    {
+      "endpoint": "keywords_data/explore/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.011
+    },
+    {
+      "endpoint": "keywords_data/explore/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.011
+    },
+    {
+      "endpoint": "keywords_data/explore/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/explore/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/explore/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "keywords_data/explore/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0027
+    },
+    {
+      "endpoint": "keywords_data/explore/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0027
+    },
+    {
+      "endpoint": "keywords_data/explore/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0054
+    },
+    {
+      "endpoint": "merchant/google/product_info/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_info/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_info/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_info/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_info/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_info/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_info/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "merchant/google/product_info/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "merchant/google/product_info/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "merchant/google/product_spec/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "merchant/google/product_spec/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_spec/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/product_spec/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "merchant/google/products/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "merchant/google/products/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "merchant/google/products/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/products/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/ad_url",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 1e-06
+    },
+    {
+      "endpoint": "merchant/google/sellers/ad_url",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 1e-06
+    },
+    {
+      "endpoint": "merchant/google/sellers/ad_url",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 1e-06
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "merchant/google/sellers/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "merchant/google/sellers/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/google/sellers/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/live/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "merchant/amazon/asin/live/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "merchant/amazon/asin/live/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "merchant/amazon/asin/live/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "merchant/amazon/asin/live/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "merchant/amazon/asin/live/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "merchant/amazon/asin/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.003
+    },
+    {
+      "endpoint": "merchant/amazon/asin/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/asin/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/live/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/products/live/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/products/live/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/products/live/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/products/live/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/products/live/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "merchant/amazon/products/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.003
+    },
+    {
+      "endpoint": "merchant/amazon/products/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/products/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/live/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/live/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/live/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/live/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/live/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/live/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0033
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.003
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/amazon/sellers/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/locations",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/locations",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/locations",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "merchant/reviews/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "merchant/reviews/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "merchant/reviews/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/reviews/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "merchant/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/locations",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/locations",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/locations",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/live/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/live/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/live/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/live/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/live/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/live/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_scraper/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/aggregated_metrics/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/aggregated_metrics/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/aggregated_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/aggregated_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/aggregated_metrics/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/aggregated_metrics/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/cross_aggregated_metrics/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/cross_aggregated_metrics/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/cross_aggregated_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/cross_aggregated_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/cross_aggregated_metrics/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/cross_aggregated_metrics/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/historical/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/historical/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/historical/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/historical/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/historical/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/historical/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/locations_and_languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/locations_and_languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/locations_and_languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/multi_target_metrics/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/multi_target_metrics/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/multi_target_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/multi_target_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/multi_target_metrics/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/multi_target_metrics/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search_mentions/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search_mentions/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search_mentions/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search_mentions/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search_mentions/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/search_mentions/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics_lite/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics_lite/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics_lite/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics_lite/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics_lite/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/target_metrics_lite/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_delta/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_delta/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_delta/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_delta/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_delta/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_delta/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_new_lost/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_new_lost/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_new_lost/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_new_lost/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_new_lost/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/timeseries_new_lost/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_domains/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_domains/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_domains/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_domains/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_domains/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_domains/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands_lite/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands_lite/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands_lite/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands_lite/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands_lite/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_brands_lite/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains_lite/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains_lite/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains_lite/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains_lite/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains_lite/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_domains_lite/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages_lite/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages_lite/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages_lite/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages_lite/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages_lite/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_mentioned_pages_lite/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_pages/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_pages/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_pages/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_pages/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_pages/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "ai_optimization/llm_mentions/top_pages/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/keywords_search_volume/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0001
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/keywords_search_volume/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.01
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/keywords_search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0001
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/keywords_search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.01
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/keywords_search_volume/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0001
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/keywords_search_volume/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.01
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/locations_and_languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/locations_and_languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/ai_keyword_data/locations_and_languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/models",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/models",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/models",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0002
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0002
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0002
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "ai_optimization/llm_responses/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/tasks_fixed",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/tasks_fixed",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/tasks_fixed",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/ai_summary",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.01
+    },
+    {
+      "endpoint": "serp/ai_summary",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.01
+    },
+    {
+      "endpoint": "serp/ai_summary",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.01
+    },
+    {
+      "endpoint": "serp/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/jobs/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "serp/jobs/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "serp/jobs/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "serp/languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/live/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/live/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/live/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/live/regular",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/live/regular",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/live/regular",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/live/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/live/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/live/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.002
+    },
+    {
+      "endpoint": "serp/locations",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/locations",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/locations",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/screenshot",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "serp/screenshot",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "serp/screenshot",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "serp/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_get/regular",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_get/regular",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_get/regular",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "serp/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "serp/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "serp/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "serp/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "appendix/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "appendix/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "appendix/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "appendix/user_data",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "appendix/user_data",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "appendix/user_data",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "app_data/app_info/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0006
+    },
+    {
+      "endpoint": "app_data/app_info/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "app_data/app_info/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_info/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_listings/search/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "app_data/app_listings/search/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "app_data/app_listings/search/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "app_data/app_listings/search/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "app_data/app_listings/search/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.001
+    },
+    {
+      "endpoint": "app_data/app_listings/search/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.1
+    },
+    {
+      "endpoint": "app_data/app_list/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_list/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_list/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_list/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_list/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_list/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_list/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "app_data/app_list/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "app_data/app_list/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "app_data/app_list/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_list/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_list/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_reviews/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_reviews/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_reviews/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_reviews/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "app_data/app_reviews/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "app_data/app_reviews/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "app_data/app_reviews/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_reviews/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_reviews/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "app_data/app_searches/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "app_data/app_searches/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0024
+    },
+    {
+      "endpoint": "app_data/app_searches/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/app_searches/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/pp_listings/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/pp_listings/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/pp_listings/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/categories",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/categories",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/categories",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/locations",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/locations",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/locations",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "app_data/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/anchors/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/anchors/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/anchors/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/anchors/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/anchors/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/anchors/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/backlinks/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/backlinks/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/backlinks/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/backlinks/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/backlinks/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/backlinks/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_backlinks/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_backlinks/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_backlinks/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_backlinks/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_backlinks/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_backlinks/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_backlinks/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_backlinks/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_backlinks/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_backlinks/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_backlinks/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_backlinks/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_referring_domains/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_referring_domains/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_referring_domains/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_referring_domains/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_referring_domains/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_new_lost_referring_domains/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_pages_summary/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_pages_summary/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_pages_summary/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_pages_summary/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_pages_summary/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_pages_summary/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_ranks/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_ranks/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_ranks/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_ranks/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_ranks/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_ranks/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_referring_domains/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_referring_domains/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_referring_domains/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_referring_domains/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_referring_domains/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_referring_domains/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_spam_score/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_spam_score/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_spam_score/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_spam_score/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/bulk_spam_score/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/bulk_spam_score/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/competitors/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/competitors/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/competitors/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/competitors/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/competitors/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/competitors/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/content_duplicates/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/content_duplicates/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/content_duplicates/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/content_duplicates/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/content_duplicates/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/content_duplicates/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_intersection/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_intersection/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_intersection/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_intersection/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_pages/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_pages/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_pages/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_pages/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_pages/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_pages/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_pages_summary/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_pages_summary/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_pages_summary/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_pages_summary/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/domain_pages_summary/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/domain_pages_summary/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/history/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/history/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/history/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/history/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/history/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/history/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "backlinks/page_intersection/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/page_intersection/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/page_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/page_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/page_intersection/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/page_intersection/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/referring_domains/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/referring_domains/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/referring_domains/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/referring_domains/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/referring_domains/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/referring_domains/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/referring_networks/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/referring_networks/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/referring_networks/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/referring_networks/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/referring_networks/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/referring_networks/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/summary/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/summary/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/summary/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/summary/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/summary/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/summary/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/timeseries_new_lost_summary/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/timeseries_new_lost_summary/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/timeseries_new_lost_summary/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/timeseries_new_lost_summary/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/timeseries_new_lost_summary/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/timeseries_new_lost_summary/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/timeseries_summary/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/timeseries_summary/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/timeseries_summary/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/timeseries_summary/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "backlinks/timeseries_summary/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "backlinks/timeseries_summary/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "business_data/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/business_listings/categories",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/business_listings/categories",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/business_listings/categories",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/business_listings/categories_aggregation/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00036
+    },
+    {
+      "endpoint": "business_data/business_listings/categories_aggregation/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "business_data/business_listings/categories_aggregation/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00036
+    },
+    {
+      "endpoint": "business_data/business_listings/categories_aggregation/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "business_data/business_listings/categories_aggregation/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00036
+    },
+    {
+      "endpoint": "business_data/business_listings/categories_aggregation/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "business_data/business_listings/locations",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/business_listings/locations",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/business_listings/locations",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/business_listings/search/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00036
+    },
+    {
+      "endpoint": "business_data/business_listings/search/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "business_data/business_listings/search/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00036
+    },
+    {
+      "endpoint": "business_data/business_listings/search/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "business_data/business_listings/search/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00036
+    },
+    {
+      "endpoint": "business_data/business_listings/search/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "business_data/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/extended_reviews/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/extended_reviews/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/extended_reviews/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/extended_reviews/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/google/extended_reviews/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/google/extended_reviews/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/live/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/live/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/live/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/live/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/live/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/live/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_get/advanced",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_get/advanced",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_get/advanced",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_get/html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_get/html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_get/html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0008
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0008
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0016
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_info/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.004
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0008
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0008
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0016
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/hotel_searches/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0054
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0054
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0054
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.003
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_info/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00225
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00225
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0045
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/my_business_updates/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.0054
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.0054
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0054
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/questions_and_answers/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/reviews/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/reviews/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/reviews/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/reviews/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/google/reviews/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/google/reviews/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/google/reviews/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/reviews/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/google/reviews/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/locations",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/locations",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/locations",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/task_get",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/task_get",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/task_get",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/reviews/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tripadvisor/search/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/task_get",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/task_get",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/task_get",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/reviews/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.00075
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.0015
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/trustpilot/search/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "business_data/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/categories",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/categories",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/categories",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/category_trends/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/category_trends/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/category_trends/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/category_trends/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/category_trends/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/category_trends/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/languages",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/languages",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/languages",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/locations",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/locations",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/locations",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "content_analysis/phrase_trends/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/phrase_trends/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/phrase_trends/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/phrase_trends/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/phrase_trends/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/phrase_trends/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/rating_distribution/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/rating_distribution/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/rating_distribution/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/search/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/search/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/search/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/search/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/search/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/search/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/sentiment_analysis/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/sentiment_analysis/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/sentiment_analysis/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/sentiment_analysis/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/sentiment_analysis/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/sentiment_analysis/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/summary/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/summary/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/summary/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/summary/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "content_analysis/summary/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 3.6e-05
+    },
+    {
+      "endpoint": "content_analysis/summary/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.024
+    },
+    {
+      "endpoint": "dataforseo_labs/app_competitors/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_competitors/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_competitors/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_competitors/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_competitors/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_competitors/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_intersection/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_intersection/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_intersection/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/app_intersection/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_app_metrics/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_app_metrics/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_app_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_app_metrics/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_app_metrics/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_app_metrics/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_keyword_difficulty/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_keyword_difficulty/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_keyword_difficulty/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_keyword_difficulty/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_keyword_difficulty/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_keyword_difficulty/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_search_volume/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_search_volume/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_search_volume/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_search_volume/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_search_volume/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_traffic_estimation/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_traffic_estimation/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_traffic_estimation/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_traffic_estimation/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_traffic_estimation/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/bulk_traffic_estimation/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/categories",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/categories",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_domain/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_domain/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_domain/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_domain/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_domain/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_domain/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_keywords/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_keywords/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_keywords/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/categories_for_keywords/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/competitors_domain/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/competitors_domain/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/competitors_domain/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/competitors_domain/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/competitors_domain/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/competitors_domain/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_intersection/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_intersection/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_intersection/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_intersection/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_metrics_by_categories/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_metrics_by_categories/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_metrics_by_categories/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_metrics_by_categories/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_metrics_by_categories/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_metrics_by_categories/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_rank_overview/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_rank_overview/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_rank_overview/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_rank_overview/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_rank_overview/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_rank_overview/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_whois_overview/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_whois_overview/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_whois_overview/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_whois_overview/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_whois_overview/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/domain_whois_overview/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_bulk_traffic_estimation/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_bulk_traffic_estimation/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_bulk_traffic_estimation/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_bulk_traffic_estimation/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_bulk_traffic_estimation/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_bulk_traffic_estimation/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_keyword_data/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_keyword_data/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_keyword_data/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_keyword_data/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_keyword_data/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_keyword_data/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_rank_overview/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_rank_overview/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_rank_overview/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_rank_overview/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_rank_overview/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_rank_overview/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_serps/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_serps/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_serps/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_serps/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_serps/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/historical_serps/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_ideas/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_ideas/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_ideas/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_ideas/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_ideas/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_ideas/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_overview/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_overview/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_overview/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_overview/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_overview/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_overview/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_app/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_app/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_app/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_app/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_app/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_app/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_categories/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_categories/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_categories/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_categories/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_categories/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_categories/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_site/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_site/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_site/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_site/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_site/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keywords_for_site/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_suggestions/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_suggestions/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_suggestions/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_suggestions/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_suggestions/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/keyword_suggestions/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/locations_and_languages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/locations_and_languages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/locations_and_languages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "dataforseo_labs/page_intersection/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/page_intersection/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/page_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/page_intersection/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/page_intersection/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/page_intersection/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_competitors/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_competitors/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_competitors/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_competitors/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_competitors/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_competitors/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_keyword_intersections/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_keyword_intersections/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_keyword_intersections/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_keyword_intersections/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_keyword_intersections/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_keyword_intersections/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_rank_overview/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_rank_overview/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_rank_overview/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_rank_overview/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_rank_overview/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/product_rank_overview/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/ranked_keywords/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/ranked_keywords/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/ranked_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/ranked_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/ranked_keywords/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/ranked_keywords/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/related_keywords/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/related_keywords/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/related_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/related_keywords/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/related_keywords/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/related_keywords/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/relevant_pages/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/relevant_pages/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/relevant_pages/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/relevant_pages/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/relevant_pages/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/relevant_pages/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/search_intent/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/search_intent/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/search_intent/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/search_intent/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/search_intent/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/search_intent/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/serp_competitors/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/serp_competitors/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/serp_competitors/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/serp_competitors/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/serp_competitors/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/serp_competitors/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/subdomains/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/subdomains/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/subdomains/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/subdomains/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/subdomains/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/subdomains/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/top_searches/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/top_searches/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/top_searches/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/top_searches/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "dataforseo_labs/top_searches/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00012
+    },
+    {
+      "endpoint": "dataforseo_labs/top_searches/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/whois/overview/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/whois/overview/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "domain_analytics/whois/overview/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/whois/overview/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "domain_analytics/whois/overview/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/whois/overview/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.12
+    },
+    {
+      "endpoint": "domain_analytics/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/languages",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/languages",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/languages",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/locations",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/locations",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/locations",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/technologies/aggregation_technologies/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/aggregation_technologies/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/aggregation_technologies/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/aggregation_technologies/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/aggregation_technologies/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/aggregation_technologies/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_html_terms/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_html_terms/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_html_terms/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_html_terms/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_html_terms/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_html_terms/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_technology/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_technology/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_technology/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_technology/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_technology/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domains_by_technology/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domain_technologies/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domain_technologies/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/domain_technologies/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies_summary/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies_summary/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies_summary/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies_summary/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies_summary/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technologies_summary/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technology_stats/live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technology_stats/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technology_stats/live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technology_stats/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technology_stats/live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0012
+    },
+    {
+      "endpoint": "domain_analytics/technologies/technology_stats/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.012
+    },
+    {
+      "endpoint": "domain_analytics/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "domain_analytics/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/errors",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/errors",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/errors",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/id_list",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/id_list",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/id_list",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/lighthouse/live",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "on_page/lighthouse/live",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "on_page/lighthouse/live",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "on_page/lighthouse/task_get",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/lighthouse/task_get",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/lighthouse/task_get",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/lighthouse/task_post",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "on_page/lighthouse/task_post",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "on_page/lighthouse/task_post",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0.005
+    },
+    {
+      "endpoint": "on_page/lighthouse/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/lighthouse/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/lighthouse/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/available_filters",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/available_filters",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/available_filters",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/content_parsing",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/content_parsing",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/content_parsing",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/content_parsing_live",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/content_parsing_live",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/content_parsing_live",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/duplicate_content",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/duplicate_content",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/duplicate_content",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/duplicate_tags",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/duplicate_tags",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/duplicate_tags",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/instant_pages",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/instant_pages",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/instant_pages",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/keyword_density",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/keyword_density",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/keyword_density",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/links",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/links",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/links",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/non_indexable",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/non_indexable",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/non_indexable",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/pages",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/pages",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/pages",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/pages_by_resource",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/pages_by_resource",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/pages_by_resource",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/page_screenshot",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.0048
+    },
+    {
+      "endpoint": "on_page/page_screenshot",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.0048
+    },
+    {
+      "endpoint": "on_page/page_screenshot",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.0048
+    },
+    {
+      "endpoint": "on_page/raw_html",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/raw_html",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/raw_html",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/redirect_chains",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/redirect_chains",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/redirect_chains",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/resources",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/resources",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/resources",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/summary",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/summary",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/summary",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/task_post",
+      "priority": "low",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/task_post",
+      "priority": "normal",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/task_post",
+      "priority": "high",
+      "cost_type": "per_result",
+      "cost": 0.00015
+    },
+    {
+      "endpoint": "on_page/tasks_ready",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/tasks_ready",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/tasks_ready",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/uncrawlable_resources",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/uncrawlable_resources",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/uncrawlable_resources",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/waterfall",
+      "priority": "low",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/waterfall",
+      "priority": "normal",
+      "cost_type": "per_request",
+      "cost": 0
+    },
+    {
+      "endpoint": "on_page/waterfall",
+      "priority": "high",
+      "cost_type": "per_request",
+      "cost": 0
+    }
+  ],
+  "note": "Account price table from GET /v3/appendix/user_data (free), pay-as-you-go account. Balance removed."
+}

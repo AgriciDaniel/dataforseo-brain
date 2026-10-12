@@ -24,16 +24,38 @@ Generative Engine Optimization (GEO) tracks whether a brand is named, cited, or 
 A brand wants to know how it shows up in AI answers: a GEO program launch, a competitive share-of-voice study, or monitoring after a content push. Inputs are target entities (brand domain and/or keywords) and a prompt set of real buyer questions.
 
 ## Endpoints used (in order)
-- `POST /v3/ai_optimization/llm_mentions/search/live` (raw mention records).
-- `POST /v3/ai_optimization/llm_mentions/aggregated_metrics/live` (consolidated metrics).
-- `POST /v3/ai_optimization/llm_mentions/cross_aggregated_metrics/live` (multi-brand comparison).
-- `POST /v3/ai_optimization/llm_mentions/top_domains/live` and `/top_pages/live` (most-cited sources).
+
+> ### v1 -> v2 migration (2026-09-17)
+>
+> The five v1 endpoints below are **retired upstream**: absent from the official
+> OpenAPI spec, and the generated clients expose no callable method for them.
+> They remain billable, so calls still succeed - which is exactly why this is
+> easy to miss. **Do not build new work on v1.**
+>
+> | v1 (retired) | v2 replacement | Shape change |
+> |---|---|---|
+> | `search/live` | `search_mentions/live` | `target` object -> **array** of up to 10 entities |
+> | `top_domains/live` | `top_mentioned_domains/live` (+ `_lite`) | - |
+> | `top_pages/live` | `top_mentioned_pages/live` (+ `_lite`) | - |
+> | `aggregated_metrics/live` | `target_metrics/live` (+ `_lite`) | - |
+> | `cross_aggregated_metrics/live` | `multi_target_metrics/live` | - |
+>
+> v2 also adds `top_mentioned_brands`, `top_mentioned_brand_categories`,
+> `historical`, `timeseries_delta` and `timeseries_new_lost` with no v1
+> equivalent. `_lite` variants cost the same - they reduce response size, not
+> spend. Evidence: [[dfs-github-org-sweep]], [[dfs-openapi-spec]].
+
+- `POST /v3/ai_optimization/llm_mentions/search_mentions/live` (raw mention records; `target` is an array).
+- `POST /v3/ai_optimization/llm_mentions/target_metrics/live` (consolidated metrics for one target).
+- `POST /v3/ai_optimization/llm_mentions/multi_target_metrics/live` (2-10 targets in ONE billed request - the default for client-vs-competitor work).
+- `POST /v3/ai_optimization/llm_mentions/top_mentioned_domains/live` and `/top_mentioned_pages/live` (most-cited sources).
+- `POST /v3/ai_optimization/llm_mentions/timeseries_delta/live` (change over time - turns a one-off audit into tracking).
 - `POST /v3/ai_optimization/{chat_gpt|claude|gemini|perplexity}/llm_responses/live` (live answer sampling).
 - `POST /v3/ai_optimization/ai_keyword_data/keywords_search_volume/live` (AI search volume).
 
 ## Pipeline
 1. Define targets: build the `target` array (up to 10 entities) of domains (`domain`, `search_filter`, `search_scope` sources/search_results) and keywords (`keyword`, `match_type`, `search_scope` question/answer/brand_entities). Set `platform` (`google` for AI Overview, `chat_gpt`) plus `location_code`/`language_code`.
-2. Pull mentions with `llm_mentions/search`: each item returns the `question`, the `answer` (markdown), cited `sources[]` (title, url, domain, position), `search_results[]`, `brand_entities[]`, `fan_out_queries[]`, and `ai_search_volume` with `monthly_searches[]`.
+2. Pull mentions with `llm_mentions/search_mentions` (note: `target` is an array of up to 10 entities): each item returns the `question`, the `answer` (markdown), cited `sources[]` (title, url, domain, position), `search_results[]`, `brand_entities[]`, `fan_out_queries[]`, and `ai_search_volume` with `monthly_searches[]`.
 3. Aggregate visibility with `aggregated_metrics` (mentions + ai_search_volume grouped by location/language/platform/source domain) and compute share of voice = your mentions / total tracked-brand mentions.
 4. Benchmark competitors with `cross_aggregated_metrics`: supply 2-10 `targets` each with an `aggregation_key` label to get side-by-side group totals in one call.
 5. Find citation surfaces with `top_domains`/`top_pages` to see which domains and pages the models cite for your topic (often third-party/UGC, not your own site).

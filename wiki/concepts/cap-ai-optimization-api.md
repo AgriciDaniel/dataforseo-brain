@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: ai-optimization
 status: stable
 created: 2026-06-26
-updated: 2026-07-08
+updated: 2026-10-02
 tags: [dataforseo, ai-optimization, llm]
 related:
   - "[[cap-llm-mentions-visibility]]"
@@ -17,6 +17,8 @@ related:
 
 > A data layer for querying LLMs, scraping their consumer answers, and measuring AI search volume. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
 
+> **Routing (2026-10-02):** to see what users are told, use the `chat_gpt`/`gemini` **llm_scraper** ($0.004 live, $0.0012 queued), not `llm_responses` ($0.03-0.09 with web search, measured). Gemini `llm_responses` returns `direct_url` since 2026-09-16. Batch non-urgent runs with `task_post` (up to 100 tasks per POST).
+
 ## Overview
 The AI Optimization API is DataForSEO's interface to the generative-search era. It is raw infrastructure (no dashboard) split into four endpoint groups: LLM Responses (call models via API), LLM Scraper (scrape the consumer ChatGPT/Gemini web UI), AI Keyword Data (AI search volume), and LLM Mentions (brand/citation visibility, covered separately in [[cap-llm-mentions-visibility]]). It lets teams test what each model says about a brand, collect cited sources, and size AI demand programmatically. Everything is pay-as-you-go with sandbox testing available; LLM Mentions joined that model on 2026-07-01 with no subscription or activation step.
 
@@ -24,7 +26,28 @@ The AI Optimization API is DataForSEO's interface to the generative-search era. 
 - **LLM Responses** (`/v3/ai_optimization/{provider}/llm_responses/`): structured answers from ChatGPT, Claude, Gemini, and Perplexity through one interface. ChatGPT/Claude/Gemini support Live and Standard; Perplexity is Live-only (`task_post_supported: false`). Each provider has a `/models/` endpoint that is the source of truth for accepted `model_name` strings: the live `/v3/ai_optimization/claude/llm_responses/models` endpoint currently accepts claude-sonnet-4-6, claude-opus-4-8, claude-sonnet-4-5, and claude-opus-4-5, among others. The static docs page lists older models and lags Anthropic's release cadence, so always re-poll the `/models/` endpoint before pinning a version. Live LLM Responses calls are pay-as-you-go accessible with no subscription (verified 2026-06-26; fixtures captured at `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-responses-*.json`).
 - **LLM Scraper** (`/v3/ai_optimization/{provider}/llm_scraper/`): scrapes the live ChatGPT and Gemini web interfaces for a keyword, returning the markdown answer, `search_results[]`, `sources[]`, typed `items[]` (text, tables, images, products, local businesses), and `brand_entities[]`. Advanced and HTML output. **Recent change (2026-05-28): the ChatGPT LLM Scraper now returns ad results.** It surfaces the **sponsored / ad placements that appear inside ChatGPT responses**, so the scraped items can now include paid results alongside the organic answer - relevant for tracking how ads show up in AI answers and for GEO competitive monitoring.
 - **AI Keyword Data** (`/v3/ai_optimization/ai_keyword_data/keywords_search_volume/live`): `ai_search_volume` and 12-month `ai_monthly_searches`, calculated from People Also Ask SERP data. Live-only, up to 1,000 keywords.
-- **LLM Mentions** (`/v3/ai_optimization/llm_mentions/`): the brand and citation visibility tracker, split out into its own note [[cap-llm-mentions-visibility]]. It is pay-as-you-go since 2026-07-01, with no subscription or activation step; `/v3/ai_optimization/llm_mentions/search/live` returned `20000 Ok` in the 2026-07-08 live fixture at `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-mentions-search.json`.
+- **LLM Mentions** (`/v3/ai_optimization/llm_mentions/`)
+
+> ### v1 -> v2 migration (2026-09-17)
+>
+> The five v1 endpoints below are **retired upstream**: absent from the official
+> OpenAPI spec, and the generated clients expose no callable method for them.
+> They remain billable, so calls still succeed - which is exactly why this is
+> easy to miss. **Do not build new work on v1.**
+>
+> | v1 (retired) | v2 replacement | Shape change |
+> |---|---|---|
+> | `search/live` | `search_mentions/live` | `target` object -> **array** of up to 10 entities |
+> | `top_domains/live` | `top_mentioned_domains/live` (+ `_lite`) | - |
+> | `top_pages/live` | `top_mentioned_pages/live` (+ `_lite`) | - |
+> | `aggregated_metrics/live` | `target_metrics/live` (+ `_lite`) | - |
+> | `cross_aggregated_metrics/live` | `multi_target_metrics/live` | - |
+>
+> v2 also adds `top_mentioned_brands`, `top_mentioned_brand_categories`,
+> `historical`, `timeseries_delta` and `timeseries_new_lost` with no v1
+> equivalent. `_lite` variants cost the same - they reduce response size, not
+> spend. Evidence: [[dfs-github-org-sweep]], [[dfs-openapi-spec]].
+: the brand and citation visibility tracker, split out into its own note [[cap-llm-mentions-visibility]]. It is pay-as-you-go since 2026-07-01, with no subscription or activation step; `/v3/ai_optimization/llm_mentions/search/live` returned `20000 Ok` in the 2026-07-08 live fixture at `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-mentions-search.json`.
 - **Reference endpoints**: each provider has a `/models/` endpoint to enumerate available model versions, and AI Keyword Data has `/locations_and_languages/` for valid targeting.
 
 ## Key parameters / inputs
@@ -42,7 +65,7 @@ The AI Optimization API is DataForSEO's interface to the generative-search era. 
 | location_* / language_* | LLM Scraper and AI Keyword Data targeting |
 
 ## Response / what you get back
-LLM Responses returns `model_name`, `input_tokens`, `output_tokens`, `reasoning_tokens`, `web_search`, `money_spent` (the third-party model's token charge, passed through), `items[]` (reasoning and message objects, each with `sections[]` of type/text and optional `annotations[]` of web sources with title and url), and `fan_out_queries[]`. LLM Scraper returns `markdown`, `sources[]`, `search_results[]`, typed items (e.g. `gemini_text`, `gemini_table`, `gemini_images`, `gemini_source`), and `brand_entities[]`. AI Keyword Data returns `ai_search_volume` and `ai_monthly_searches[]`.
+LLM Responses returns `model_name`, `input_tokens`, `output_tokens`, `reasoning_tokens`, `web_search`, `money_spent` (the third-party model's token charge, passed through), `items[]` (reasoning and message objects, each with `sections[]` of type/text and optional `annotations[]` of web sources with title and url), and `fan_out_queries[]`. LLM Scraper returns `markdown`, `sources[]`, `search_results[]`, typed items (ChatGPT: `chat_gpt_text`, `chat_gpt_table`, `chat_gpt_navigation_list`, `chat_gpt_images`, `chat_gpt_products`, `chat_gpt_local_businesses`, `chat_gpt_ad`; Gemini: `gemini_text`, `gemini_table`, `gemini_images`; the spec's full lists), and `brand_entities[]`. AI Keyword Data returns `ai_search_volume` and `ai_monthly_searches[]`.
 
 ## Cost & method notes
 - Pricing combines DataForSEO's per-task cost with the model's pass-through `money_spent`. LLM Responses Live is $0.0006/task plus token charges; the Standard queue is $0.0002 plus a $0.01 refundable prepayment per task (auto-refunded down to the actual LLM cost, settling in up to ~72h) per the live pricing page, which is authoritative over the older raw-note $0.0006 Standard figure. LLM Scraper (ChatGPT and Gemini only) is $0.0012/page Standard, $0.0024 Priority, $0.004 Live (treat as approximate where the pricing page is unreachable). AI Keyword Data is $0.01/task plus $0.0001/keyword.

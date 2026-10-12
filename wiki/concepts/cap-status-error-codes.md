@@ -55,6 +55,7 @@ Build your retry/error matrix from this note before shipping [[play-cost-optimiz
 
 - 40202 maps to the 2000 calls/min ceiling; 40209 to the 30-simultaneous cap. See [[cap-rate-limits-throughput]].
 - 40204 stays in the code catalog as "subscription required," but it is legacy for the historically gated Backlinks and LLM Mentions modules. A pay-as-you-go account no longer receives 40204 for those modules after the 2026-07-01 move; if it appears elsewhere, handle it as a product-specific access error. See [[cap-backlinks-api]] and [[cap-llm-mentions-visibility]].
+- **Docs conflict (verified 2026-09-16):** the official errors appendix still describes 40204 as "access denied. visit plans and subscriptions to activate your subscription and get access to this api" and still names the Backlinks API. That page has not been updated since the 2026-07-01 pay-as-you-go move. A live `backlinks/summary/live` call on a pay-as-you-go account with no subscription returned `status_code: 20000` on 2026-09-16. Trust the live probe over the appendix text.
 - 40505 ("Outdated location parameters") fails geo-targeted tasks; refresh from the helper endpoint. See [[cap-locations-languages-targeting]].
 - 40404 ("Sandbox missing prepared data") only occurs in the sandbox environment. See [[cap-sandbox-testing]].
 - 50401 is the Live 120-second timeout; 50402 is the 50-second target-page cap. See [[cap-task-vs-live-execution]].

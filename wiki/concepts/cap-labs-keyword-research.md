@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: labs
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, labs, keyword-research]
 related:
   - "[[cap-labs-competitor-research]]"
@@ -17,6 +17,8 @@ related:
 # Labs Keyword Research (Capability)
 
 > The DataForSEO Labs keyword-research endpoints turn one seed keyword or domain into thousands of scored keyword ideas from a pre-indexed in-house database, across Google, Amazon, Google Play, and the App Store. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Changed in September 2026:** `keywords_for_site` accepts a single page URL as `target` since 2026-09-29; include `https://` or `www.`, or it silently falls back to the whole domain. `search_intent` no longer needs a language (one multilingual model since 2026-09-22), so intent labels from before that date may differ. Set `limit` on every list endpoint: Labs bills $0.00012 per row, and limits of 40-100 on `ranked_keywords` overflowed agent context 23 times.
 
 ## Overview
 Labs is DataForSEO's analytical layer that queries a pre-indexed database rather than live-scraping a SERP. The keyword-research family expands a seed into ideas, suggestions, and related terms, then enriches each with search volume, CPC, competition, keyword difficulty, and search intent. Because the data is pre-computed, these endpoints are cheaper and faster than live SERP or Keywords Data calls, at the cost of slight staleness (the database updates periodically). All endpoints are Live/synchronous POST calls under `/v3/dataforseo_labs/{engine}/{function}/live`.

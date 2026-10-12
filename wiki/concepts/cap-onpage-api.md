@@ -55,6 +55,17 @@ The summary reports crawl state via `crawl_progress`, `crawl_status` (`max_crawl
 ## When to use / how it fits
 OnPage is the spine of [[play-technical-site-audit]] (crawl -> summary -> duplicates/redirects/non-indexable -> Lighthouse -> fix list) and contributes to [[play-cost-optimized-pipeline]] when paired with webhooks. Use Instant Pages for spot checks and the queue for full-site crawls. Route jobs via [[dec-which-api-for-which-job]] and weigh queue vs live via [[dec-live-vs-standard-vs-priority]].
 
+## `content_parsing_live` (verified priced 2026-09-17)
+`POST /v3/on_page/content_parsing/live` bills **$0.00015 per result** - tied with
+`instant_pages` as the **cheapest call in the whole DataForSEO catalog**, and
+about 13x cheaper than a Live SERP. It returns the structured content of a single
+page (headings, text blocks, markup) without running a crawl task.
+
+Use it wherever you need one page's content rather than a site crawl: competitor
+page teardowns, content-gap checks, extracting a client's own copy for rewriting.
+There is also a task-based `content_parsing` at the same rate. See
+[[cap-live-price-table]].
+
 ## Gotchas / limits
 - 2000 API calls/min, max 100 tasks per POST, max 30 simultaneous requests; Instant Pages allows max 20 tasks per request and no more than 5 identical domains per request.
 - Task results are retained for 30 days; raw HTML for 7 days; completed tasks sit in `tasks_ready` up to 3 days.

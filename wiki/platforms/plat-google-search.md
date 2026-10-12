@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: serp
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, platform, serp, google]
 related:
   - "[[cap-serp-api]]"
@@ -16,6 +16,8 @@ related:
 # Google Search as a DataForSEO Surface
 
 > Google organic results, paid units, and 50+ SERP features (including AI Overviews and AI Mode) exposed as structured data. Sits under [[index|DataForSEO Brain]] then [[platforms/_index|Platforms]].
+
+> **Update 2026-09-15:** Google Events is deprecated as a separate SERP engine in DataForSEO.
 
 ## Overview
 Google web search is the single richest surface DataForSEO indexes. The SERP API Google Organic endpoint returns the full ranked page for a keyword, location, and language, decomposed into typed elements instead of an HTML blob. The same surface is enriched by DataForSEO Labs (pre-indexed keyword and competitor intelligence drawn from Google data) and by the AI Optimization API (which tracks Google AI Overview citations). For most rank tracking, keyword research, and competitor analysis jobs this is the first surface a practitioner reaches.
@@ -39,8 +41,9 @@ Google web search is the single richest surface DataForSEO indexes. The SERP API
 ## Response / what you get back
 - Envelope: `version`, `status_code` (20000 OK), `cost`, `tasks[]`, each task carrying `result[]`.
 - `result.item_types` lists the element types present; `result.se_results_count` is the total indexed result count; `result.items[]` holds the typed elements.
-- Per organic item: `rank_group`, `rank_absolute`, `page`, `position`, `xpath`, `domain`, `title`, `url`, `description`, `is_featured_snippet`, `rating`, `price`, `links`, `about_this_result`.
-- AI Mode items carry nested `ai_overview_element`, `ai_overview_table_element`, `ai_overview_shopping_element`, and reference citations.
+- Per organic item: `rank_group`, `rank_absolute`, `page`, `position`, `xpath`, `domain`, `title`, `url`, `description`, `checks`, `rating`, `price`, `links`, `about_this_result`.
+- `checks` is an array naming the properties that are true for the element, or `null` when none apply — always null-guard it. It supersedes the legacy booleans `is_image`, `is_video`, `is_featured_snippet`, `is_malicious`, `is_web_story`, `amp_version`, which DataForSEO removes on **2027-01-20** (announced 2026-08-24); after that date, reading them directly raises undefined-property errors. `checks` also carries newer flags such as `is_highly_cited`. Labs endpoints that return organic SERP elements (Domain Intersection, Page Intersection, Competitors Domain, Relevant Pages, Domain Rank Overview, Historical Rank Overview) lose the same booleans on that date; `checks` arrives there in a later update.
+- AI Mode items carry nested elements typed `ai_overview_element`, `ai_overview_expanded_element`, `ai_overview_video_element`, `ai_overview_table_element`, `ai_overview_shopping` and `ai_overview_paid` (the OpenAPI spec's full list), plus reference citations.
 
 ## Cost & method notes
 - Base charge is per SERP request for up to 10 results; `depth` beyond 10 adds cost when the engine returns more. See [[cap-queue-priority-cost-model]].

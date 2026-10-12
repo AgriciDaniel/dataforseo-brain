@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: ai-optimization
 status: stable
 created: 2026-06-26
-updated: 2026-07-08
+updated: 2026-10-02
 tags: [dataforseo, ai-optimization, geo]
 related:
   - "[[cap-ai-optimization-api]]"
@@ -17,15 +17,38 @@ related:
 
 > Structured data on where brands, domains, and keywords are mentioned and cited inside AI answers. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
 
+> **Cost and targeting (2026-10-02):** every LLM Mentions call is **$0.10 flat** + $0.001/row. Put several targets in one `multi_target_metrics` call. Query-side endpoints need KEYWORD targets; domain targets return zeros, fully billed. 52 exploratory calls cost ~$5.27 in September 2026.
+
 ## Overview
 The LLM Mentions API (launched 2025-11-11) is DataForSEO's flagship AI-visibility tracker. It answers the question traditional SEO tools cannot: is my brand named, and is my site cited, inside generative AI answers. It maintains a mentions database collected from Google AI Overview and ChatGPT, each mention being a question-answer pair plus the sources the model cited. It is the measurement half of GEO, paired with the live-querying endpoints in [[cap-ai-optimization-api]]. All five endpoints are Live-only under `/v3/ai_optimization/llm_mentions/`.
 
 ## What it covers
-- **Search** (`/llm_mentions/search/live`): raw mention records for target keywords/domains, returning `question`, `answer` (markdown), `sources[]`, `search_results[]`, `ai_search_volume`, `monthly_searches[]`, `brand_entities[]`, and `fan_out_queries[]`.
-- **Top Pages** (`/llm_mentions/top_pages/live`): mentions metrics grouped by the most-cited pages for a target.
-- **Top Domains** (`/llm_mentions/top_domains/live`): mentions metrics grouped by the most-cited domains.
-- **Aggregated Metrics** (`/llm_mentions/aggregated_metrics/live`): consolidated metrics for one target across location, language, platform, and source domain.
-- **Cross Aggregated Metrics** (`/llm_mentions/cross_aggregated_metrics/live`): the same metrics for 2-10 targets at once, labelled by `aggregation_key`, for side-by-side brand or keyword comparison. Note the task spec slug `cross_model_comparison` maps to this real path.
+
+> ### v1 -> v2 migration (2026-09-17)
+>
+> The five v1 endpoints below are **retired upstream**: absent from the official
+> OpenAPI spec, and the generated clients expose no callable method for them.
+> They remain billable, so calls still succeed - which is exactly why this is
+> easy to miss. **Do not build new work on v1.**
+>
+> | v1 (retired) | v2 replacement | Shape change |
+> |---|---|---|
+> | `search/live` | `search_mentions/live` | `target` object -> **array** of up to 10 entities |
+> | `top_domains/live` | `top_mentioned_domains/live` (+ `_lite`) | - |
+> | `top_pages/live` | `top_mentioned_pages/live` (+ `_lite`) | - |
+> | `aggregated_metrics/live` | `target_metrics/live` (+ `_lite`) | - |
+> | `cross_aggregated_metrics/live` | `multi_target_metrics/live` | - |
+>
+> v2 also adds `top_mentioned_brands`, `top_mentioned_brand_categories`,
+> `historical`, `timeseries_delta` and `timeseries_new_lost` with no v1
+> equivalent. `_lite` variants cost the same - they reduce response size, not
+> spend. Evidence: [[dfs-github-org-sweep]], [[dfs-openapi-spec]].
+
+- **Search** (`/llm_mentions/search/live`) - **RETIRED, use `search_mentions/live`**: raw mention records for target keywords/domains, returning `question`, `answer` (markdown), `sources[]`, `search_results[]`, `ai_search_volume`, `monthly_searches[]`, `brand_entities[]`, and `fan_out_queries[]`.
+- **Top Pages** (`/llm_mentions/top_pages/live`) - **RETIRED, use `top_mentioned_pages/live`**: mentions metrics grouped by the most-cited pages for a target.
+- **Top Domains** (`/llm_mentions/top_domains/live`) - **RETIRED, use `top_mentioned_domains/live`**: mentions metrics grouped by the most-cited domains.
+- **Aggregated Metrics** (`/llm_mentions/aggregated_metrics/live`) - **RETIRED, use `target_metrics/live`**: consolidated metrics for one target across location, language, platform, and source domain.
+- **Cross Aggregated Metrics** (`/llm_mentions/cross_aggregated_metrics/live`) - **RETIRED, use `multi_target_metrics/live`**: the same metrics for 2-10 targets at once, labelled by `aggregation_key`, for side-by-side brand or keyword comparison. Note the task spec slug `cross_model_comparison` maps to this real path.
 - Aggregation endpoints accept `initial_dataset_filters` with operators `=`, `<>`, `in`, `not_in`, `like`, `not_like`, `ilike`, `not_ilike`, `match`, `not_match`, applied before grouping.
 - `links_scope` (sources or search_results) on Top Pages and Top Domains controls whether grouping uses cited sources or retrieved search results.
 
@@ -51,6 +74,61 @@ Search returns `total_count`, `current_offset`, `search_after_token`, and `items
 
 ## When to use / how it fits
 LLM Mentions is the data engine of [[play-ai-visibility-tracking]] and the GEO loop in [[cap-geo-ai-search-optimization]]. Use Search for evidence (the actual question and answer), Top Domains/Pages to see who AI cites in your category, and Cross Aggregated Metrics to compute Share of Voice across competitors. Practitioner research notes that about 85% of brand mentions come from third-party pages, so the off-domain `sources_domain[]` view matters as much as your own. The answer surfaces are profiled in [[plat-ai-assistants]] and the models in [[ent-llm-model-providers]].
+
+## LLM Mentions v2 endpoint family (verified live 2026-09-17)
+
+The five endpoints documented above are the original set. The account exposes
+**20**. The v2 family below was missing from this note until 2026-09-17 and is
+the part that matters for productised AI-visibility work.
+
+| Endpoint | Returns |
+|---|---|
+| `target_metrics/live` | mentions + ai_search_volume for up to **10 entities** (domains and/or keywords) in one target set |
+| `multi_target_metrics/live` | the same, for **2-10 labelled target sets** - client vs competitor set in a single call |
+| `search_mentions/live` | mention-level search |
+| `top_mentioned_brands/live` | brand-level share of voice in LLM answers |
+| `top_mentioned_brand_categories/live` | category-level share of voice |
+| `top_mentioned_domains/live` | newer counterpart to `top_domains` |
+| `top_mentioned_pages/live` | newer counterpart to `top_pages` |
+| `historical/live` | backfill for trend baselines |
+| `timeseries_delta/live` | change in mentions between periods |
+| `timeseries_new_lost/live` | mentions gained and lost |
+
+`_lite` variants exist for `target_metrics`, `top_mentioned_domains`,
+`top_mentioned_pages`, `top_mentioned_brands` and `top_mentioned_brand_categories`.
+
+### Billing - the lever that matters
+**A task is one billable request regardless of how many targets it carries.**
+Verified live 2026-09-17: `multi_target_metrics` with 5 domains cost **$0.105**
+($0.10 request + $0.001 x 5 results). Five separate `target_metrics` calls would
+have cost about **$0.505** - roughly **4.8x** more for identical data.
+
+**`_lite` is NOT cheaper.** Every LLM Mentions endpoint, lite included, bills
+$0.10/request + $0.001/result. Choose lite for a smaller response, never for spend.
+
+### Request shape (both endpoints)
+- `target_metrics`: `target` array, up to 10 entities. Each is either
+  `{"domain": ..., "search_filter": "include|exclude", "search_scope": "any|sources|search_results"}`
+  or `{"keyword": ..., "match_type": "word_match|partial_match"}`.
+  At least one entity must be `"search_filter": "include"`.
+- `multi_target_metrics`: `targets` array of 2-10 objects, each
+  `{"key": "<label, <=250 chars>", "target": [ ...entities... ]}`.
+- Optional on both: `location_code` (default 2840 US), `language_code` (default
+  `en`), `platform` (`chat_gpt` | `google`; both if omitted),
+  `initial_dataset_filters` (max 8), `internal_list_limit` (1-10), `tag`.
+- Live method only. **Post to the bare path - no trailing slash.**
+
+### Worked result (client.example competitor set, location_code 2124, 2026-09-17)
+| Target | mentions | ai_search_volume |
+|---|---|---|
+| client.example | 1 | 70 |
+| competitor-a.example | 338 | 111,870 |
+| competitor-b.example | 13 | 1,160 |
+| competitor-c.example | 99 | 35,860 |
+| competitor-d.example | 670 | 167,440 |
+
+One $0.105 call reproduced figures an earlier audit assembled by
+hand. See [[play-ai-visibility-tracker]].
 
 ## Gotchas / limits
 - Access is now plain pay-as-you-go, with no subscription or activation step. It returned `40204` through 2026-06-26; that gate was removed 2026-07-01 when DataForSEO moved all APIs to pay-as-you-go. A live re-probe on 2026-07-08 returned `20000 Ok` with real data for `/v3/ai_optimization/llm_mentions/search/live`; fixture: `.raw/sources/dataforseo-research/ai-optimization/fixtures/llm-mentions-search.json`. See [[cap-status-error-codes]].

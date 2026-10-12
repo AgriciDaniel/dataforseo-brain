@@ -35,6 +35,7 @@ DataForSEO is pay-as-you-go: you deposit funds ($50 minimum) and are billed per 
 
 ## Response / what you get back
 - Reference per Google SERP (10 results): Standard Normal $0.0006 ($600/1M), Standard High $0.0012 ($1,200/1M), Live $0.002 ($2,000/1M). Catalog range overall "$0.60 / 1,000 SERPs to $100 / purchase."
+- **Superseded: see [[cap-live-price-table]] for account-verified prices pulled 2026-09-17.** The 2026-06-26 figures below predate the 2026-07-01 increase (~+20% on Labs, Backlinks, Domain Analytics, Keywords Data, OnPage, Content Analysis, Business Data; +50% Merchant Amazon Task POST). **SERP prices were NOT increased** and remain correct as written.
 - Live-observed costs (2026-06-26, `_cost-log.json`): Labs keyword endpoints ~$0.0105/task; Labs overview/difficulty ~$0.0101; SERP Live advanced $0.002; Google Ads search volume $0.075; clickstream DFS search volume $0.15; Whois overview $0.101; OnPage instant_pages $0.000125; business_listings search $0.0103.
 - Example scaled SERP price for 100 results: Standard Normal $0.00465, High $0.0093, Live $0.0155.
 

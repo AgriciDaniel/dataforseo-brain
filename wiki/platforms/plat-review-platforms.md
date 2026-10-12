@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: business-data
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, platform, business-data, reviews, reputation]
 related:
   - "[[cap-business-data-api]]"
@@ -16,6 +16,8 @@ related:
 # Review Platforms as DataForSEO Surfaces
 
 > Trustpilot, Tripadvisor, Google Reviews, and Pinterest exposed for reputation, sentiment, and social-proof monitoring, complemented by the Content Analysis citation database. Sits under [[index|DataForSEO Brain]] then [[platforms/_index|Platforms]].
+
+> **Retired 2026-09-16:** `business_data/social_media/*` (Pinterest, Facebook, Reddit) no longer exists.
 
 ## Overview
 Reputation data spans two modules. The Business Data API reads structured reviews from named platforms: Trustpilot, Tripadvisor, Google Reviews, plus Pinterest pin counts as a social-proof signal. The Content Analysis API takes a different angle: it searches a large citation database for any mention of a brand or keyword across the web and scores sentiment, rather than reading one platform's review feed. Used together they answer "what are customers saying on the review sites" and "what is the web-wide sentiment around this brand."

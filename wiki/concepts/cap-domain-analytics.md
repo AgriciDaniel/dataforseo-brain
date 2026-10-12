@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: domain-analytics
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, domain-analytics, technographics]
 related:
   - "[[cap-backlinks-api]]"
@@ -16,6 +16,8 @@ related:
 # Domain Analytics API
 
 > Technology-stack detection and Whois registration intelligence, enriched with backlink and SERP metrics. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Update 2026-09:** Labs ETV changed formula in early September 2026; don't compare older ETV values with new ones.
 
 ## Overview
 The Domain Analytics module answers two questions about a domain: what software it runs, and who/when it was registered. The Technologies sub-API is a technographics engine (a Wappalyzer-style stack detector) over DataForSEO's crawl of millions of domains, and the Whois sub-API turns registration records into a queryable, filterable dataset enriched with backlink and organic/paid SERP metrics. Both are Live-only. This module is the technographic and ownership layer that complements keyword, SERP, and backlink data in competitive research.

@@ -5,7 +5,6 @@ import argparse
 import json
 import re
 import shutil
-import stat
 import sys
 from datetime import date
 from pathlib import Path
@@ -78,7 +77,8 @@ def copy_template(src: Path, dest: Path, replacements: dict[str, str]) -> None:
             continue
         for old, new in replacements.items():
             text = text.replace(old, new)
-        target.write_text(text, encoding="utf-8")
+        # A Windows checkout (core.autocrlf) gives CRLF; text-mode writing then doubled it to \r\r\n.
+        target.write_text(text.replace("\r\n", "\n"), encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

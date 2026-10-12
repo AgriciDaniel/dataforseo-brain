@@ -50,7 +50,7 @@ By default the server registers hundreds of tools, which consumes significant LL
 - SSE - legacy/deprecated
 - Hosted remote - DataForSEO runs `https://mcp.dataforseo.com/mcp` (streamable HTTP) and `https://mcp.dataforseo.com/http` (HTTP/SSE), so no self-hosting is required
 - Cloudflare Worker - `index-worker.js` build with `POST /mcp`, `GET /sse`, `GET /health`, deployable via `wrangler`
-- Published on npm as `dataforseo-mcp-server` (latest 2.9.9 at retrieval, Jun 2026; requires Node.js >=20.0.0 per `package.json` engines - the README still says v14+ and the MCP page 18+, both stale). The v2.9.9 line added Historical SERPs (date params), an `exclude_targets` field on the backlinks domain-intersection tool, tool annotations/titles, and OAuth/MCP auth improvements. Documented clients: Claude Desktop, Claude Code, Cursor, ChatGPT, Gemini CLI, Docker.
+- Published on npm as `dataforseo-mcp-server` (latest **3.1.1**, published 2026-08-25; requires **Node.js >=22** per `package.json` engines). The repository now ships a redesigned **v3** and marks v2 deprecated, so the 2.9.x guidance below is historical. Verified 2026-09-16. The earlier v2.9.9 line added Historical SERPs (date params), an `exclude_targets` field on the backlinks domain-intersection tool, tool annotations/titles, and OAuth/MCP auth improvements. Documented clients: Claude Desktop, Claude Code, Cursor, ChatGPT, Gemini CLI, Docker.
 
 ## When to use / how it fits
 - MCP fits agent-native prototyping and interactive runtimes; raw REST fits production batch jobs - the full tradeoff is [[dec-mcp-vs-raw-rest]].
@@ -79,5 +79,6 @@ By default the server registers hundreds of tools, which consumes significant LL
 - Setting Up the Official DataForSEO MCP Server: Simple Guide - https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide - retrieved 2026-06-26
 - DataForSEO Model Context Protocol (official MCP page) - https://dataforseo.com/model-context-protocol - retrieved 2026-06-26
 - dataforseo-mcp-server (npm package) - https://www.npmjs.com/package/dataforseo-mcp-server - retrieved 2026-06-26
-- MCP server package.json (version 2.9.9, engines.node >=20.0.0) - https://github.com/dataforseo/mcp-server-typescript/blob/master/package.json - retrieved 2026-06-26
+- MCP server npm registry (version 3.1.1, engines.node >=22, published 2026-08-25) - https://www.npmjs.com/package/dataforseo-mcp-server - retrieved 2026-09-16
+- MCP server package.json (version 2.9.9, engines.node >=20.0.0) - https://github.com/dataforseo/mcp-server-typescript/blob/master/package.json - retrieved 2026-06-26 (superseded)
 - DataForSEO API v3 - Authentication - https://docs.dataforseo.com/v3/auth/ - retrieved 2026-06-26

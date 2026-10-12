@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: serp
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, serp, api-hub]
 related:
   - "[[cap-serp-google-verticals]]"
@@ -17,6 +17,8 @@ related:
 # SERP API (Capability Hub)
 
 > The SERP API returns live and queued search-engine results pages for a keyword, location, and language across seven engines. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
+
+> **Cost rule (2026-10-02):** always set `depth`. Missing depth gives 100 results = 10 billed pages. Live, the first 10 results cost $0.002 and each further 10 cost $0.0015 (depth 20 $0.0035, depth 30 $0.005, measured 2026-10-03), so depth 100 is about $0.0155. Queued (Standard) SERP is $0.0006 vs $0.002 live.
 
 ## Overview
 The SERP API is DataForSEO's search-results scraping layer. You give it a `keyword`, a location, and a language, and it returns the structured ranked results for that query. It spans Google, Bing, YouTube, Baidu, Yahoo, Seznam, and Naver, each under `/v3/serp/{engine}/{type}/{method}`. Every engine and vertical shares one request envelope and one response envelope (tasks[] -> result[] -> items[]), so once you learn Google Organic the other surfaces are variations on the same shape. It is the source layer behind rank tracking, SERP-feature monitoring, and AI Overview capture.

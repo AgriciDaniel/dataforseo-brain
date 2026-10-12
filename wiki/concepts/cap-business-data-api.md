@@ -5,7 +5,7 @@ domain: dataforseo
 subdomain: business-data
 status: stable
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-02
 tags: [dataforseo, business-data, local-seo]
 related:
   - "[[plat-google-maps-local]]"
@@ -18,13 +18,16 @@ related:
 
 > The Business Data API returns local-business and reputation data: Google My Business info, updates, reviews, and Q&A; Google Hotels; Trustpilot and Tripadvisor profiles and reviews; Pinterest pin counts; and a pre-indexed Business Listings database of Google Maps POIs. Sits under [[index|DataForSEO Brain]] -> [[concepts/_index|Concepts]].
 
+> **Retired 2026-09-16:** DataForSEO ended the Pinterest API and the whole `business_data/social_media/*` group (Pinterest, Facebook, Reddit). Don't call those endpoints. Business Listings and the review/GMB endpoints are unaffected; listings measured ~$0.00076 per row in a 2026-10-01 study (the table says $0.00036).
+
 ## Overview
 Business Data is DataForSEO's local-SEO and reputation layer. It scrapes Google Business Profile details and reviews, hotel listings, and third-party review platforms, and it also exposes a pre-indexed Business Listings database for discovering points of interest by category and location. The review and GMB endpoints follow the Task lifecycle (some also offer Live); Pinterest and Business Listings are Live. It is the data behind local rank tracking, reputation monitoring, and market mapping of physical businesses. Endpoints live under `/v3/business_data/{provider}/...`.
 
 ## What it covers
 - Google: `/v3/business_data/google/my_business_info/task_post` (profile details), `.../my_business_updates/task_post` (posts), `.../reviews/task_post` and `.../extended_reviews/task_post`, `.../questions_and_answers/task_post`, `.../hotel_searches/task_post`, `.../hotel_info/task_post`.
+- Business Listings (still live): `/v3/business_data/business_listings/search/live` (Maps POIs by category) and `.../business_listings/categories_aggregation/live` (aggregated category stats).
 - Third-party reviews: `/v3/business_data/trustpilot/search/task_post` and `.../trustpilot/reviews/task_post`; `/v3/business_data/tripadvisor/search/task_post` and `.../tripadvisor/reviews/task_post`.
-- Live: `/v3/business_data/social_media/pinterest/live` (pin counts per URL); the `social_media` group also exposes `facebook/live` and `reddit/live` (same `targets` pattern, per-URL billing). Plus `/v3/business_data/business_listings/search/live` (Maps POIs by category) and `/v3/business_data/business_listings/categories_aggregation/live` (aggregated category stats).
+- Live: `/v3/business_data/social_media/pinterest/live` (pin counts per URL); the `social_media` group also exposes `facebook/live` and `reddit/live` (same `targets` pattern, per-URL billing).
 
 ## Key parameters / inputs
 | field | notes |
