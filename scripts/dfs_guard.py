@@ -329,7 +329,8 @@ def check(tool, inp, session, now, log):
             return "deny", (f"The connector's Google Ads tool returns only {CONNECTOR_ADS_ITEMS} of the {len(kws)} keywords "
                             "but bills the whole call (measured 2026-10-04: 95 sent, 10 back). Use REST: "
                             "dfs_safety.call('/v3/keywords_data/google_ads/search_volume/live', "
-                            "[{'keywords': [...], 'location_code': ..., 'language_code': 'en'}]) returns every keyword.")
+                            "[{'keywords': [...], 'location_code': ..., 'language_code': 'en'}]) returns every keyword; "
+                            "through the gateway, use api_request with path /v3/keywords_data/google_ads/search_volume/live.")
         if len(kws) < GOOGLE_ADS_MIN_KEYWORDS and not below_country(p):
             return "deny", (f"Google Ads search_volume costs a flat $0.09 per call; with {len(kws)} keywords Labs ($0.012 + $0.00012/keyword) is cheaper. "
                             "Use dataforseo_labs_google_keyword_overview ($0.012 + $0.00012/keyword, up to 700 keywords per call). "

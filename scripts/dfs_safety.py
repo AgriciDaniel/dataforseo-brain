@@ -93,6 +93,9 @@ def rest_guard(endpoint, payload, confirm_cost=False, allow_repeat=False, now=No
             print(f"dfs_safety: {endpoint}: {reason}", file=sys.stderr)
         if "depth" in patch and "depth" not in task:
             task = dict(task, depth=patch["depth"])   # API default is 100 results = 10 billed pages
+        if "limit" in patch:   # billed per row; scripts may page on purpose, so warn rather than change it
+            print(f"dfs_safety: {endpoint}: limit={task.get('limit', 'default 100')} rows are billed per row; "
+                  f"the guard's cap for this endpoint is {patch['limit']}.", file=sys.stderr)
         patched.append(task)
         est += g.estimate(ep, task)
     body = patched if isinstance(payload, list) else patched[0]

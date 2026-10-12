@@ -100,3 +100,8 @@ def test_task_get_cost_echo_is_not_logged_or_counted(api):
     api["body"]["cost"] = 0.0021      # task_get repeats the task's cost; nothing new is billed
     dfs_safety.call("/v3/serp/google/organic/task_get/advanced/abc")
     assert not api["log"].exists() and dfs_safety._run_spent == 0
+
+
+def test_big_limit_warns_but_is_sent_unchanged(api, capsys):
+    dfs_safety.call("/v3/dataforseo_labs/google/ranked_keywords/live", [{"target": "a.com", "limit": 500}])
+    assert api["calls"][0][1][0]["limit"] == 500 and "billed per row" in capsys.readouterr().err

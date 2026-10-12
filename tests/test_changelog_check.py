@@ -39,3 +39,14 @@ def test_network_failure_is_quiet(monkeypatch, tmp_path):
     monkeypatch.setattr("urllib.request.urlopen", boom)
     lines, alert = run_baselines.changelog_check(vault(tmp_path))
     assert alert is False and "skipped" in lines[0]
+
+
+def test_same_day_post_counts_unless_recorded(monkeypatch, tmp_path):
+    posts(monkeypatch, ("2026-10-01", "Posted later on the checked day"))
+    v = vault(tmp_path)
+    lines, alert = run_baselines.changelog_check(v)
+    assert alert is True and "Posted later" in "\n".join(lines)
+    note = v / "wiki" / "sources" / "dfs-changelog.md"
+    note.write_text(note.read_text(encoding="utf-8") + "\n- [x](https://dataforseo.com/update/x/)\n", encoding="utf-8")
+    lines, alert = run_baselines.changelog_check(v)
+    assert alert is False

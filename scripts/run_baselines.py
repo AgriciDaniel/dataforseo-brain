@@ -221,7 +221,8 @@ def changelog_check(vault):
     note = pathlib.Path(vault) / "wiki" / "sources" / "dfs-changelog.md"
     if not note.exists():
         return [], False
-    m = re.search(r"\*\*Checked:\*\* (\d{4}-\d{2}-\d{2})", note.read_text(encoding="utf-8"))
+    text = note.read_text(encoding="utf-8")
+    m = re.search(r"\*\*Checked:\*\* (\d{4}-\d{2}-\d{2})", text)
     if not m:
         return [], False
     checked = m.group(1)
@@ -231,7 +232,8 @@ def changelog_check(vault):
             posts = json.load(resp)
     except Exception as exc:   # never lose the paid results over a free check
         return [f"\nDataForSEO changelog check skipped: {exc}\n"], False
-    new = [p for p in posts if p.get("date", "")[:10] > checked]
+    # same-day posts count too unless already recorded: a post later on the checked day was missed by ">"
+    new = [p for p in posts if p.get("date", "")[:10] >= checked and p.get("link", "") not in text]
     if not new:
         return [f"\nDataForSEO changelog: nothing new since {checked}.\n"], False
     lines = [f"\n**DataForSEO posted {len(new)} product update(s) since the changelog note was checked ({checked}):**\n"]

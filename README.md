@@ -103,6 +103,16 @@ exact cost with a `source=` tag. `dfs_safety.queue()` runs Standard-queue tasks,
 polling so a restart never pays twice. Node scripts use `scripts/dfs_safety.mjs`. `scripts/spend_report.py`
 summarizes the call log by day, source and endpoint, with guard blocks and bursts.
 
+`gateway/dfs_gateway.py` puts the same guard in front of chat clients that can't run hooks (claude.ai custom
+connectors, phone, Codex). It runs DataForSEO's MCP server(s) over stdio and re-exposes the tools over
+Streamable HTTP behind a secret-token URL, with the guard's deny/ask rules (`confirm_cost` for asks), a daily
+budget and logging. `DFS_GATEWAY_UPSTREAM` can list several servers separated by ` ;; `: the 2.x server's
+per-endpoint tools plus the 3.x server's `docs_*` and `api_request`. Bind it to localhost and publish it
+through HTTPS on port 443 (claude.ai connectors would not reach a non-standard port in our tests).
+
+`scripts/drift_watch.py` is a free daily check of DataForSEO's updates feed, OpenAPI spec and price table that
+exits non-zero once per new finding or when a check keeps failing, so a scheduler can raise an alert.
+
 ## How it was built
 
 An orchestrated, source-cited pipeline (a watcher thread plus parallel secretaries):
